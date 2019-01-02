@@ -1,0 +1,14 @@
+ .card-deck {
+  @include media-breakpoint-up(sm) {
+    .card {
+      margin-bottom: $card-deck-margin * 2;
+    }
+  }
+}
+
+.card-header {
+  padding-bottom: 0;
+  ~ .card-body {
+    padding-top: 0;
+  }
+}

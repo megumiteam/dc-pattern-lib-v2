@@ -1,0 +1,25 @@
+.nav-pills {
+
+  &.nav-pills-dark {
+    .nav-link.active,
+    .show > .nav-link,
+    .nav-link {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+
+  .nav-link {
+    font-size: $font-size-base * .875;
+    color: $body-color;
+    &:hover,
+    &:focus {
+      background: rgba($nav-pills-link-active-bg, .05);
+      color: $body-color;
+    }
+  }
+}

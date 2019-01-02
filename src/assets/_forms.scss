@@ -1,0 +1,47 @@
+.form-control {
+  font-size: $input-font-size;
+}
+
+// .form-group {
+//   position: relative;
+
+//   > label {
+//     font-size: $input-font-size;
+//     color: $input-placeholder-color;
+//     position: absolute;
+//     padding: $input-padding-y $input-padding-x;
+//     line-height: 0;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     cursor: text;
+//     transition: all .1s ease-in-out;
+//     height: 100%;
+//   }
+
+//   input::placeholder {
+//     color: transparent;
+//   }
+
+//   input:not(:placeholder-shown) ~ label {
+//     font-size: $input-font-size * .5;
+//     padding-top: $input-padding-y / 2;
+//     opacity: .75;
+//   }
+// }
+
+// /* Fallback for Edge
+// -------------------------------------------------- */
+// @supports (-ms-ime-align: auto) {
+//   .form-group > label {
+//     display: none;
+//   }
+// }
+
+// /* Fallback for IE
+// -------------------------------------------------- */
+// @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+//   .form-group > label {
+//     display: none;
+//   }
+// }

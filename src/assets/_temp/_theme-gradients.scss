@@ -1,0 +1,51 @@
+// Theme
+
+._gradient-primary {
+  background-image: linear-gradient(90deg, $primary, $secondary) !important;
+  background-color: $primary;
+
+  &--reverse {
+    background-image: linear-gradient(90deg, $secondary, $primary);
+  }
+}
+
+// Purples
+
+._gradient-purple {
+  background-image: linear-gradient(90deg, $purple, $magenta) !important;
+  background-color: $purple;
+}
+
+._gradient-purple--reverse {
+  background-image: linear-gradient(90deg, $magenta, $purple);
+}
+
+._gradient-purple-40 {
+  background-image: linear-gradient(40deg, $purple, $magenta);
+}
+
+._gradient-purple-dark {
+  background-image: linear-gradient(90deg, $purple-dark 0%, $black 100%);
+  background-color: $purple-dark;
+}
+
+._gradient-purple-dark--reverse {
+  background-image: linear-gradient(90deg, transparent 0%, $purple-dark 100%);
+  background-color: $black;
+}
+
+._gradient-purple-dark-40 {
+  background-image: linear-gradient(40deg, transparent 0%, $black 100%);
+  background-color: $purple-dark;
+}
+
+// Blues
+
+._gradient-blue {
+  background-image: linear-gradient(90deg, #00aaf1, #7cd2ff) !important;
+  background-color: $purple;
+}
+
+._gradient-blue--reverse {
+  background-image: linear-gradient(90deg, #00aaf1, #7cd2ff);
+}

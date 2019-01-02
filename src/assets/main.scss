@@ -1,0 +1,224 @@
+@import "variables";
+@import "bootstrap/scss/bootstrap.scss";
+@import "toggle-checkbox";
+@import "forms";
+@import "card";
+@import "list-group";
+@import "buttons";
+@import "dropdown";
+@import "nav";
+
+ul.navbar-nav {
+  margin: 0 (-$navbar-padding-x + -$navbar-nav-link-padding-x);
+}
+
+@mixin bg-gradient-variant($parent, $color) {
+  #{$parent} {
+    background: $color linear-gradient(90deg, mix($body-bg, $color, 15%), $color) repeat-x !important;
+  }
+}
+
+/**
+ * Theme Gradients
+ */
+$theme-gradients: (
+  ("primary", $purple, $magenta, $white),
+  ("magenta", $purple, $magenta, $white),
+  ("purple-dark", $purple-dark, $black, $white),
+  ("green", $green, $teal, $white),
+);
+
+@each $color in $theme-gradients {
+  .btn-gradient-#{nth($color, 1)} {
+    color: $white;
+    background: linear-gradient(to right, #{nth($color, 2)}, #{nth($color, 3)});
+    background-size: 120%;
+    background-position: 20%;
+    @include hover {
+      color: #{nth($color, 4)};
+      text-decoration: none;
+      opacity: 90%;
+    }
+  }
+
+  .bg-gradient-#{nth($color, 1)} {
+    background: linear-gradient(to right, #{nth($color, 2)}, #{nth($color, 3)});
+  }
+}
+
+/**
+ * Z Index
+ */
+@for $i from 1 through 10 {
+  .z-#{$i} {
+    z-index: #{$i};
+  }
+}
+
+// .section-angle--purple-dark {
+//   position: relative;
+// }
+
+// .section-angle--purple-dark:after {
+//   content: '';
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   background: inherit;
+//   z-index: -1;
+//   bottom: 0;
+//   transform-origin: left bottom;
+//   transform: skewY(3deg);
+// }
+
+/**
+ * UI Helpers
+ */
+button {
+  cursor: pointer;
+}
+
+ .clickable {
+  cursor: pointer;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+* {
+  &:disabled {
+    pointer-events: none;
+  }
+}
+
+/**
+ * Sizing Utilities
+ */
+
+ .vh-100 {
+   min-height: 100vh;
+ }
+
+.vw-100 {
+  min-height: 100vw;
+}
+
+/**
+ * Admin Layout
+ */
+.app-outer {
+
+  &.open {
+    .app-drawer {
+      transform: translateX(0);
+    }
+
+    .app-dimmer {
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
+}
+
+.global-nav {
+  min-width: 300px;
+}
+
+
+.global-nav__secondary,
+.app-drawer__secondary {
+  min-width: 65px;
+}
+
+.global-nav__inner {
+  min-width: 300px;
+}
+
+.app-drawer {
+  top: 0;
+  width: 360px;
+  z-index: 100;
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: transform .2s ease-in-out;
+}
+
+.app-dimmer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba( $black, .5 );
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease 0s;
+}
+
+.app-drawer__title {
+  font-size: 12px;
+}
+
+/**
+ * Account Avatar
+ */
+.account-avatar {
+  padding: 2px;
+  background: $white;
+}
+
+/**
+ * Product Schemes
+ */
+ [data-scheme="amimoto"] {
+   .bg-primary,
+   .bg-gradient-primary {
+     background-color: $blue !important;
+   }
+ }
+
+ // Modal Off Canvas
+ .app-nav {
+  .modal-content {
+    border-radius: 0;
+    border: none;
+  }
+  &.left {
+    .modal-dialog {
+      margin: 0;
+    }
+    .modal-dialog {
+      transform: translateX(-100%);
+    }
+    .show {
+      .modal-dialog {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+
+.modal .modal-dialog.left {
+  // transform: translateX(-100%);
+  // transition: opacity 0.3s linear, transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog.left {
+  // transform: translateX(0);
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-dialog {
+  // width: 100%;
+  // margin-left: 0;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+}

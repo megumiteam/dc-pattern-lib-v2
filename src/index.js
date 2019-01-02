@@ -1,9 +1,12 @@
-import React, {Component} from 'react'
+import './assets/main.css';
+import AppMain from './AppMain';
+import AppDimmer from './AppDimmer';
+import AppDrawer from './AppDrawer';
+import AppNav from './AppNav';
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export {
+  AppMain,
+  AppDimmer,
+  AppDrawer,
+  AppNav
+};

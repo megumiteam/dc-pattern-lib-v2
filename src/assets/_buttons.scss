@@ -1,0 +1,25 @@
+.btn {
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  box-shadow: $btn-box-shadow;
+  @include hover { box-shadow: $btn-active-box-shadow; }
+}
+
+// Progress Button
+.btn-progress {
+  position: relative;
+  overflow: hidden;
+
+  .progress {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    height: 110%;
+    width: 110%;
+    z-index: 0;
+  }
+}
+
+.btn-progress__label {
+  z-index: 1;
+  position: relative;
+}
