@@ -1,9 +1,42 @@
 import _ from 'lodash';
 
-export function demoNav() {
+
+export function demoPrimaryNav() {
   const labels = {
     navLabels: {
-      name: 'Menu Title'
+      name: 'Demo Nav 1'
+    },
+  };
+
+  const menu = {
+    navItems: [
+      {
+        name: 'Menu Item 1',
+        to: '/admin/menu-item-1',
+      },
+      {
+        name: 'Menu Item 2',
+        to: '/admin/menu-item-2',
+      },
+      {
+        name: 'Menu Item 3',
+        to: '/admin/menu-item-3',
+      },
+      {
+        name: 'Menu Item 4',
+        to: '/admin/menu-item-4',
+      },
+    ],
+  };
+
+  const items = _.merge(labels, menu);
+  return items;
+}
+
+export function demoSecondaryNav() {
+  const labels = {
+    navLabels: {
+      name: 'Demo Nav 2'
     },
   };
 
@@ -33,5 +66,6 @@ export function demoNav() {
 }
 
 export default {
-  demoNav,
+  demoPrimaryNav,
+  demoSecondaryNav,
 };

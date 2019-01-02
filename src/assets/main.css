@@ -8003,14 +8003,14 @@ button {
   pointer-events: initial; }
 
 .global-nav {
-  min-width: 300px; }
+  min-width: 250px; }
 
 .global-nav__secondary,
 .app-drawer__secondary {
   min-width: 65px; }
 
 .global-nav__inner {
-  min-width: 300px; }
+  min-width: 250px; }
 
 .app-drawer {
   top: 0;
@@ -8057,12 +8057,8 @@ button {
   margin: 0; }
 
 .app-nav.left .modal-dialog {
-  transform: translateX(-100%); }
+  transform: translateX(-100%);
+  transition: opacity 0.2s linear, transform 0.2s ease-in-out; }
 
 .app-nav.left .show .modal-dialog {
   transform: translateX(0); }
-
-/* ----- MODAL STYLE ----- */
-.modal-content {
-  border-radius: 0;
-  border: none; }
