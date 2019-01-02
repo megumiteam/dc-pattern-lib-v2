@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { AppMain, AppDrawer, AppNav, AppSidebar, DashboardCard } from './../../src';
+import { AppMain, AppDrawer, AppNav, AppSidebar, DashboardCard, DashboardCardGroup } from './../../src';
 import { demoPrimaryNav, demoSecondaryNav } from './Menus/';
 
 class Demo extends Component {
@@ -49,9 +49,19 @@ class Demo extends Component {
             </Switch>
           </Router>
         </AppDrawer>
-        <DashboardCard title="Dashboard Card Title">
-          Dashboard Card Body
-        </DashboardCard>
+        <DashboardCardGroup>
+          <DashboardCard title="Dashboard Card Title">
+            Dashboard Card Body
+          </DashboardCard>
+          <DashboardCard title="Dashboard Card Title">
+            Dashboard Card Body
+          </DashboardCard>
+        </DashboardCardGroup>
+        <DashboardCardGroup>
+          <DashboardCard title="Dashboard Card Title">
+            Dashboard Card Body
+          </DashboardCard>
+        </DashboardCardGroup>
       </AppMain>
     </div>
   }
