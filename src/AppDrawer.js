@@ -21,7 +21,6 @@ export default class AppDrawer extends React.Component {
   static propTypes = {
     position: t.string,
     className: t.string,
-
     active: t.bool,
   }
   

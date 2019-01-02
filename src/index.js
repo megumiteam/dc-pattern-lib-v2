@@ -4,11 +4,13 @@ import AppDimmer from './AppDimmer';
 import AppDrawer from './AppDrawer';
 import AppNav from './AppNav';
 import AppSidebar from './AppSidebar';
+import AppDrawerToggle from './AppDrawerToggle';
 
 export {
   AppMain,
   AppDimmer,
   AppDrawer,
   AppNav,
-  AppSidebar
+  AppSidebar,
+  AppDrawerToggle
 };

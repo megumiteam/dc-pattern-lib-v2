@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component, Fragment } from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { AppMain, AppDrawer, AppNav, AppSidebar } from './../../src';
@@ -22,7 +22,13 @@ class Demo extends Component {
 
   render() {
     return <div className="d-flex vh-100 app-inner">
-      <AppSidebar>
+      <AppSidebar inner={
+          <Fragment>
+            <button onClick={this.toggleNav}>+</button>
+            <button onClick={this.toggleNav}>+</button>
+          </Fragment>
+        } toggle={this.toggleNav}
+      >
       <Router>
         <Switch>
           <Route
@@ -44,7 +50,6 @@ class Demo extends Component {
           </Router>
         </AppDrawer>
         <h1>dc-pattern-lib</h1>
-        <button color="danger" onClick={this.toggleNav}>Toggle Drawer</button>
       </AppMain>
     </div>
   }
