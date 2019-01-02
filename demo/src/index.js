@@ -44,7 +44,7 @@ class Demo extends Component {
             <Switch>
               <Route
                 path="/"
-                render={props => <AppNav dark items={demoSecondaryNav()} />}
+                render={props => <AppNav items={demoSecondaryNav()} />}
               />
             </Switch>
           </Router>
