@@ -5,6 +5,7 @@ import AppDrawer from './AppDrawer';
 import AppNav from './AppNav';
 import AppSidebar from './AppSidebar';
 import AppDrawerToggle from './AppDrawerToggle';
+import DashboardCard from './DashboardCard';
 
 export {
   AppMain,
@@ -12,5 +13,6 @@ export {
   AppDrawer,
   AppNav,
   AppSidebar,
-  AppDrawerToggle
+  AppDrawerToggle,
+  DashboardCard
 };
