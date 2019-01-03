@@ -1,5 +1,5 @@
 // Import Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Code+Pro:200,300,400,500,600,700,900');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Code+Pro:200,300,400,500,600,700,900');
 
 // Variables
 //
@@ -11,15 +11,15 @@
 
 $transparent: transparent !default;
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-100: #f4f5f7 !default;
+$gray-200: darken($gray-100, 20%) !default;
+$gray-300: darken($gray-100, 30%) !default;
+$gray-400: darken($gray-100, 40%) !default;
+$gray-500: darken($gray-100, 50%) !default;
+$gray-600: darken($gray-100, 60%) !default;
+$gray-700: darken($gray-100, 70%) !default;
+$gray-800: darken($gray-100, 80%) !default;
+$gray-900: darken($gray-100, 90%) !default;
 $black:    #000 !default;
 
 $grays: () !default;
@@ -70,7 +70,7 @@ $colors: map-merge(
     "gray":         $gray-600,
     "gray-dark":    $gray-800,
     "purple-dark":  $purple-dark,
-    "magenta":      $magenta
+    "magenta":      $magenta,
   ),
   $colors
 );
@@ -102,7 +102,8 @@ $theme-colors: map-merge(
     "green":        $green,
     "purple":       $purple,
     "blue":         $blue,
-    "transparent":  $transparent
+    "transparent":  $transparent,
+    "gray-100":     $gray-100
   ),
   $theme-colors
 );
@@ -175,7 +176,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $black !default;
 
 
 // Links
@@ -242,7 +243,7 @@ $container-max-widths: map-merge(
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           40px !default;
 
 
 // Components
@@ -263,7 +264,7 @@ $border-radius-rounded:       50px;
 $rounded-pill:                50rem !default;
 
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow:                  0 .25rem .875rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
 $component-active-color:      inherit !default;
@@ -281,7 +282,7 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Montserrat" !default;
+$font-family-sans-serif:      system-ui !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
@@ -794,19 +795,19 @@ $jumbotron-bg:                      $gray-200 !default;
 
 // Cards
 
-$card-spacer-y:                     2rem !default;
-$card-spacer-x:                     2rem !default;
-$card-border-width:                 0px !default;
-$card-border-radius:                $border-radius !default;
+$card-spacer-y:                     .5rem !default;
+$card-spacer-x:                     .5rem !default;
+$card-border-width:                 0 !default;
+$card-border-radius:                $border-radius-sm !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
-$card-cap-bg:                       $white !default;
+$card-cap-bg:                       transparent !default;
 $card-cap-color:                    $body-color !default;
 $card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 
-$card-group-margin:                 ($grid-gutter-width / 2) !default;
+$card-group-margin:                 ($grid-gutter-width / 4) !default;
 $card-deck-margin:                  $card-group-margin !default;
 
 $card-columns-count:                3 !default;

@@ -98,13 +98,13 @@ button {
  * Sizing Utilities
  */
 
- .vh-100 {
-   min-height: 100vh;
- }
+//  .vh-100 {
+//    min-height: 100vh;
+//  }
 
-.vw-100 {
-  min-height: 100vw;
-}
+// .vw-100 {
+//   min-height: 100vw;
+// }
 
 /**
  * Admin Layout
@@ -174,7 +174,7 @@ button {
 /**
  * Product Schemes
  */
- [data-scheme="amimoto"] {
+ [scheme="amimoto"] {
    .bg-primary,
    .bg-gradient-primary {
      background-color: $blue !important;

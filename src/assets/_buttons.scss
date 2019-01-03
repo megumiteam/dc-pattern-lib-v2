@@ -4,6 +4,30 @@
   @include hover { box-shadow: $btn-active-box-shadow; }
 }
 
+// Button Link
+.btn-link {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  color: $body-color;
+  @include hover {
+    color: $body-color;
+    text-decoration: none;
+  }
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+}
+
+.btn.btn-link:not(:disabled):not(.disabled):active,
+.btn.btn-link:not(:disabled):not(.disabled).active,
+.btn.btn-link:not(:disabled):not(.disabled):hover,
+.btn.btn-link:not(:disabled):not(.disabled).hover  {
+  box-shadow: none;
+}
+
 // Progress Button
 .btn-progress {
   position: relative;

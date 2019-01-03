@@ -15,25 +15,22 @@ const DashboardCardHeader = ({
   (title ? (
     <CardHeader>
       <div className="d-flex justify-content-between align-items-center">
-        <CardTitle className="mb-0 h5" tag="h3">
+        <CardTitle className="mb-0 h6" tag="div">
           {title}
         </CardTitle>
-        <div>
-          {actions}
-        </div>
+        {actions ? <div>{actions}</div> : ''}
       </div>
       <DashboardCardSubTitle subtitle={subtitle} />
-      <hr />
     </CardHeader>
   ) : (
-    <div />
+    ''
   ));
 
 const DashboardCardFooter = ({ footer }: { footer?: React.Node } = { footer: '' }) =>
-  (footer ? <CardFooter>{footer}</CardFooter> : <div />);
+  (footer ? <CardFooter>{footer}</CardFooter> : '');
 
 const DashboardCardSubTitle = ({ subtitle }: { subtitle?: string } = { subtitle: '' }) =>
-  (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : <div />);
+  (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : '');
 
 const DashboardCard = ({
   title,
@@ -56,13 +53,13 @@ const DashboardCard = ({
     subtitle: '',
     style: '',
     cardPadding: '',
-    children: <div />,
-    actions: <div />,
-    footer: <div />,
+    children: '',
+    actions: '',
+    footer: '',
   }) => (
-    <Card className="w-100 shadow" style={style}>
+    <Card className="shadow-sm" style={style}>
       <DashboardCardHeader title={title} subtitle={subtitle} actions={actions} />
-      {children ? <CardBody className={cardPadding}>{children}</CardBody> : <div />}
+      {children ? <CardBody className={cardPadding}>{children}</CardBody> : ''}
       <DashboardCardFooter footer={footer} />
     </Card>
 );

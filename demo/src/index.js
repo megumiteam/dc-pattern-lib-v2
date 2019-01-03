@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {Row, Col, Button, DropdownToggle, Dropdown, DropdownMenu, DropdownItem } from 'reactstrap';
 import { AppMain, AppDrawer, AppNav, AppSidebar, DashboardCard, DashboardCardGroup } from './../../src';
 import { demoPrimaryNav, demoSecondaryNav } from './Menus/';
 
@@ -21,7 +22,7 @@ class Demo extends Component {
   }
 
   render() {
-    return <div className="d-flex vh-100 app-inner">
+    return <div scheme="amimoto" className="d-flex vh-100 app-inner">
       <AppSidebar inner={
           <Fragment>
             <button onClick={this.toggleNav}>+</button>
@@ -52,8 +53,21 @@ class Demo extends Component {
         <DashboardCardGroup>
           <DashboardCard
             title="Dashboard Card Title"
-            actions="Actions Prop">
-            Dashboard Card Body
+            actions={<Dropdown>
+            <DropdownToggle color="link" caret>
+              Dropdown
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem header>Header</DropdownItem>
+              <DropdownItem>Some Action</DropdownItem>
+              <DropdownItem disabled>Action (disabled)</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>Foo Action</DropdownItem>
+              <DropdownItem>Bar Action</DropdownItem>
+              <DropdownItem>Quo Action</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>}>
+            Just a single Dashboard Card with a actions prop demo in a dashboard card group.
           </DashboardCard>
         </DashboardCardGroup>
         <DashboardCardGroup>
@@ -62,6 +76,18 @@ class Demo extends Component {
           </DashboardCard>
           <DashboardCard title="Dashboard Card in a Group">
           Just two dashboard cards in a dashboard card group.
+          </DashboardCard>
+        </DashboardCardGroup>
+        <DashboardCardGroup>
+          <DashboardCard>
+            <Row>
+              <Col md={3}>
+                <img className="img-fluid w-100" src="//placehold.it/400x300" />
+              </Col>
+              <Col>
+                
+              </Col>
+            </Row>
           </DashboardCard>
         </DashboardCardGroup>
       </AppMain>
