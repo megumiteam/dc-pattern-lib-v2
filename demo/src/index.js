@@ -50,16 +50,18 @@ class Demo extends Component {
           </Router>
         </AppDrawer>
         <DashboardCardGroup>
-          <DashboardCard title="Dashboard Card Title">
-            Dashboard Card Body
-          </DashboardCard>
-          <DashboardCard title="Dashboard Card Title">
+          <DashboardCard
+            title="Dashboard Card Title"
+            actions="Actions Prop">
             Dashboard Card Body
           </DashboardCard>
         </DashboardCardGroup>
         <DashboardCardGroup>
-          <DashboardCard title="Dashboard Card Title">
-            Dashboard Card Body
+          <DashboardCard title="Dashboard Card in a Group">
+            Just two dashboard cards in a dashboard card group.
+          </DashboardCard>
+          <DashboardCard title="Dashboard Card in a Group">
+          Just two dashboard cards in a dashboard card group.
           </DashboardCard>
         </DashboardCardGroup>
       </AppMain>

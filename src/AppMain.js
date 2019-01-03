@@ -8,7 +8,9 @@ export default class AppMain extends Component {
     return <div className="position-relative z-1 flex-grow-1 app-right">
     <Container>
       <Row>
-        <Col className="d-flex flex-column flex-grow-1 vh-100">{children}</Col>
+        <Col className="d-flex flex-column flex-grow-1 vh-100 pt-4">
+          {children}
+        </Col>
       </Row>
     </Container>
   </div>

@@ -5,13 +5,11 @@ import { Card, CardHeader, CardBody, CardTitle, CardSubtitle, CardFooter } from 
 
 const DashboardCardHeader = ({
   title,
-  tips,
   actions,
   subtitle,
 }: {
   title: string,
   subtitle: string,
-  tips: React.Node,
   actions: React.Node,
 }) =>
   (title ? (
@@ -21,7 +19,6 @@ const DashboardCardHeader = ({
           {title}
         </CardTitle>
         <div>
-          {tips}
           {actions}
         </div>
       </div>
@@ -43,7 +40,6 @@ const DashboardCard = ({
   subtitle,
   children,
   style,
-  tips,
   actions,
   footer,
   cardPadding,
@@ -51,7 +47,6 @@ const DashboardCard = ({
     title?: string,
     subtitle?: string,
     children: React.Node,
-    tips?: React.Node,
     actions?: React.Node,
     footer?: React.Node,
     style?: string,
@@ -62,12 +57,11 @@ const DashboardCard = ({
     style: '',
     cardPadding: '',
     children: <div />,
-    tips: <div />,
     actions: <div />,
     footer: <div />,
   }) => (
     <Card className="w-100 shadow" style={style}>
-      <DashboardCardHeader title={title} subtitle={subtitle} tips={tips} actions={actions} />
+      <DashboardCardHeader title={title} subtitle={subtitle} actions={actions} />
       {children ? <CardBody className={cardPadding}>{children}</CardBody> : <div />}
       <DashboardCardFooter footer={footer} />
     </Card>
