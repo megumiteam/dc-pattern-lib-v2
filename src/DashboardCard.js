@@ -15,7 +15,7 @@ const DashboardCardHeader = ({
   (title ? (
     <CardHeader>
       <div className="d-flex justify-content-between align-items-center">
-        <CardTitle className="mb-0 h6" tag="div">
+        <CardTitle className="mb-0 h6 font-weight-bold" tag="div">
           {title}
         </CardTitle>
         {actions ? <div>{actions}</div> : ''}
@@ -36,30 +36,27 @@ const DashboardCard = ({
   title,
   subtitle,
   children,
-  style,
   actions,
   footer,
-  cardPadding,
+  bodyClassName,
 }: {
     title?: string,
     subtitle?: string,
     children: React.Node,
     actions?: React.Node,
     footer?: React.Node,
-    style?: string,
-    cardPadding?: string,
+    bodyClassName?: string,
   } = {
     title: '',
     subtitle: '',
-    style: '',
-    cardPadding: '',
+    bodyClassName: '',
     children: '',
     actions: '',
     footer: '',
   }) => (
-    <Card className="shadow-sm" style={style}>
+    <Card className="shadow-sm">
       <DashboardCardHeader title={title} subtitle={subtitle} actions={actions} />
-      {children ? <CardBody className={cardPadding}>{children}</CardBody> : ''}
+      {children ? <CardBody className={bodyClassName}>{children}</CardBody> : ''}
       <DashboardCardFooter footer={footer} />
     </Card>
 );
@@ -68,15 +65,13 @@ DashboardCardHeader.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   cardClass: PropTypes.string,
-  style: PropTypes.string,
-  cardPadding: PropTypes.string,
+  bodyClassName: PropTypes.string,
 };
 
 DashboardCardHeader.defaultProps = {
   title: '',
   subtitle: '',
-  style: '',
-  cardPadding: '',
+  bodyClassName: '',
 };
 
 export default DashboardCard;

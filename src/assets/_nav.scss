@@ -1,5 +1,4 @@
 .nav-pills {
-
   &.nav-pills-dark {
     .nav-link.active,
     .show > .nav-link,
@@ -14,11 +13,11 @@
   }
 
   .nav-link {
-    font-size: $font-size-base * .875;
+    font-size: $font-size-base * 0.875;
     color: $body-color;
     &:hover,
     &:focus {
-      background: rgba($nav-pills-link-active-bg, .05);
+      background: rgba($nav-pills-link-active-bg, 0.075);
       color: $body-color;
     }
   }

@@ -1,7 +1,15 @@
 .btn {
-  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  @include button-size(
+    $btn-padding-y,
+    $btn-padding-x,
+    $btn-font-size,
+    $btn-line-height,
+    $btn-border-radius
+  );
   box-shadow: $btn-box-shadow;
-  @include hover { box-shadow: $btn-active-box-shadow; }
+  @include hover {
+    box-shadow: $btn-active-box-shadow;
+  }
 }
 
 // Button Link
@@ -17,14 +25,14 @@
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: $btn-focus-box-shadow;
+    box-shadow: 0;
   }
 }
 
 .btn.btn-link:not(:disabled):not(.disabled):active,
 .btn.btn-link:not(:disabled):not(.disabled).active,
 .btn.btn-link:not(:disabled):not(.disabled):hover,
-.btn.btn-link:not(:disabled):not(.disabled).hover  {
+.btn.btn-link:not(:disabled):not(.disabled).hover {
   box-shadow: none;
 }
 
