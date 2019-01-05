@@ -15,7 +15,7 @@ const DashboardCardHeader = ({
   (title ? (
     <CardHeader>
       <div className="d-flex justify-content-between align-items-center">
-        <CardTitle className="mb-0 h6 font-weight-bold" tag="div">
+        <CardTitle className="mb-0 h5 font-weight-bold" tag="div">
           {title}
         </CardTitle>
         {actions ? <div>{actions}</div> : ''}

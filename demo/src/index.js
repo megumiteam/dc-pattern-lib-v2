@@ -10,7 +10,8 @@ import {
   DropdownMenu,
   DropdownItem,
   Table,
-  Badge
+  Badge,
+  ButtonGroup
 } from "reactstrap";
 import {
   AppMain,
@@ -21,6 +22,7 @@ import {
   DashboardCardGroup
 } from "./../../src";
 import { demoPrimaryNav, demoSecondaryNav } from "./Menus/";
+import ToggleScheme from "./ToggleScheme";
 
 class Demo extends Component {
   constructor(props) {
@@ -40,7 +42,7 @@ class Demo extends Component {
 
   render() {
     return (
-      <div scheme="amimoto" className="d-flex vh-100 app-inner">
+      <div className="d-flex vh-100 app-inner">
         <AppSidebar
           inner={
             <Fragment>
@@ -70,25 +72,8 @@ class Demo extends Component {
             </Router>
           </AppDrawer>
           <DashboardCardGroup>
-            <DashboardCard
-              title="Dashboard Card Title"
-              actions={
-                <Dropdown>
-                  <DropdownToggle color="link" caret>
-                    Dropdown
-                  </DropdownToggle>
-                </Dropdown>
-              }>
-              Just a single Dashboard Card with a actions prop demo in a
-              dashboard card group.
-            </DashboardCard>
-          </DashboardCardGroup>
-          <DashboardCardGroup>
-            <DashboardCard title="Dashboard Card in a Group">
-              Just two dashboard cards in a dashboard card group.
-            </DashboardCard>
-            <DashboardCard title="Dashboard Card in a Group">
-              Just two dashboard cards in a dashboard card group.
+            <DashboardCard title="Toggle Scheme">
+              <ToggleScheme />
             </DashboardCard>
           </DashboardCardGroup>
           <DashboardCardGroup>
@@ -166,7 +151,7 @@ class Demo extends Component {
             <DashboardCard
               title="Domains"
               bodyClassName="p-0"
-              actions={<Button color="white">Add a Custom Domain</Button>}>
+              actions={<Button color="primary">Add a Custom Domain</Button>}>
               <Row>
                 <Col>
                   <Table hover>

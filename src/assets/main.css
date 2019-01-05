@@ -184,8 +184,8 @@ table {
   border-collapse: collapse; }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #4e586b;
   text-align: left;
   caption-side: bottom; }
@@ -1042,7 +1042,7 @@ pre {
   background-color: transparent; }
   .table th,
   .table td {
-    padding: 0.75rem;
+    padding: 1rem;
     vertical-align: top;
     border-top: 1px solid rgba(0, 0, 0, 0.125); }
   .table thead th {
@@ -3821,13 +3821,13 @@ input[type="button"].btn-block {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 0.75rem; }
+  padding: 1rem; }
 
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 1rem; }
 
 .card-subtitle {
-  margin-top: -0.375rem;
+  margin-top: -0.5rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -3837,10 +3837,10 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .card-link + .card-link {
-  margin-left: 0.75rem; }
+  margin-left: 1rem; }
 
 .card-header {
-  padding: 0.75rem 0.75rem;
+  padding: 1rem 1rem;
   margin-bottom: 0;
   color: #000;
   background-color: transparent;
@@ -3851,21 +3851,21 @@ input[type="button"].btn-block {
     border-top: 0; }
 
 .card-footer {
-  padding: 0.75rem 0.75rem;
+  padding: 1rem 1rem;
   background-color: transparent;
   border-top: 0 solid rgba(0, 0, 0, 0.125); }
   .card-footer:last-child {
     border-radius: 0 0 calc( 0.25rem - 0) calc( 0.25rem - 0); }
 
 .card-header-tabs {
-  margin-right: -0.375rem;
-  margin-bottom: -0.75rem;
-  margin-left: -0.375rem;
+  margin-right: -0.5rem;
+  margin-bottom: -1rem;
+  margin-left: -0.5rem;
   border-bottom: 0; }
 
 .card-header-pills {
-  margin-right: -0.375rem;
-  margin-left: -0.375rem; }
+  margin-right: -0.5rem;
+  margin-left: -0.5rem; }
 
 .card-img-overlay {
   position: absolute;
@@ -3958,7 +3958,7 @@ input[type="button"].btn-block {
             border-radius: 0; } }
 
 .card-columns .card {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 1rem; }
 
 @media (min-width: 576px) {
   .card-columns {
@@ -8096,7 +8096,7 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   background-color: transparent; }
   .table th,
   .table td {
-    padding: 0.75rem;
+    padding: 1rem;
     vertical-align: top;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     border-top: 0; }
@@ -8155,7 +8155,8 @@ ul.navbar-nav {
     text-decoration: none;
     opacity: 90%; }
 
-.bg-gradient-magenta {
+.bg-gradient-magenta, [scheme="shifter"] .bg-primary,
+[scheme="shifter"] .bg-gradient-primary, [scheme="shifter"] .btn-primary {
   background: linear-gradient(to right, #bc519e, #f80759); }
 
 .btn-gradient-purple-dark {
@@ -8284,9 +8285,6 @@ button {
   padding: 2px;
   background: #fff; }
 
-/**
- * Product Schemes
- */
 .app-nav .modal-content {
   border-radius: 0;
   border: none; }
@@ -8300,3 +8298,21 @@ button {
 
 .app-nav.left .show .modal-dialog {
   transform: translateX(0); }
+
+/**
+ * Product Schemes
+ */
+[scheme="amimoto"] .bg-primary,
+[scheme="amimoto"] .bg-gradient-primary {
+  background-color: #004cff !important; }
+
+[scheme="amimoto"] .btn-primary {
+  background-color: #004cff;
+  border-color: #004cff; }
+
+/**
+ * Product Schemes
+ */
+[scheme="shifter"] .btn-primary {
+  background-color: transparent !important;
+  border-color: transparent !important; }

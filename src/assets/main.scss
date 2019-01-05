@@ -171,21 +171,6 @@ button {
   background: $white;
 }
 
-/**
- * Product Schemes
- */
-// [scheme="amimoto"] {
-//   .bg-primary,
-//   .bg-gradient-primary {
-//     background-color: $blue !important;
-//   }
-
-//   .btn-primary {
-//     background-color: $blue;
-//     border-color: $blue;
-//   }
-// }
-
 // Modal Off Canvas
 .app-nav {
   .modal-content {
@@ -205,5 +190,36 @@ button {
         transform: translateX(0);
       }
     }
+  }
+}
+
+/**
+ * Product Schemes
+ */
+[scheme="amimoto"] {
+  .bg-primary,
+  .bg-gradient-primary {
+    background-color: $blue !important;
+  }
+
+  .btn-primary {
+    background-color: $blue;
+    border-color: $blue;
+  }
+}
+
+/**
+ * Product Schemes
+ */
+[scheme="shifter"] {
+  .bg-primary,
+  .bg-gradient-primary {
+    @extend .bg-gradient-magenta;
+  }
+
+  .btn-primary {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    @extend .bg-gradient-magenta;
   }
 }
