@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { render } from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { IoIosAdd, IoIosHelp } from "react-icons/io";
 import {
   Row,
   Col,
@@ -11,7 +12,10 @@ import {
   DropdownItem,
   Table,
   Badge,
-  ButtonGroup
+  ButtonGroup,
+  UncontrolledTooltip,
+  Input,
+  Label
 } from "reactstrap";
 import {
   AppMain,
@@ -23,14 +27,17 @@ import {
 } from "./../../src";
 import { demoPrimaryNav, demoSecondaryNav } from "./Menus/";
 import ToggleScheme from "./ToggleScheme";
+import CopyDemo from "./CopyDemo";
 
 class Demo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      appDrawer: false
+      appDrawer: false,
+      tooltipOpen: false
     };
 
+    this.toggleTooltip = this.toggleTooltip.bind(this);
     this.toggleNav = this.toggleNav.bind(this);
   }
 
@@ -40,14 +47,30 @@ class Demo extends Component {
     });
   }
 
+  toggleTooltip() {
+    this.setState({
+      tooltipOpen: !this.state.tooltipOpen
+    });
+  }
+
   render() {
     return (
       <div className="d-flex vh-100 app-inner">
         <AppSidebar
           inner={
             <Fragment>
-              <button onClick={this.toggleNav}>+</button>
-              <button onClick={this.toggleNav}>+</button>
+              <Button
+                onClick={this.toggleNav}
+                color="transparent"
+                id="UncontrolledTooltipExample"
+                className="btn-circle">
+                <IoIosAdd size="30" />
+              </Button>
+              <UncontrolledTooltip
+                placement="right"
+                target="UncontrolledTooltipExample">
+                Create
+              </UncontrolledTooltip>
             </Fragment>
           }
           toggle={this.toggleNav}>
@@ -78,14 +101,22 @@ class Demo extends Component {
           </DashboardCardGroup>
           <DashboardCardGroup>
             <DashboardCard
-              title="Sites"
+              title={
+                <div>
+                  <Input size="sm" placeholder="Search sites" />
+                </div>
+              }
               bodyClassName="p-0"
               actions={
-                <Dropdown>
-                  <DropdownToggle color="link" caret>
-                    Sort by
-                  </DropdownToggle>
-                </Dropdown>
+                <Fragment>
+                  <Button
+                    size="sm"
+                    onClick={this.toggleNav}
+                    color="white"
+                    className="btn-circle">
+                    <IoIosAdd size="24" className="" />
+                  </Button>
+                </Fragment>
               }>
               <Row>
                 <Col>
@@ -151,7 +182,11 @@ class Demo extends Component {
             <DashboardCard
               title="Domains"
               bodyClassName="p-0"
-              actions={<Button color="primary">Add a Custom Domain</Button>}>
+              actions={
+                <Button color="primary" size="sm">
+                  Add a Custom Domain
+                </Button>
+              }>
               <Row>
                 <Col>
                   <Table hover>
@@ -227,6 +262,30 @@ class Demo extends Component {
                   />
                 </Col>
                 <Col />
+              </Row>
+            </DashboardCard>
+          </DashboardCardGroup>
+          <DashboardCardGroup>
+            <DashboardCard
+              title="SFTP/SSH"
+              actions={
+                <Fragment>
+                  <Button
+                    size="sm"
+                    onClick={this.toggleNav}
+                    color="white"
+                    className="btn-circle">
+                    <IoIosHelp size="24" className="" />
+                  </Button>
+                </Fragment>
+              }>
+              <Row>
+                <Col>
+                <CopyDemo />
+                <Label for="exampleEmail">Email</Label>
+          <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" /></Col>
+                <Col>Password</Col>
+                <Col>Port</Col>
               </Row>
             </DashboardCard>
           </DashboardCardGroup>

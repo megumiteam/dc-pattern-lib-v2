@@ -124,17 +124,15 @@ button {
   }
 }
 
+.global-nav__primary,
+.global-nav__secondary {
+  min-width: 64px;
+  padding: 1rem;
+}
+
+.global-nav__inner,
 .global-nav {
-  min-width: 250px;
-}
-
-.global-nav__secondary,
-.app-drawer__secondary {
-  min-width: 65px;
-}
-
-.global-nav__inner {
-  min-width: 250px;
+  min-width: 300px;
 }
 
 .app-drawer {
