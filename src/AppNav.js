@@ -18,7 +18,9 @@ export default class AppNav extends Component {
       appDrawer: !this.state.appDrawer,
     });
   }
+
   render() {
+
     const NavItems = () => {
       const items = this.props.items.navItems.map(item => (
         <NavItem key={item.name}>
@@ -63,6 +65,6 @@ AppNav.propTypes = {
 };
 
 AppNav.defaultProps = {
-  items: null,
+  items: '',
   dark: false,
 };

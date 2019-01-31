@@ -23,11 +23,13 @@ import {
   AppNav,
   AppSidebar,
   DashboardCard,
-  DashboardCardGroup
+  DashboardCardGroup,
+  DashboardCardLoader
 } from "./../../src";
 import { demoPrimaryNav, demoSecondaryNav } from "./Menus/";
 import ToggleScheme from "./ToggleScheme";
 import CopyDemo from "./CopyDemo";
+import './../../src/assets/main.css';
 
 class Demo extends Component {
   constructor(props) {
@@ -94,6 +96,7 @@ class Demo extends Component {
               </Switch>
             </Router>
           </AppDrawer>
+          <DashboardCardLoader />
           <DashboardCardGroup>
             <DashboardCard title="Toggle Scheme">
               <ToggleScheme />

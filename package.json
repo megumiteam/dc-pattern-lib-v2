@@ -35,6 +35,7 @@
     "bootstrap": "^4.2.1",
     "nwb": "0.23.x",
     "react": "^16.7.0",
+    "react-content-loader": "^4.0.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
     "reactstrap": "^7.0.2"
