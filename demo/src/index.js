@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import { IoIosAdd, IoIosHelp } from "react-icons/io";
 import {
   Row,
   Col,
@@ -66,7 +65,7 @@ class Demo extends Component {
                 color="transparent"
                 id="UncontrolledTooltipExample"
                 className="btn-circle">
-                <IoIosAdd size="30" />
+                +
               </Button>
               <UncontrolledTooltip
                 placement="right"
@@ -117,7 +116,7 @@ class Demo extends Component {
                     onClick={this.toggleNav}
                     color="white"
                     className="btn-circle">
-                    <IoIosAdd size="24" className="" />
+                    +
                   </Button>
                 </Fragment>
               }>
@@ -278,7 +277,7 @@ class Demo extends Component {
                     onClick={this.toggleNav}
                     color="white"
                     className="btn-circle">
-                    <IoIosHelp size="24" className="" />
+                    +
                   </Button>
                 </Fragment>
               }>
