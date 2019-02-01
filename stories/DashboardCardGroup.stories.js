@@ -2,6 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number } from '@storybook/addon-knobs';
+import { withInfo } from '@storybook/addon-info';
 
 // target
 import DashboardCard from '../src/DashboardCard';
@@ -10,6 +11,9 @@ import './../src/assets/main.css';
 
 storiesOf('DashboardCardGroup', module)
   .addDecorator(withKnobs)
+  .addDecorator(
+    withInfo
+  )
   .add('Basic usage', () => (
     <DashboardCardGroup>
       <DashboardCard><span role="img" aria-label="so cool">😀 😎 👍 💯</span></DashboardCard>
@@ -25,7 +29,7 @@ storiesOf('DashboardCardGroup', module)
     }, 'GROUP-ID1')
     const children = []
     for (let index = 0; index < length; index++) {
-      children.push(<DashboardCard><span role="img" aria-label="so cool">😀 😎 👍 💯</span></DashboardCard>)
+      children.push(<DashboardCard key={index}><span role="img" aria-label="so cool">😀 😎 👍 💯</span></DashboardCard>)
     }
     return (
     <DashboardCardGroup>
