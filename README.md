@@ -1,6 +1,6 @@
 # dc-pattern-lib
 
-[![Travis][build-badge]][build]
+[![Build Status](https://travis-ci.org/megumiteam/dc-pattern-lib-v2.svg?branch=master)](https://travis-ci.org/megumiteam/dc-pattern-lib-v2)
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
