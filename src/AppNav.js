@@ -1,10 +1,28 @@
 // @flow
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { NavLink as RRNavLink } from 'react-router-dom';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 
-export default class AppNav extends Component {
+type Props = {
+  items: {
+    navItems: [
+      {
+        name: string,
+        to: string,
+      },
+    ],
+    navLabels: {
+      name: string,
+    },
+  },
+  active: boolean,
+  dark: boolean,
+};
+type State = {
+  appDrawer: boolean,
+};
+
+export default class AppNav extends Component<Props, State> {
   constructor() {
     super();
     this.state = {
@@ -14,13 +32,13 @@ export default class AppNav extends Component {
   }
 
   active() {
+    const { appDrawer } = this.state;
     this.setState({
-      appDrawer: !this.state.appDrawer,
+      appDrawer: !appDrawer,
     });
   }
 
   render() {
-
     const NavItems = () => {
       const items = this.props.items.navItems.map(item => (
         <NavItem key={item.name}>
@@ -58,13 +76,3 @@ export default class AppNav extends Component {
     );
   }
 }
-
-AppNav.propTypes = {
-  items: PropTypes.object,
-  dark: PropTypes.bool,
-};
-
-AppNav.defaultProps = {
-  items: '',
-  dark: false,
-};

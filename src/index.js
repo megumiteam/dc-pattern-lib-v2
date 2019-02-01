@@ -18,5 +18,5 @@ export {
   AppDrawerToggle,
   DashboardCard,
   DashboardCardGroup,
-  DashboardCardLoader
+  DashboardCardLoader,
 };
