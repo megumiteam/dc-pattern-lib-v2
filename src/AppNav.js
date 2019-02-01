@@ -20,7 +20,6 @@ export default class AppNav extends Component {
   }
 
   render() {
-
     const NavItems = () => {
       const items = this.props.items.navItems.map(item => (
         <NavItem key={item.name}>

@@ -1,10 +1,10 @@
-import t from "prop-types";
-import React, { Component } from "react";
-import { Container, Col, Row } from "reactstrap";
+import t from 'prop-types';
+import React, { Component } from 'react';
+import { Container, Col, Row } from 'reactstrap';
 
 export default class AppMain extends Component {
   render() {
-    let { children, ...props } = this.props;
+    const { children, ...props } = this.props;
     return (
       <div className="position-relative z-1 flex-grow-1 app-right">
         <Container fluid className="bg-gray-100">

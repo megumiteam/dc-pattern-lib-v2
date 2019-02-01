@@ -1,11 +1,13 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import {
+  Button, Modal, ModalHeader, ModalBody, ModalFooter,
+} from 'reactstrap';
 
 export default class AppDimmer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      modal: false,
     };
 
     this.toggle = this.toggle.bind(this);
@@ -13,7 +15,7 @@ export default class AppDimmer extends React.Component {
 
   toggle() {
     this.setState({
-      modal: !this.state.modal
+      modal: !this.state.modal,
     });
   }
 
