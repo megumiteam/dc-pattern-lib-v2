@@ -1,6 +1,6 @@
 {
   "name": "dc-pattern-lib",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "dc-pattern-lib React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -13,7 +13,7 @@
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-    "build": "npm run build-css && nwb build-react-component",
+    "build": "npm run build-css && nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start-nwb": "nwb serve-react-demo",
