@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import {
   Card, CardHeader, CardBody, CardTitle, CardSubtitle, CardFooter,
 } from 'reactstrap';
@@ -31,14 +30,15 @@ const DashboardCardFooter = ({ footer }: { footer?: React.Node } = { footer: '' 
 
 const DashboardCardSubTitle = ({ subtitle }: { subtitle?: string } = { subtitle: '' }) => (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : '');
 
-const DashboardCard = ({
-  title,
-  subtitle,
-  children,
-  actions,
-  footer,
-  bodyClassName,
-}: {
+const DashboardCard = (
+  {
+    title,
+    subtitle,
+    children,
+    actions,
+    footer,
+    bodyClassName,
+  }: {
     title?: string,
     subtitle?: string,
     children: React.Node,
@@ -46,31 +46,19 @@ const DashboardCard = ({
     footer?: React.Node,
     bodyClassName?: string,
   } = {
-  title: '',
-  subtitle: '',
-  bodyClassName: '',
-  children: '',
-  actions: '',
-  footer: '',
-}) => (
+    title: '',
+    subtitle: '',
+    bodyClassName: '',
+    children: '',
+    actions: '',
+    footer: '',
+  },
+) => (
   <Card className="shadow-sm">
     <DashboardCardHeader title={title} subtitle={subtitle} actions={actions} />
     {children ? <CardBody className={bodyClassName}>{children}</CardBody> : ''}
     <DashboardCardFooter footer={footer} />
   </Card>
 );
-
-DashboardCardHeader.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  cardClass: PropTypes.string,
-  bodyClassName: PropTypes.string,
-};
-
-DashboardCardHeader.defaultProps = {
-  title: '',
-  subtitle: '',
-  bodyClassName: '',
-};
 
 export default DashboardCard;

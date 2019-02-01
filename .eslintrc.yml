@@ -2,6 +2,10 @@ extends: airbnb
 parser: babel-eslint
 plugins:
   - flowtype
+
+rules:
+  react/jsx-filename-extension: off
+  react/destructuring-assignment: off
 settings:
   flowtype:
     onlyFilesWithFlowAnnotation: true

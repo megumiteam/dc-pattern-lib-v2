@@ -1,23 +1,25 @@
+// @flow
 import React from 'react';
-import {
-  Button, Modal, ModalHeader, ModalBody, ModalFooter,
-} from 'reactstrap';
+import { Modal } from 'reactstrap';
 
-export default class AppDimmer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false,
-    };
+type Props = {
+  className: string,
+};
+type State = {
+  modal: boolean,
+};
 
-    this.toggle = this.toggle.bind(this);
-  }
+export default class AppDimmer extends React.Component<Props, State> {
+  state = {
+    modal: false,
+  };
 
-  toggle() {
+  toggle = () => {
+    const { modal } = this.state;
     this.setState({
-      modal: !this.state.modal,
+      modal: !modal,
     });
-  }
+  };
 
   render() {
     return (

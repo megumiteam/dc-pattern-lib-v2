@@ -1,49 +1,46 @@
+/* eslint-disable react/prefer-stateless-function */
 import t from 'prop-types';
-import React from 'react';
-import {
-  Button, Modal, ModalHeader, ModalBody, ModalFooter,
-} from 'reactstrap';
+import * as React from 'react';
+import { Modal, ModalBody } from 'reactstrap';
 
-export default class AppDrawer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false,
-    };
+type Props = {
+  position: string,
+  className: string,
+  bgColor: string,
+  active: boolean,
+  children: React.Node,
+  toggle: Function,
+};
 
-    this.toggle = this.toggle.bind(this);
-  }
-
-  toggle() {
-    this.setState({
-      active: !this.state.active,
-    });
-  }
-
+export default class AppDrawer extends React.Component<Props> {
   static propTypes = {
     position: t.string,
     className: t.string,
     bgColor: t.string,
     active: t.bool,
-  }
+  };
 
   static defaultProps = {
     position: 'left',
     className: '',
     bgColor: '',
     active: false,
-  }
+  };
 
   render() {
     const {
-      position, active, className, bgColor, children, toggle, ...props
+      position, active, className, bgColor, children, toggle,
     } = this.props;
     return (
       <div>
-        <Modal size="md" toggle={toggle} wrapClassName={`app-nav ${position}`} isOpen={active} className={className}>
-          <ModalBody className={`${bgColor} vh-100 border-0`}>
-            {children}
-          </ModalBody>
+        <Modal
+          size="md"
+          toggle={toggle}
+          wrapClassName={`app-nav ${position}`}
+          isOpen={active}
+          className={className}
+        >
+          <ModalBody className={`${bgColor} vh-100 border-0`}>{children}</ModalBody>
         </Modal>
       </div>
     );
