@@ -68,7 +68,7 @@ export default class AppNav extends Component<Props, State> {
       <Nav
         vertical
         pills
-        className={`d-flex flex-grow-1 mb-auto  ${this.props.dark ? 'nav-pills-dark' : ''}`}
+        className={`d-flex flex-grow-1 mb-auto ${this.props.dark ? 'nav-pills-dark' : ''}`}
       >
         <NavTitle />
         <NavItems />

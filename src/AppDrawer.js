@@ -32,17 +32,15 @@ export default class AppDrawer extends React.Component<Props> {
       position, active, className, bgColor, children, toggle,
     } = this.props;
     return (
-      <div>
-        <Modal
-          size="md"
-          toggle={toggle}
-          wrapClassName={`app-nav ${position}`}
-          isOpen={active}
-          className={className}
-        >
-          <ModalBody className={`${bgColor} vh-100 border-0`}>{children}</ModalBody>
-        </Modal>
-      </div>
+      <Modal
+        size="sm"
+        toggle={toggle}
+        wrapClassName={`app-nav ${position}`}
+        isOpen={active}
+        className={className}
+      >
+        <ModalBody className={`${bgColor} vh-100 border-0`}>{children}</ModalBody>
+      </Modal>
     );
   }
 }

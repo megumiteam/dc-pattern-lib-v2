@@ -5,7 +5,7 @@ const AppMain = ({ children }: { children: React.Node }) => (
   <div className="position-relative z-1 flex-grow-1 app-right">
     <Container fluid className="bg-gray-100">
       <Row>
-        <Col className="d-flex flex-column flex-grow-1 h-100 pt-4">{children}</Col>
+        <Col className="d-flex flex-column flex-grow-1 h-100 pt-3">{children}</Col>
       </Row>
     </Container>
   </div>

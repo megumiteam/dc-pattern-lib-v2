@@ -19,6 +19,7 @@
   border: 0;
   box-shadow: none;
   color: $body-color;
+  background-color: transparent !important;
   @include hover {
     color: $body-color;
     text-decoration: none;
