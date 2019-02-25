@@ -17,8 +17,7 @@
     color: $body-color;
     &:hover,
     &:focus {
-      background: rgba($nav-pills-link-active-bg, 0.075);
-      color: $body-color;
+      color: rgba($body-color, 0.875);
     }
   }
 }

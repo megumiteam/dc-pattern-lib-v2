@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.4;
   color: inherit; }
 
 h1, .h1 {
@@ -331,22 +331,22 @@ h6, .h6 {
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.4; }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.4; }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.4; }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.4; }
 
 hr {
   margin-top: 1rem;
@@ -5415,12 +5415,19 @@ button.bg-purple-dark:hover,
 button.bg-purple-dark:focus {
   background-color: #210e1b !important; }
 
-.bg-magenta {
+.bg-magenta, [scheme="shifter"] .bg-primary,
+[scheme="shifter"] .bg-gradient-primary {
   background-color: #f80759 !important; }
 
-a.bg-magenta:hover, a.bg-magenta:focus,
+a.bg-magenta:hover, [scheme="shifter"] a.bg-primary:hover,
+[scheme="shifter"] a.bg-gradient-primary:hover, a.bg-magenta:focus, [scheme="shifter"] a.bg-primary:focus,
+[scheme="shifter"] a.bg-gradient-primary:focus,
 button.bg-magenta:hover,
-button.bg-magenta:focus {
+[scheme="shifter"] button.bg-primary:hover,
+[scheme="shifter"] button.bg-gradient-primary:hover,
+button.bg-magenta:focus,
+[scheme="shifter"] button.bg-primary:focus,
+[scheme="shifter"] button.bg-gradient-primary:focus {
   background-color: #c60647 !important; }
 
 .bg-green {
@@ -8050,7 +8057,8 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   padding: 0;
   border: 0;
   box-shadow: none;
-  color: #000; }
+  color: #000;
+  background-color: transparent !important; }
   .btn-link:hover {
     color: #000;
     text-decoration: none; }
@@ -8151,8 +8159,7 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   font-size: 0.875rem;
   color: #000; }
   .nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
-    background: rgba(0, 0, 0, 0.075);
-    color: #000; }
+    color: rgba(0, 0, 0, 0.875); }
 
 ul.navbar-nav {
   margin: 0 -0.5rem; }
@@ -8273,13 +8280,18 @@ button {
   opacity: 1;
   pointer-events: initial; }
 
-.global-nav__primary,
+.global-nav,
 .global-nav__secondary {
   min-width: 64px; }
 
-.global-nav__inner,
-.global-nav {
-  min-width: 250px; }
+.global-nav__primary {
+  width: 0;
+  overflow: hidden; }
+
+@media (min-width: 768px) {
+  .global-nav__inner,
+  .global-nav {
+    min-width: 250px; } }
 
 .secondary-nav {
   width: 150px; }
@@ -8290,6 +8302,9 @@ button {
 .account-avatar {
   padding: 2px;
   background: #fff; }
+
+.app-nav .modal-dialog {
+  width: 250px; }
 
 .app-nav .modal-content {
   border-radius: 0;

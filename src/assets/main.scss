@@ -124,14 +124,21 @@ button {
   }
 }
 
-.global-nav__primary,
+.global-nav,
 .global-nav__secondary {
   min-width: 64px;
 }
 
-.global-nav__inner,
-.global-nav {
-  min-width: 250px;
+.global-nav__primary {
+  width: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .global-nav__inner,
+  .global-nav {
+    min-width: 250px;
+  }
 }
 
 .secondary-nav {
@@ -148,6 +155,10 @@ button {
 
 // Modal Off Canvas
 .app-nav {
+  .modal-dialog {
+    width: 250px;
+  }
+
   .modal-content {
     border-radius: 0;
     border: none;
@@ -192,6 +203,7 @@ button {
 [scheme="shifter"] {
   .bg-primary,
   .bg-gradient-primary {
+    @extend .bg-magenta;
     @extend .bg-gradient-magenta;
   }
 
