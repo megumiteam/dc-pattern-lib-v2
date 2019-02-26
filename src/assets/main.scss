@@ -129,10 +129,15 @@ button {
   min-width: 64px;
 }
 
-.global-nav__primary {
-  width: 0;
-  overflow: hidden;
+.global-nav__inner,
+.global-nav {
+  min-width: 250px;
 }
+
+// .global-nav__primary {
+//   width: 0;
+//   overflow: hidden;
+// }
 
 @media (min-width: 768px) {
   .global-nav__inner,
