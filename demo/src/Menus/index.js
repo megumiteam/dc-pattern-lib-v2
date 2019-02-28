@@ -26,6 +26,11 @@ export function demoPrimaryNav() {
         name: 'Menu Item 4',
         to: '/admin/menu-item-4',
       },
+      {
+        name: 'Disabled Menu',
+        to: '/admin/menu-item-5',
+        disabled: true,
+      },
     ],
   };
 

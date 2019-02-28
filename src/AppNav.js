@@ -9,6 +9,7 @@ type Props = {
       {
         name: string,
         to: string,
+        disabled?: boolean
       },
     ],
     navLabels: {
@@ -47,6 +48,7 @@ export default class AppNav extends Component<Props, State> {
             to={item.to}
             activeClassName="active"
             tag={RRNavLink}
+            disabled={item.disabled === true}
           >
             {item.name}
           </NavLink>
