@@ -218,3 +218,15 @@ button {
     @extend .bg-gradient-magenta;
   }
 }
+
+/**
+ * Stripe Elements
+ */
+.input {
+  &.d-flex {
+    .StripeElement {
+      @extend .w-100;
+      @extend .align-self-center;
+    }
+  }
+}

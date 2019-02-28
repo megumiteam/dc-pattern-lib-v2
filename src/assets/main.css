@@ -5847,7 +5847,7 @@ button.bg-gray-100:focus {
 .align-self-end {
   align-self: flex-end !important; }
 
-.align-self-center {
+.align-self-center, .input.d-flex .StripeElement {
   align-self: center !important; }
 
 .align-self-baseline {
@@ -6257,7 +6257,7 @@ button.bg-gray-100:focus {
 .w-75 {
   width: 75% !important; }
 
-.w-100 {
+.w-100, .input.d-flex .StripeElement {
   width: 100% !important; }
 
 .w-auto {
@@ -8337,3 +8337,7 @@ button {
 [scheme="shifter"] .btn-primary {
   background-color: transparent !important;
   border-color: transparent !important; }
+
+/**
+ * Stripe Elements
+ */
