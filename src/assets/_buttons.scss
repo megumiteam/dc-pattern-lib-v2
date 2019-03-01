@@ -1,11 +1,4 @@
 .btn {
-  // @include button-size(
-  //   $btn-padding-y,
-  //   $btn-padding-x,
-  //   $btn-font-size,
-  //   $btn-line-height,
-  //   $btn-border-radius
-  // );
   border-radius: $btn-border-radius;
   box-shadow: $btn-box-shadow;
   @include hover {

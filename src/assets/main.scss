@@ -177,7 +177,7 @@ button {
 
     .modal-dialog {
       transform: translateX(-100%);
-      transition: opacity 0.2s linear, transform 0.2s ease-in-out;
+      transition: opacity 0.15s linear, transform 0.15s ease-in-out;
     }
 
     .show {
@@ -217,6 +217,14 @@ button {
     background-color: transparent !important;
     border-color: transparent !important;
     @extend .bg-gradient-magenta;
+  }
+
+  .btn-outline-primary {
+    @include button-outline-variant($magenta);
+
+    @include hover {
+      @extend .bg-gradient-magenta;
+    }
   }
 }
 

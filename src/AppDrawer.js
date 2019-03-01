@@ -39,7 +39,7 @@ export default class AppDrawer extends React.Component<Props> {
         isOpen={active}
         className={className}
       >
-        <ModalBody className={`${bgColor} vh-100 border-0`}>{children}</ModalBody>
+        <ModalBody className={`${bgColor} vh-100 border-0 p-0`}>{children}</ModalBody>
       </Modal>
     );
   }
