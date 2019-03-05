@@ -8429,12 +8429,9 @@ button {
   pointer-events: initial; }
 
 .global-nav,
+.global-nav__inner,
 .global-nav__secondary {
   min-width: 64px; }
-
-.global-nav__inner,
-.global-nav {
-  min-width: 250px; }
 
 @media (min-width: 768px) {
   .global-nav__inner,
@@ -8510,3 +8507,28 @@ button {
 /**
  * Stripe Elements
  */
+/**
+ * Sites List
+ */
+.sites a {
+  text-decoration: none; }
+
+.sites .screenshot {
+  width: 4rem; }
+  @media (min-width: 768px) {
+    .sites .screenshot {
+      width: 6rem; } }
+
+.sites .meta {
+  max-width: 40vw; }
+
+/**
+ * List Striped
+ */
+.list-striped > *:hover {
+  background-color: rgba(244, 245, 247, 0.2); }
+
+.list-striped > *:nth-child(even) {
+  background-color: rgba(244, 245, 247, 0.25); }
+  .list-striped > *:nth-child(even):hover {
+    background-color: rgba(244, 245, 247, 0.2); }

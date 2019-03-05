@@ -126,19 +126,10 @@ button {
 }
 
 .global-nav,
+.global-nav__inner,
 .global-nav__secondary {
   min-width: 64px;
 }
-
-.global-nav__inner,
-.global-nav {
-  min-width: 250px;
-}
-
-// .global-nav__primary {
-//   width: 0;
-//   overflow: hidden;
-// }
 
 @media (min-width: 768px) {
   .global-nav__inner,
@@ -236,6 +227,46 @@ button {
     .StripeElement {
       @extend .w-100;
       @extend .align-self-center;
+    }
+  }
+}
+
+/**
+ * Sites List
+ */
+.sites {
+  a {
+    text-decoration: none;
+  }
+
+  .screenshot {
+    width: 4rem;
+
+    @media (min-width: 768px) {
+      width: 6rem;
+    }
+  }
+
+  .meta {
+    max-width: 40vw;
+  }
+}
+
+/**
+ * List Striped
+ */
+.list-striped {
+  > * {
+    &:hover {
+      background-color: rgba($gray-100, 0.2);
+    }
+
+    &:nth-child(even) {
+      background-color: rgba($gray-100, 0.25);
+
+      &:hover {
+        background-color: rgba($gray-100, 0.2);
+      }
     }
   }
 }
