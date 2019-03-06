@@ -125,6 +125,14 @@ button {
   }
 }
 
+.app-right {
+  overflow-x: hidden;
+}
+
+.app-inner {
+  margin-bottom: $spacer * 2;
+}
+
 .global-nav,
 .global-nav__inner,
 .global-nav__secondary {
@@ -239,34 +247,35 @@ button {
     text-decoration: none;
   }
 
-  .screenshot {
-    width: 4rem;
+  th.screenshot {
+    width: 1px;
 
-    @media (min-width: 768px) {
-      width: 6rem;
-    }
-  }
+    img {
+      width: 4em;
 
-  .meta {
-    max-width: 40vw;
-  }
-}
-
-/**
- * List Striped
- */
-.list-striped {
-  > * {
-    &:hover {
-      background-color: rgba($gray-100, 0.2);
-    }
-
-    &:nth-child(even) {
-      background-color: rgba($gray-100, 0.25);
-
-      &:hover {
-        background-color: rgba($gray-100, 0.2);
+      @media (min-width: 768px) {
+        width: 6rem;
       }
     }
   }
+
+  // .meta {
+  //   max-width: 40vw;
+  // }
+}
+
+th.fit,
+td.fit {
+  width: 1px;
+}
+
+/**
+ * Overflows
+ */
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
