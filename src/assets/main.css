@@ -8535,6 +8535,9 @@ th.fit,
 td.fit {
   width: 1px; }
 
+th {
+  font-weight: 500; }
+
 /**
  * Overflows
  */
