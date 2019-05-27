@@ -10,3 +10,66 @@
 [npm]: https://www.npmjs.org/package/npm-package
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
+
+## Getting started
+
+```bash
+$ git clone git@github.com:megumiteam/dc-pattern-lib-v2.git
+$ cd dc-pattern-lib-v2
+$ npm install
+$ npm start
+```
+
+## Browser check
+
+`npm start` will be start to run two local server.
+
+### URL: http://localhost:3000/
+
+It is a demo site to use the package.
+All source code are in `demo/src` directory.
+
+And we can start the server by the following command.
+
+```bash
+# start all dev server
+$ npm start
+
+# start the demo server
+$ npm run start-nwb
+```
+
+### URL: http://localhost:6006/
+
+It is a component catalog made by a Storybook.
+All source code are in `stories/` directory.
+
+And we can start the server by the following command.
+
+```
+# start all dev server
+$ npm start
+
+# start the demo server
+$ npm run storybook
+```
+
+## Contributing
+
+```
+$ git checkout -b YOUR_TOPIC_BRANCH
+
+# edit some code
+...
+
+# Lint
+$ npm run lint
+
+# Test
+$ npm test
+
+# Push your branch
+$ git push origin YOUR_TOPIC_BRANCH
+
+# Then, you can make a Pull Request
+```
