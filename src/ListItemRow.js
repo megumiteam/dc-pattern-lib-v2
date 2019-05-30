@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { withRouter } from 'react-router-dom';
-import { Table } from 'reactstrap';
+import { Table, Row, Col } from 'reactstrap';
 import DashboardCard from './DashboardCard';
 
 type Props = {
@@ -16,6 +16,11 @@ class ListItemRow extends React.Component<Props> {
     target: '',
   };
 
+  constructor(props: Props) {
+    super(props);
+    this.style = props.target ? { cursor: 'pointer' } : {};
+  }
+
   onClick = () => {
     const { target, history } = this.props;
     if (!target) return;
@@ -24,11 +29,15 @@ class ListItemRow extends React.Component<Props> {
 
   render() {
     return (
-      <DashboardCard>
-        <Table responsive onClick={this.onClick} style={{ cursor: 'pointer' }}>
-          <tbody>{this.props.children}</tbody>
-        </Table>
-      </DashboardCard>
+      <Row className="mb-gutter">
+        <Col>
+          <DashboardCard>
+            <Table responsive onClick={this.onClick} style={this.style}>
+              <tbody>{this.props.children}</tbody>
+            </Table>
+          </DashboardCard>
+        </Col>
+      </Row>
     );
   }
 }

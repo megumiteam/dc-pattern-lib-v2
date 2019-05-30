@@ -1,6 +1,7 @@
-import React, { Component, Fragment } from "react";
-import { render } from "react-dom";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+/* eslint-disable */
+import React, { Component, Fragment } from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import {
   Row,
   Col,
@@ -14,8 +15,8 @@ import {
   ButtonGroup,
   UncontrolledTooltip,
   Input,
-  Label
-} from "reactstrap";
+  Label,
+} from 'reactstrap';
 import {
   AppMain,
   AppDrawer,
@@ -23,19 +24,20 @@ import {
   AppSidebar,
   DashboardCard,
   DashboardCardGroup,
-  DashboardCardLoader
-} from "./../../src";
-import { demoPrimaryNav, demoSecondaryNav } from "./Menus/";
-import ToggleScheme from "./ToggleScheme";
-import CopyDemo from "./CopyDemo";
-import './../../src/assets/main.css';
+  DashboardCardLoader,
+  ListItemRow,
+} from '../../src';
+import { demoPrimaryNav, demoSecondaryNav } from './Menus';
+import ToggleScheme from './ToggleScheme';
+import CopyDemo from './CopyDemo';
+import '../../src/assets/main.css';
 
 class Demo extends Component {
   constructor(props) {
     super(props);
     this.state = {
       appDrawer: false,
-      tooltipOpen: false
+      tooltipOpen: false,
     };
 
     this.toggleTooltip = this.toggleTooltip.bind(this);
@@ -44,13 +46,13 @@ class Demo extends Component {
 
   toggleNav() {
     this.setState({
-      appDrawer: !this.state.appDrawer
+      appDrawer: !this.state.appDrawer,
     });
   }
 
   toggleTooltip() {
     this.setState({
-      tooltipOpen: !this.state.tooltipOpen
+      tooltipOpen: !this.state.tooltipOpen,
     });
   }
 
@@ -64,23 +66,20 @@ class Demo extends Component {
                 onClick={this.toggleNav}
                 color="transparent"
                 id="UncontrolledTooltipExample"
-                className="btn-circle">
+                className="btn-circle"
+              >
                 +
               </Button>
-              <UncontrolledTooltip
-                placement="right"
-                target="UncontrolledTooltipExample">
+              <UncontrolledTooltip placement="right" target="UncontrolledTooltipExample">
                 Create
               </UncontrolledTooltip>
             </Fragment>
           }
-          toggle={this.toggleNav}>
+          toggle={this.toggleNav}
+        >
           <Router>
             <Switch>
-              <Route
-                path="/"
-                render={props => <AppNav dark items={demoPrimaryNav()} />}
-              />
+              <Route path="/" render={props => <AppNav dark items={demoPrimaryNav()} />} />
             </Switch>
           </Router>
         </AppSidebar>
@@ -88,10 +87,7 @@ class Demo extends Component {
           <AppDrawer toggle={this.toggleNav} active={this.state.appDrawer}>
             <Router>
               <Switch>
-                <Route
-                  path="/"
-                  render={props => <AppNav items={demoSecondaryNav()} />}
-                />
+                <Route path="/" render={props => <AppNav items={demoSecondaryNav()} />} />
               </Switch>
             </Router>
           </AppDrawer>
@@ -111,15 +107,12 @@ class Demo extends Component {
               bodyClassName="p-0"
               actions={
                 <Fragment>
-                  <Button
-                    size="sm"
-                    onClick={this.toggleNav}
-                    color="white"
-                    className="btn-circle">
+                  <Button size="sm" onClick={this.toggleNav} color="white" className="btn-circle">
                     +
                   </Button>
                 </Fragment>
-              }>
+              }
+            >
               <Row>
                 <Col>
                   <Table hover>
@@ -137,7 +130,7 @@ class Demo extends Component {
                                 amimoto.a508
                               </a>
                             </small>
-                            {" - "}
+                            {' - '}
                             <small>Created 2019-12-16</small>
                           </div>
                         </td>
@@ -162,7 +155,7 @@ class Demo extends Component {
                                 amimoto.a508
                               </a>
                             </small>
-                            {" - "}
+                            {' - '}
                             <small>Created 2019-12-16</small>
                           </div>
                         </td>
@@ -188,7 +181,8 @@ class Demo extends Component {
                 <Button color="primary" size="sm">
                   Add a Custom Domain
                 </Button>
-              }>
+              }
+            >
               <Row>
                 <Col>
                   <Table hover>
@@ -215,7 +209,7 @@ class Demo extends Component {
                           </div>
                           <div>
                             <small>Domain Alias</small>
-                            {" - "}
+                            {' - '}
                             <small className="text-yellow">Pending</small>
                           </div>
                         </td>
@@ -236,7 +230,7 @@ class Demo extends Component {
                           </div>
                           <div>
                             <small>Primary Domain</small>
-                            {" - "}
+                            {' - '}
                             <small className="text-green">Verified</small>
                           </div>
                         </td>
@@ -258,10 +252,7 @@ class Demo extends Component {
             <DashboardCard title="Overview">
               <Row>
                 <Col md={2}>
-                  <img
-                    className="img-fluid w-100"
-                    src="//placehold.it/400x300"
-                  />
+                  <img className="img-fluid w-100" src="//placehold.it/400x300" />
                 </Col>
                 <Col />
               </Row>
@@ -272,29 +263,58 @@ class Demo extends Component {
               title="SFTP/SSH"
               actions={
                 <Fragment>
-                  <Button
-                    size="sm"
-                    onClick={this.toggleNav}
-                    color="white"
-                    className="btn-circle">
+                  <Button size="sm" onClick={this.toggleNav} color="white" className="btn-circle">
                     +
                   </Button>
                 </Fragment>
-              }>
+              }
+            >
               <Row>
                 <Col>
-                <CopyDemo />
-                <Label for="exampleEmail">Email</Label>
-          <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" /></Col>
+                  <CopyDemo />
+                  <Label for="exampleEmail">Email</Label>
+                  <Input
+                    type="email"
+                    name="email"
+                    id="exampleEmail"
+                    placeholder="with a placeholder"
+                  />
+                </Col>
                 <Col>Password</Col>
                 <Col>Port</Col>
               </Row>
             </DashboardCard>
           </DashboardCardGroup>
+          <Router>
+            <ListItemRow>
+              <tr>
+                <td>
+                  <h1>Hello</h1>
+                </td>
+                <td>
+                  <p className="text-muted">
+                    <b>Owner</b>
+                  </p>
+                  <p>digitalcube</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h1>Hello</h1>
+                </td>
+                <td>
+                  <p className="text-muted">
+                    <b>Owner</b>
+                  </p>
+                  <p>shifter</p>
+                </td>
+              </tr>
+            </ListItemRow>
+          </Router>
         </AppMain>
       </div>
     );
   }
 }
 
-render(<Demo />, document.querySelector("#demo"));
+render(<Demo />, document.querySelector('#demo'));
