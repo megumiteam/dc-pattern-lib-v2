@@ -8,6 +8,7 @@ import AppDrawerToggle from './AppDrawerToggle';
 import DashboardCard from './DashboardCard';
 import DashboardCardGroup from './DashboardCardGroup';
 import DashboardCardLoader from './DashboardCardLoader';
+import ListItemRow from './ListItemRow';
 
 export {
   AppMain,
@@ -19,4 +20,5 @@ export {
   DashboardCard,
   DashboardCardGroup,
   DashboardCardLoader,
+  ListItemRow,
 };
