@@ -6,8 +6,8 @@
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+[npm-badge]: https://img.shields.io/npm/v/dc-pattern-lib.png?style=flat-square
+[npm]: https://www.npmjs.org/package/dc-pattern-lib
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
 
@@ -73,3 +73,18 @@ $ git push origin YOUR_TOPIC_BRANCH
 
 # Then, you can make a Pull Request
 ```
+
+## Publish
+
+We publish it from Travis CI.
+You should run the following command after merge your TOPIC BRANCH into the master branch.
+
+```bash
+$ git checkout master
+$ git pull origin master
+# Tag it ( https://semver.org/ )
+$ npm version {major | minior | patch}
+```
+
+After run `npm version`, the `npm run postversion` will run to push the tag into GitHub.
+And Travis CI will start to build and publish it when you push a tagged branch.
