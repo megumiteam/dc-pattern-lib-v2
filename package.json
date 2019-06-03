@@ -65,6 +65,9 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "",
   "homepage": "",
   "license": "MIT",
