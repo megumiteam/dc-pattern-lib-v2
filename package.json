@@ -23,6 +23,7 @@
     "test:watch": "nwb test-react --server",
     "lint": "eslint src/",
     "storybook": "start-storybook -p 6006",
+    "postversion": "git push origin $(git describe --abbrev=0 --tags)",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
