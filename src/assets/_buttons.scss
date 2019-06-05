@@ -4,6 +4,12 @@
   @include hover {
     box-shadow: $btn-active-box-shadow;
   }
+
+  &.disabled,
+  &:disabled {
+    background-color: $gray !important;
+    border-color: $gray !important;
+  }
 }
 
 // Button Link
@@ -96,4 +102,44 @@
 .dropdown-toggle {
   cursor: pointer;
   user-select: none;
+}
+
+.btn-success {
+  &:hover,
+  &.hover {
+    background-color: $success-dark;
+    border-color: $success-dark;
+  }
+
+  &:focus,
+  &.focus {
+    background-color: $teal !important;
+    border-color: $teal !important;
+  }
+
+  &:active,
+  &.active {
+    background-color: $teal !important;
+    border-color: $teal !important;
+  }
+}
+
+.btn-danger {
+  &:hover,
+  &.hover {
+    background-color: $red-dark !important;
+    border-color: $red-dark !important;
+  }
+
+  &:focus,
+  &.focus {
+    background-color: $danger-light !important;
+    border-color: $danger-light !important;
+  }
+
+  &:active,
+  &.active {
+    background-color: $danger-light !important;
+    border-color: $danger-light !important;
+  }
 }

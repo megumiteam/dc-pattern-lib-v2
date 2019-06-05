@@ -37,6 +37,7 @@ const DashboardCard = (
     children,
     actions,
     footer,
+    className,
     bodyClassName,
   }: {
     title?: string,
@@ -44,6 +45,7 @@ const DashboardCard = (
     children: React.Node,
     actions?: React.Node,
     footer?: React.Node,
+    className?: string,
     bodyClassName?: string,
   } = {
     title: '',
@@ -51,10 +53,11 @@ const DashboardCard = (
     bodyClassName: '',
     children: '',
     actions: '',
+    className: '',
     footer: '',
   },
 ) => (
-  <Card className="shadow-sm">
+  <Card className={`shadow-sm ${className}`}>
     <DashboardCardHeader title={title} subtitle={subtitle} actions={actions} />
     {children ? <CardBody className={bodyClassName}>{children}</CardBody> : ''}
     <DashboardCardFooter footer={footer} />
