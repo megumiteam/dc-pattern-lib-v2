@@ -205,7 +205,8 @@ button {
 /**
  * Product Schemes
  */
-[scheme="shifter"] {
+[scheme="shifter"],
+.shifter-ui {
   .bg-primary,
   .bg-gradient-primary {
     @extend .bg-magenta;
@@ -213,9 +214,54 @@ button {
   }
 
   .btn-primary {
-    background-color: transparent !important;
-    border-color: transparent !important;
-    @extend .bg-gradient-magenta;
+    @include button-variant($purple-dark, $purple-dark);
+
+    &.hover,
+    &:hover {
+      background-color: $purple-darker !important;
+    }
+
+    &:focus,
+    &.focus {
+      background-color: $purple !important;
+      border-color: $purple !important;
+    }
+
+    &:active,
+    &.active {
+      background-color: $purple !important;
+      border-color: $purple !important;
+    }
+  }
+
+  .btn-secondary {
+    @include button-outline-variant($purple-dark);
+    background-color: transparent;
+
+    &:disabled,
+    &.disabled {
+      color: $gray;
+      background-color: transparent !important;
+    }
+
+    &.hover,
+    &:hover {
+      background-color: $purple-dark !important;
+      color: $white;
+    }
+
+    &:focus,
+    &.focus {
+      background-color: $purple !important;
+      border-color: $purple !important;
+      color: $white;
+    }
+
+    &:active,
+    &.active {
+      background-color: $purple !important;
+      border-color: $purple !important;
+    }
   }
 
   .btn-outline-primary {
