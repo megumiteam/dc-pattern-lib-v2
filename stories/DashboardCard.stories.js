@@ -18,6 +18,7 @@ storiesOf('DashboardCard', module)
       actions={text('Actions', 'action')}
       bodyClassName={text('BodyClassName', '')}
       footer={text('Footer', 'footer')}
+      headerClassName="text-green"
     >
       <span role="img" aria-label="so cool">
         😀 😎 👍 💯
