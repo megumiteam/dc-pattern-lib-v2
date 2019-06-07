@@ -8670,6 +8670,10 @@ button {
     .shifter-ui .btn-outline-primary.dropdown-toggle:focus {
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(248, 7, 89, 0.5); }
 
+[scheme="shifter"] .card-header,
+.shifter-ui .card-header {
+  color: #451d39; }
+
 /**
  * Stripe Elements
  */
