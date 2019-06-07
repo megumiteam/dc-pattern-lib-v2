@@ -62,7 +62,7 @@ const DashboardCard = (
 ) => (
   <Card className={`shadow-sm ${className || ''}`}>
     <DashboardCardHeader title={title} subtitle={subtitle} actions={actions} />
-    {children ? <CardBody className={`${bodyClassName} ${borderless ? 'p-0 overflow-hidden' : ''}`}>{children}</CardBody> : ''}
+    {children ? <CardBody className={`${bodyClassName || ''} ${borderless ? 'p-0 overflow-hidden' : ''}`}>{children}</CardBody> : ''}
     <DashboardCardFooter footer={footer} />
   </Card>
 );
