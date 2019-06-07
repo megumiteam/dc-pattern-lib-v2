@@ -39,6 +39,7 @@ const DashboardCard = (
     footer,
     className,
     bodyClassName,
+    borderless,
   }: {
     title?: string,
     subtitle?: string,
@@ -47,6 +48,7 @@ const DashboardCard = (
     footer?: React.Node,
     className?: string,
     bodyClassName?: string,
+    borderless?: Boolean,
   } = {
     title: '',
     subtitle: '',
@@ -55,11 +57,12 @@ const DashboardCard = (
     actions: '',
     className: '',
     footer: '',
+    borderless: '',
   },
 ) => (
-  <Card className={`shadow-sm ${className}`}>
+  <Card className={`shadow-sm ${className || ''}`}>
     <DashboardCardHeader title={title} subtitle={subtitle} actions={actions} />
-    {children ? <CardBody className={bodyClassName}>{children}</CardBody> : ''}
+    {children ? <CardBody className={`${bodyClassName} ${borderless ? 'p-0 overflow-hidden' : ''}`}>{children}</CardBody> : ''}
     <DashboardCardFooter footer={footer} />
   </Card>
 );

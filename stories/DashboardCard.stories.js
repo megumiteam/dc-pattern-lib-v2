@@ -30,4 +30,15 @@ storiesOf('DashboardCard', module)
         😀 😎 👍 💯
       </span>
     </DashboardCard>
+  ))
+  .add('Borderless', () => (
+    <DashboardCard borderless title={text('Title', 'title')} subtitle={text('Subtile', 'example')}>
+      <span role="img" aria-label="so cool">
+        Add
+        {' '}
+        <code>borderless</code>
+        {' '}
+to DashboardCard to disable padding and add overflow css.
+      </span>
+    </DashboardCard>
   ));
