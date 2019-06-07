@@ -8322,7 +8322,8 @@ a.text-gray-100:hover, a.text-gray-100:focus {
     vertical-align: top;
     border-bottom: 2px solid rgba(0, 0, 0, 0.125);
     border-top: 0; }
-  .table tr:last-of-type td {
+  .table tr:last-of-type td,
+  .table tr:last-of-type th {
     border-bottom: 0; }
   .table thead th {
     border-bottom: 0;

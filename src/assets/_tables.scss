@@ -14,7 +14,8 @@
 
   tr {
     &:last-of-type {
-      td {
+      td,
+      th {
         border-bottom: 0;
       }
     }
