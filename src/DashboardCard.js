@@ -13,7 +13,7 @@ const DashboardCardHeader = ({
   subtitle: string,
   actions: React.Node,
 }) => (title ? (
-  <CardHeader>
+  <CardHeader className="border-0">
     <div className="d-flex justify-content-between align-items-center">
       <CardTitle className="mb-0 h5 font-weight-bold" tag="div">
         {title}
