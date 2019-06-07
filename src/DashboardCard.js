@@ -25,8 +25,8 @@ const DashboardCardHeader = ({
     <DashboardCardSubTitle subtitle={subtitle} />
   </CardHeader>
 ) : (
-  ''
-));
+    ''
+  ));
 
 const DashboardCardFooter = ({ footer }: { footer?: React.Node } = { footer: '' }) => (footer ? <CardFooter>{footer}</CardFooter> : '');
 
@@ -54,22 +54,29 @@ const DashboardCard = (
     headerClassName?: string,
     borderless?: Boolean,
   } = {
-    title: '',
-    subtitle: '',
-    bodyClassName: '',
-    headerClassName: '',
-    children: '',
-    actions: '',
-    className: '',
-    footer: '',
-    borderless: '',
-  },
+      title: '',
+      subtitle: '',
+      bodyClassName: '',
+      headerClassName: '',
+      children: '',
+      actions: '',
+      className: '',
+      footer: '',
+      borderless: '',
+    },
 ) => (
-  <Card className={`shadow-sm ${className || ''}`}>
-    <DashboardCardHeader title={title} subtitle={subtitle} actions={actions} headerClassName={headerClassName} />
-    {children ? <CardBody className={`${bodyClassName || ''} ${borderless ? 'p-0 overflow-hidden' : ''}`}>{children}</CardBody> : ''}
-    <DashboardCardFooter footer={footer} />
-  </Card>
-);
+    <Card className={`shadow-sm ${className || ''}`}>
+      <DashboardCardHeader
+        title={title}
+        subtitle={subtitle}
+        actions={actions}
+        headerClassName={headerClassName} />
+      {children ? <CardBody
+        className={`${bodyClassName || ''} ${borderless ? 'p-0 overflow-hidden' : ''}`}>
+        {children}
+      </CardBody> : ''}
+      <DashboardCardFooter footer={footer} />
+    </Card>
+  );
 
 export default DashboardCard;
