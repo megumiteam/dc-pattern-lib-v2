@@ -11,10 +11,17 @@ import '../src/assets/main.css';
 storiesOf('DashboardCardLoader', module)
   .addDecorator(withKnobs)
   .addDecorator(withInfo)
-  .add('Full Example', () => (
+  .add('Default / Card', () => (
     <DashboardCardLoader>
       <span role="img" aria-label="so cool">
         😀 😎 👍 💯
       </span>
     </DashboardCardLoader>
+  ))
+  .add('Site', () => (
+    <div className="card-columns">
+      <DashboardCardLoader cardStyle="site" />
+      <DashboardCardLoader cardStyle="site" />
+      <DashboardCardLoader cardStyle="site" />
+    </div>
   ));
