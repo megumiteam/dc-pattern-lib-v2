@@ -29,7 +29,7 @@ storiesOf('DashboardCardGroup', module)
   .add('Full Example', () => {
     const length = number(
       'Card items',
-      2,
+      4,
       {
         range: true,
         min: 0,
@@ -49,5 +49,10 @@ storiesOf('DashboardCardGroup', module)
         </DashboardCard>,
       );
     }
-    return <DashboardCardGroup>{children}</DashboardCardGroup>;
+    return (
+      <div>
+        <DashboardCardGroup>{children}</DashboardCardGroup>
+        <DashboardCardGroup>{children}</DashboardCardGroup>
+      </div>
+    );
   });
