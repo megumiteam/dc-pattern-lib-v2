@@ -66,7 +66,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
-  color: #000;
+  color: #6a6a6a;
   text-align: left;
   background-color: #fff; }
 
@@ -142,11 +142,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #000;
+  color: #6a6a6a;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: black;
+    color: #444444;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -1049,7 +1049,7 @@ pre {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #000;
+  color: #6a6a6a;
   background-color: transparent; }
   .table th,
   .table td {
@@ -1085,7 +1085,7 @@ pre {
   background-color: rgba(0, 0, 0, 0.05); }
 
 .table-hover tbody tr:hover {
-  color: #000;
+  color: #6a6a6a;
   background-color: rgba(0, 0, 0, 0.01); }
 
 .table-primary,
@@ -1526,7 +1526,7 @@ select.form-control:focus::-ms-value {
   padding-bottom: 1.125rem;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #000;
+  color: #6a6a6a;
   background-color: transparent;
   border: solid transparent;
   border-width: 2px 0; }
@@ -1839,7 +1839,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 500;
-  color: #000;
+  color: #6a6a6a;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -1854,7 +1854,7 @@ textarea.form-control {
     .btn {
       transition: none; } }
   .btn:hover {
-    color: #000;
+    color: #6a6a6a;
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
@@ -2638,10 +2638,10 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 300;
-  color: #000;
+  color: #6a6a6a;
   text-decoration: none; }
   .btn-link:hover {
-    color: black;
+    color: #444444;
     text-decoration: underline; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: underline;
@@ -2724,7 +2724,7 @@ input[type="button"].btn-block {
   padding: 0 0;
   margin: 0.25rem 0 0;
   font-size: 1rem;
-  color: #000;
+  color: #6a6a6a;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3838,7 +3838,7 @@ input[type="button"].btn-block {
 .card-header {
   padding: 1rem 1rem;
   margin-bottom: 0;
-  color: #000;
+  color: #6a6a6a;
   background-color: transparent;
   border-bottom: 0 solid rgba(0, 0, 0, 0.125); }
   .card-header:first-child {
@@ -4004,12 +4004,12 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -2px;
   line-height: 1.25;
-  color: #000;
+  color: #6a6a6a;
   background-color: #fff;
   border: 2px solid darkgray; }
   .page-link:hover {
     z-index: 2;
-    color: black;
+    color: #444444;
     text-decoration: none;
     background-color: #c2c2c2;
     border-color: darkgray; }
@@ -4514,7 +4514,7 @@ input[type="button"].btn-block {
     text-decoration: none;
     background-color: #f5f5f5; }
   .list-group-item-action:active {
-    color: #000;
+    color: #6a6a6a;
     background-color: #c2c2c2; }
 
 .list-group-item {
@@ -5235,7 +5235,7 @@ a.close.disabled {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #000; }
+  color: #6a6a6a; }
 
 .carousel {
   position: relative; }
@@ -7989,7 +7989,7 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   color: #cfcfcf !important; }
 
 .text-body {
-  color: #000 !important; }
+  color: #6a6a6a !important; }
 
 .text-muted {
   color: #5c5c5c !important; }
@@ -8215,10 +8215,10 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   padding: 0;
   border: 0;
   box-shadow: none;
-  color: #000;
+  color: #6a6a6a;
   background-color: transparent !important; }
   .btn-link:hover {
-    color: #000;
+    color: #6a6a6a;
     text-decoration: none; }
   .btn-link:focus, .btn-link.focus {
     outline: 0;
@@ -8311,26 +8311,6 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   overflow: hidden;
   font-size: 0.875rem; }
 
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
-  color: #000;
-  background-color: transparent; }
-  .table th,
-  .table td {
-    padding: 1rem;
-    vertical-align: top;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.125);
-    border-top: 0; }
-  .table tr:last-of-type td,
-  .table tr:last-of-type th {
-    border-bottom: 0; }
-  .table thead th {
-    border-bottom: 0;
-    border-top: 0; }
-  .table .table {
-    background-color: #fff; }
-
 .nav-pills.nav-pills-dark .nav-link.active,
 .nav-pills.nav-pills-dark .show > .nav-link,
 .nav-pills.nav-pills-dark .nav-link {
@@ -8344,9 +8324,9 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 
 .nav-pills .nav-link {
   font-size: 0.875rem;
-  color: #000; }
+  color: #6a6a6a; }
   .nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
-    color: rgba(0, 0, 0, 0.875); }
+    color: rgba(106, 106, 106, 0.875); }
 
 /**
  * Generating Text
@@ -8818,7 +8798,9 @@ button {
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(248, 7, 89, 0.5); }
 
 [scheme="shifter"] .card-header,
-.shifter-ui .card-header {
+[scheme="shifter"] .text-primary,
+.shifter-ui .card-header,
+.shifter-ui .text-primary {
   color: #451d39; }
 
 /**
