@@ -11,6 +11,7 @@
 $transparent: transparent !default;
 $white: #fff !default;
 $gray: #c0c0c0 !default;
+$gray-dark: #6a6a6a !default;
 $gray-100: #f5f5f5 !default;
 $gray-200: darken($gray-100, 20%) !default;
 $gray-300: darken($gray-100, 30%) !default;
@@ -487,9 +488,9 @@ $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
 
 $label-margin-bottom: 0.5rem !default;
 
-$input-padding-y: 1.375rem !default;
-$input-padding-x: 1.375rem !default;
-$input-font-size: 0.8125rem !default;
+$input-padding-y: 1.125rem !default;
+$input-padding-x: 1rem !default;
+$input-font-size: 0.9375rem !default;
 $input-font-weight: $font-weight-base !default;
 $input-line-height: $input-btn-line-height !default;
 
@@ -504,19 +505,19 @@ $input-font-size-lg: $input-btn-font-size-lg !default;
 $input-line-height-lg: $input-btn-line-height-lg !default;
 
 $input-bg: $white !default;
-$input-disabled-bg: $gray-200 !default;
+$input-disabled-bg: $gray-100 !default;
 
 $input-color: $gray-700 !default;
-$input-border-color: transparent !default;
+$input-border-color: $gray-dark !default;
 $input-border-width: $input-btn-border-width !default;
-$input-box-shadow: $btn-box-shadow !default;
+$input-box-shadow: none !default;
 
 $input-border-radius: $border-radius !default;
 $input-border-radius-lg: $border-radius-lg !default;
 $input-border-radius-sm: $border-radius-sm !default;
 
 $input-focus-bg: $input-bg !default;
-$input-focus-border-color: transparent !default;
+$input-focus-border-color: $magenta !default;
 $input-focus-color: $input-color !default;
 $input-focus-width: $input-btn-focus-width !default;
 $input-focus-box-shadow: $input-btn-focus-box-shadow !default;
