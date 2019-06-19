@@ -3817,13 +3817,13 @@ input[type="button"].btn-block {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem; }
+  padding: 1.5rem; }
 
 .card-title {
-  margin-bottom: 1rem; }
+  margin-bottom: 1.5rem; }
 
 .card-subtitle {
-  margin-top: -0.5rem;
+  margin-top: -0.75rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -3833,10 +3833,10 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .card-link + .card-link {
-  margin-left: 1rem; }
+  margin-left: 1.5rem; }
 
 .card-header {
-  padding: 1rem 1rem;
+  padding: 1.5rem 1.5rem;
   margin-bottom: 0;
   color: #6a6a6a;
   background-color: transparent;
@@ -3847,21 +3847,21 @@ input[type="button"].btn-block {
     border-top: 0; }
 
 .card-footer {
-  padding: 1rem 1rem;
+  padding: 1.5rem 1.5rem;
   background-color: transparent;
   border-top: 0 solid rgba(0, 0, 0, 0.125); }
   .card-footer:last-child {
     border-radius: 0 0 calc( 0.25rem - 0) calc( 0.25rem - 0); }
 
 .card-header-tabs {
-  margin-right: -0.5rem;
-  margin-bottom: -1rem;
-  margin-left: -0.5rem;
+  margin-right: -0.75rem;
+  margin-bottom: -1.5rem;
+  margin-left: -0.75rem;
   border-bottom: 0; }
 
 .card-header-pills {
-  margin-right: -0.5rem;
-  margin-left: -0.5rem; }
+  margin-right: -0.75rem;
+  margin-left: -0.75rem; }
 
 .card-img-overlay {
   position: absolute;
@@ -3937,7 +3937,7 @@ input[type="button"].btn-block {
             border-bottom-left-radius: 0; } }
 
 .card-columns .card {
-  margin-bottom: 1rem; }
+  margin-bottom: 1.5rem; }
 
 @media (min-width: 576px) {
   .card-columns {
