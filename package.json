@@ -28,14 +28,14 @@
     "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.jsx\""
   },
   "dependencies": {
-    "react-router-dom": "^4.3.1",
-    "reactstrap": "^7.1.0",
+    "@storybook/addon-info": "^4.1.11",
+    "@storybook/addon-knobs": "^4.1.11",
+    "@storybook/react": "^4.1.11",
     "prop-types": "^15.6.2",
     "react-content-loader": "^4.0.0",
     "react-copy-to-clipboard": "^5.0.1",
-    "@storybook/react": "^4.1.11",
-    "@storybook/addon-knobs": "^4.1.11",
-    "@storybook/addon-info": "^4.1.11"
+    "react-router-dom": "^4.3.1",
+    "reactstrap": "^8.0.0"
   },
   "peerDependencies": {
     "react": "16.x"
@@ -47,7 +47,7 @@
     "@storybook/addons": "^4.1.11",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
-    "bootstrap": "^4.3.0",
+    "bootstrap": "^4.3.1",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-flowtype": "^3.9.1",
