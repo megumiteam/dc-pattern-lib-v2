@@ -6,7 +6,7 @@ const DashboardCardLoader = (
   {
     cardStyle,
   }: {
-    cardStyle?: string,
+    cardStyle: string,
   } = {
     cardStyle: 'site',
   },
