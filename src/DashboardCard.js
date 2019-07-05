@@ -28,43 +28,31 @@ const DashboardCardHeader = ({
   ''
 ));
 
-const DashboardCardFooter = ({ footer }: { footer?: React.Node } = { footer: '' }) => (footer ? <CardFooter>{footer}</CardFooter> : '');
+const DashboardCardFooter = ({ footer }: { footer: React.Node }) => (footer ? <CardFooter>{footer}</CardFooter> : '');
 
-const DashboardCardSubTitle = ({ subtitle }: { subtitle?: string } = { subtitle: '' }) => (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : '');
+const DashboardCardSubTitle = ({ subtitle }: { subtitle: string }) => (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : '');
 
-const DashboardCard = (
-  {
-    title,
-    subtitle,
-    children,
-    actions,
-    footer,
-    className,
-    bodyClassName,
-    headerClassName,
-    borderless,
-  }: {
-    title?: string,
-    subtitle?: string,
-    children: React.Node,
-    actions?: React.Node,
-    footer?: React.Node,
-    className?: string,
-    bodyClassName?: string,
-    headerClassName?: string,
-    borderless?: Boolean,
-  } = {
-    title: '',
-    subtitle: '',
-    bodyClassName: '',
-    headerClassName: '',
-    children: '',
-    actions: '',
-    className: '',
-    footer: '',
-    borderless: '',
-  },
-) => (
+const DashboardCard = ({
+  title,
+  subtitle,
+  children,
+  actions,
+  footer,
+  className,
+  bodyClassName,
+  headerClassName,
+  borderless,
+}: {
+  title: string,
+  subtitle: string,
+  children: React.Node,
+  actions: React.Node,
+  footer: React.Node,
+  className: string,
+  bodyClassName: string,
+  headerClassName: string,
+  borderless: Boolean,
+}) => (
   <Card className={`shadow-sm ${className || ''}`}>
     <DashboardCardHeader
       title={title}
