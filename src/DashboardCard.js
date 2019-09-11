@@ -17,7 +17,7 @@ const DashboardCardHeader = ({
 }) => (title ? (
   <CardHeader className={`border-0 ${headerClassName || ''}`}>
     <div className="d-flex justify-content-between align-items-center">
-      <CardTitle className="mb-0 h5" tag="div">
+      <CardTitle className="h5" tag="div">
         {title}
       </CardTitle>
       {actions ? <div>{actions}</div> : ''}
