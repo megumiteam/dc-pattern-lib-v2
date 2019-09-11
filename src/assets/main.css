@@ -8185,9 +8185,6 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   .card-deck .card {
     margin-bottom: 20px; } }
 
-.card-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
-
 .list-group.striped .list-group-item:first-of-type {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem; }
