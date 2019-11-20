@@ -13,7 +13,6 @@
 .card-hover:hover {
       &:hover,
       &:focus {
-  transform:scale(1.0025);
   box-shadow: 0 .125rem .625rem 0 rgba(69,29,57,0.25), 0 .5rem 2rem .125rem rgba(69,29,57,0.25) !important;
   transition: .25s;
       }

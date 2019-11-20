@@ -16,8 +16,8 @@ const DashboardCardLoader = (
       height={300}
       width={400}
       speed={2}
-      primaryColor="#f3f3f3"
-      secondaryColor="#ecebeb"
+      primaryColor="#DAD2D7"
+      secondaryColor="#CCB9C5"
     >
       <rect x="0" y="0" rx="4" ry="4" width="400" height="300" />
     </ContentLoader>
