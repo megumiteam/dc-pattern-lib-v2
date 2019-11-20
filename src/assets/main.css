@@ -8495,6 +8495,18 @@ a.text-gray-100:hover, a.text-gray-100:focus {
     visibility: hidden;
     opacity: 0; } }
 
+/**
+ * Spin
+ */
+@keyframes spin {
+  0% {
+    transform: rotateZ(0); }
+  100% {
+    transform: rotateZ(360deg); } }
+
+.spin {
+  animation: spin 1.25s linear infinite; }
+
 ul.navbar-nav {
   margin: 0 -0.5rem; }
 

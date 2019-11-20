@@ -4,6 +4,7 @@ import React from 'react';
 type Props = {
   className?: string,
 };
+
 type State = {
   active: boolean,
 };
