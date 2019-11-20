@@ -1,0 +1,18 @@
+.alert {
+    color: $purple-dark;
+}
+
+.alert-success {
+    background-color:$green-lighter;
+    border-color:$success;
+}
+
+.alert-warning {
+    background-color:$yellow-lighter;
+    border-color:$warning;
+}
+
+.alert-danger {
+    background-color:$pink-lighter;
+    border-color:$danger;
+}

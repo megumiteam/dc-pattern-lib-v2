@@ -27,11 +27,15 @@ storiesOf('DashboardCard', module)
   ))
   .add('with titles', () => (
     <div className="shifter-ui">
-    <DashboardCard title={text('Title', 'title')} subtitle={text('Subtile', 'example')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </DashboardCard>
+      <DashboardCard
+        className="card-hover"
+        title={text('Title', 'title')}
+        subtitle={text('Subtile', 'example')}
+      >
+        <span role="img" aria-label="so cool">
+          😀 😎 👍 💯
+        </span>
+      </DashboardCard>
     </div>
   ))
   .add('Borderless', () => (

@@ -9,7 +9,7 @@
 @import "dropdown";
 @import "tables";
 @import "nav";
-
+@import "alert";
 @import "custom"; // Custom Styles, not twbs/bootstrap related.
 
 ul.navbar-nav {
@@ -263,14 +263,6 @@ button {
     &.active {
       background-color: $purple !important;
       border-color: $purple !important;
-    }
-  }
-
-  .btn-outline-primary {
-    @include button-outline-variant($magenta);
-
-    @include hover {
-      @extend .bg-gradient-magenta;
     }
   }
 

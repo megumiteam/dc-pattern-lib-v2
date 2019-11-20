@@ -43,17 +43,22 @@ $grays: map-merge(
 $blue: #004cff;
 $indigo: #6610f2;
 $purple: #bc519e;
-$purple-dark: #451d39;
+$purple-dark: #451D39;
 $purple-darker: #2e1627;
+$purple-light: #DAD2D7;
+$purple-lighter: #FEEEF4;
 $pink: #f80759;
+$pink-lighter: #FEEEF4;
 $magenta: $pink;
 $red-light: #ff6477 !default;
 $red: #ff5857 !default;
 $red-dark: #5a0610 !default;
 $orange: #fd7e14 !default;
-$yellow: #ffbf3f !default;
+$yellow: #FFA600 !default;
+$yellow-lighter: #FFFDE4 !default;
 $green: #17b491 !default;
-$green-dark: #0f6e59 !default;
+$green-dark: #0F6E59 !default;
+$green-lighter: #DFFFF8 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
@@ -75,18 +80,19 @@ $colors: map-merge(
     "gray": $gray-600,
     "gray-dark": $gray-800,
     "purple-dark": $purple-dark,
-    "magenta": $magenta
+    "purple-light": $purple-light,
+    "magenta": $magenta,
   ),
   $colors
 );
 
-$primary: $black !default;
-$secondary: $gray-600 !default;
+$primary: $purple-dark !default;
+$secondary: $yellow !default;
 $success: $green !default;
 $success-dark: $green-dark !default;
-$info: $cyan !default;
+$info: $purple-lighter;
 $warning: $yellow !default;
-$danger: $red !default;
+$danger: $pink !default;
 $danger-dark: $red-dark;
 $danger-light: $red-light;
 $light: $gray-100 !default;
@@ -190,7 +196,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg: $white !default;
-$body-color: $gray-dark !default;
+$body-color: $purple-darker !default;
 
 // Links
 //
@@ -272,7 +278,7 @@ $border-radius-rounded: 4px;
 
 $rounded-pill: 50rem !default;
 
-$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
+$box-shadow-sm: 0 0.125rem .25rem rgba($purple-darker, 0.15) !default;
 $box-shadow: 0 0.25rem 0.875rem rgba($black, 0.15) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
 
@@ -819,9 +825,9 @@ $navbar-dark-toggler-icon-bg: str-replace(
 ) !default;
 $navbar-dark-toggler-border-color: rgba($white, 0.1) !default;
 
-$navbar-light-color: rgba($black, 0.5) !default;
-$navbar-light-hover-color: rgba($black, 0.7) !default;
-$navbar-light-active-color: rgba($black, 0.9) !default;
+$navbar-light-color: $purple-dark !default;
+$navbar-light-hover-color: $red-light !default;
+$navbar-light-active-color: $pink !default;
 $navbar-light-disabled-color: rgba($black, 0.3) !default;
 $navbar-light-toggler-icon-bg: str-replace(
   url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"),
@@ -977,11 +983,11 @@ $alert-padding-x: 1.25rem !default;
 $alert-margin-bottom: 1rem !default;
 $alert-border-radius: $border-radius !default;
 $alert-link-font-weight: $font-weight-bold !default;
-$alert-border-width: $border-width !default;
+$alert-border-width: 1px !default;
 
-$alert-bg-level: -10 !default;
-$alert-border-level: -9 !default;
-$alert-color-level: 6 !default;
+$alert-bg-level: 0 !default;
+$alert-border-level: 10 !default;
+$alert-color-level: 0 !default;
 
 // Progress bars
 

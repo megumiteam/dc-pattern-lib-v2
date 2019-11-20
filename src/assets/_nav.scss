@@ -12,12 +12,13 @@
     }
   }
 
-  .nav-link {
-    font-size: $font-size-base * 0.875;
-    color: $body-color;
-    &:hover,
-    &:focus {
-      color: rgba($body-color, 0.875);
-    }
+  
+}
+.navbar-light.nav-link {
+  color: $body-color;
+  font-weight: 500;
+  &:hover,
+  &:focus {
+    transition:.25s;
   }
 }
