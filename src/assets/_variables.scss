@@ -271,10 +271,10 @@ $line-height-sm: 1.5 !default;
 $border-width: 2px !default;
 $border-color: $gray-200 !default;
 
-$border-radius: 0.5rem !default;
+$border-radius: 0.25rem !default;
 $border-radius-lg: 1.25rem !default;
 $border-radius-sm: 0.25rem !default;
-$border-radius-rounded: 4px;
+$border-radius-rounded: 0.25rem;
 
 $rounded-pill: 50rem !default;
 
@@ -881,11 +881,11 @@ $jumbotron-bg: $gray-200 !default;
 $tooltip-font-size: $font-size-sm !default;
 $tooltip-max-width: 200px !default;
 $tooltip-color: $white !default;
-$tooltip-bg: $black !default;
+$tooltip-bg: $purple-darker !default;
 $tooltip-border-radius: $border-radius !default;
 $tooltip-opacity: 0.9 !default;
-$tooltip-padding-y: 0.25rem !default;
-$tooltip-padding-x: 0.5rem !default;
+$tooltip-padding-y: .75rem !default;
+$tooltip-padding-x: 1.5rem !default;
 $tooltip-margin: 0 !default;
 
 $tooltip-arrow-width: 0.8rem !default;
