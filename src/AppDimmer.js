@@ -1,29 +1,25 @@
 // @flow
 import React from 'react';
 import { Modal } from 'reactstrap';
+import { Logo } from './Logos';
 
 type Props = {
-  className: string,
-};
-type State = {
-  modal: boolean,
+  isOpen: boolean,
 };
 
-export default class AppDimmer extends React.Component<Props, State> {
-  state = {
-    modal: false,
-  };
-
-  toggle = () => {
-    const { modal } = this.state;
-    this.setState({
-      modal: !modal,
-    });
-  };
-
+export default class AppDimmer extends React.Component<Props> {
   render() {
     return (
-      <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} />
+      <Modal
+        centered
+        isOpen={this.props.isOpen}
+        toggle={this.toggle}
+        contentClassName="text-center border-0 shadow-none bg-transparent"
+      >
+        <div className="spin mx-auto" style={{ width: '40px' }}>
+          <Logo logoStyle="logomark-color" />
+        </div>
+      </Modal>
     );
   }
 }
