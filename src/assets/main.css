@@ -4958,11 +4958,11 @@ a.close.disabled {
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #000; }
+  background-color: #2e1627; }
   .modal-backdrop.fade {
     opacity: 0; }
   .modal-backdrop.show {
-    opacity: 0.5; }
+    opacity: 0.75; }
 
 .modal-header {
   display: flex;
@@ -8346,7 +8346,7 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   border-color: #FFA600; }
 
 .alert-danger {
-  background-color: #FEEEF4;
+  background-color: #FFC0C0;
   border-color: #f80759; }
 
 /**
