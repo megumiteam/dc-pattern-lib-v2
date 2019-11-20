@@ -188,7 +188,7 @@ table {
 caption {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: #5c5c5c;
+  color: #8f8f8f;
   text-align: left;
   caption-side: bottom; }
 
@@ -1582,7 +1582,7 @@ textarea.form-control {
   margin-top: 0.3rem;
   margin-left: -1.25rem; }
   .form-check-input:disabled ~ .form-check-label {
-    color: #5c5c5c; }
+    color: #8f8f8f; }
 
 .form-check-label {
   margin-bottom: 0; }
@@ -7993,7 +7993,7 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   color: #2e1627 !important; }
 
 .text-muted {
-  color: #5c5c5c !important; }
+  color: #8f8f8f !important; }
 
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important; }
