@@ -279,8 +279,8 @@ $border-radius-rounded: 0.25rem;
 $rounded-pill: 50rem !default;
 
 $box-shadow-sm: 0 0.125rem .25rem rgba($purple-darker, 0.15) !default;
-$box-shadow: 0 0.25rem 0.875rem rgba($black, 0.15) !default;
-$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+$box-shadow: 0 0.15rem .5rem 0.125rem rgba($purple, 0.25) !default;
+$box-shadow-lg: 0 .125rem .625rem 0 rgba(69,29,57,0.25), 0 .5rem 2rem .125rem rgba(69,29,57,0.25) !default;
 
 $component-active-color: inherit !default;
 $component-active-bg: rgba($black, 0.1) !default;
@@ -476,7 +476,7 @@ $btn-box-shadow: 0 2px 2px rgba($black, 0.15) !default;
 $btn-focus-width: $input-btn-focus-width !default;
 $btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
 $btn-disabled-opacity: 1 !default;
-$btn-active-box-shadow: $input-btn-focus-box-shadow !default;
+$btn-active-box-shadow: $box-shadow !default;
 
 $btn-link-disabled-color: $gray-600 !default;
 
