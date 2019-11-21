@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Button } from 'reactstrap';
+import { FaBeer } from 'react-icons/fa';
 import Logo from '../src/Logos';
-import AppDrawer from '../src/AppDrawer';
-import AppDrawerToggle from '../src/AppDrawerToggle';
 import Dashboard from '../src/Dashboard';
 import DashboardMain from '../src/DashboardMain';
 import DashboardSidebar from '../src/DashboardSidebar';
@@ -15,16 +15,19 @@ storiesOf('App', module).add('Dimmer', () => <DashboardDimmer isOpen />);
 
 storiesOf('App', module).add('Sidebar', () => <DashboardSidebar />);
 
-storiesOf('App', module).add('Drawer', () => <AppDrawer isOpen="true" />);
-
-storiesOf('App', module).add('Toggle', () => <AppDrawerToggle />);
-
-// storiesOf('App', module).add('Nav', () => <AppNav items={} />);
-
 storiesOf('App', module).add('Full Example', () => (
   <Dashboard>
     <DashboardSidebar>
-      <Logo logoStyle="logomark-color" />
+      <div className="py-4">
+        <Logo logoStyle="logomark-color" />
+      </div>
+      <div className="pb-4">
+        <Button color="outline-primary">
+          <FaBeer />
+          {' '}
+Create New Site
+        </Button>
+      </div>
       <DashboardNav />
     </DashboardSidebar>
     <DashboardMain>

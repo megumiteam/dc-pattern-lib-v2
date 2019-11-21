@@ -2,7 +2,7 @@ import React from 'react';
 import { Col } from 'reactstrap';
 
 const DashboardMain = ({ children }: { children: React.Node }) => (
-  <Col sm="10" className="ml-auto">
+  <Col md="9" className="ml-sm-auto">
     {children}
   </Col>
 );
