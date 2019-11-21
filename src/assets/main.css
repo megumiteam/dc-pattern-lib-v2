@@ -8611,28 +8611,6 @@ button {
   .clickable a:hover {
     text-decoration: none; }
 
-*:disabled {
-  pointer-events: none; }
-
-/**
- * Sizing Utilities
- */
-/**
- * Admin Layout
- */
-.app-outer.open .app-drawer {
-  transform: translateX(0); }
-
-.app-outer.open .app-dimmer {
-  opacity: 1;
-  pointer-events: initial; }
-
-.app-right {
-  overflow-x: hidden; }
-
-.app-inner {
-  margin-bottom: 2rem; }
-
 .global-nav,
 .global-nav__inner,
 .global-nav__secondary {
@@ -8652,23 +8630,6 @@ button {
 .account-avatar {
   padding: 2px;
   background: #fff; }
-
-.app-nav .modal-dialog {
-  width: 250px; }
-
-.app-nav .modal-content {
-  border-radius: 0;
-  border: none; }
-
-.app-nav.left .modal-dialog {
-  margin: 0; }
-
-.app-nav.left .modal-dialog {
-  transform: translateX(-100%);
-  transition: opacity 0.15s linear, transform 0.15s ease-in-out; }
-
-.app-nav.left .show .modal-dialog {
-  transform: translateX(0); }
 
 /**
  * Product Schemes

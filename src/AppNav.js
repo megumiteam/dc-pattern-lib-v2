@@ -18,6 +18,7 @@ type Props = {
   active: boolean,
   dark: boolean,
 };
+
 type State = {
   appDrawer: boolean,
 };
@@ -39,6 +40,10 @@ export default class AppNav extends Component<Props, State> {
   }
 
   render() {
+    if (!this.props.items) {
+      return null;
+    }
+
     const NavItems = () => {
       const items = this.props.items.navItems.map(item => (
         <NavItem key={item.name}>

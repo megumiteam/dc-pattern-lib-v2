@@ -1,11 +1,8 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
-
 import { Input, Label } from 'reactstrap';
-import '../src/assets/main.css';
 
 storiesOf('Switch', module)
   .addDecorator(withKnobs)
