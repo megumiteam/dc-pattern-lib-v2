@@ -7,7 +7,7 @@ type Props = {
   isOpen: boolean,
 };
 
-export default class AppDimmer extends React.Component<Props> {
+export default class DashboardDimmer extends React.Component<Props> {
   render() {
     return (
       <Modal

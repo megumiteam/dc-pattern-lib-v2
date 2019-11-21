@@ -1,9 +1,15 @@
 import React from 'react';
-import { Col } from 'reactstrap';
+import { Nav, NavLink } from 'reactstrap';
 
 const DashboardNav = ({ children }: { children: React.Node }) => (
-  <Col sm="9" className="ml-auto">
+  <div>
+    <Nav vertical>
+      <NavLink href="#">Sites</NavLink>
+      <NavLink href="#">Teams</NavLink>
+      <NavLink href="#">Account</NavLink>
+      <NavLink href="#">Guides</NavLink>
+    </Nav>
     {children}
-  </Col>
+  </div>
 );
 export default DashboardNav;
