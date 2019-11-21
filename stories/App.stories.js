@@ -5,4 +5,4 @@ import AppDimmer from '../src/AppDimmer';
 // target
 import '../src/assets/main.css';
 
-storiesOf('App Dimmer', module).add('Open', () => <AppDimmer isOpen />);
+storiesOf('App', module).add('Dimmer', () => <AppDimmer isOpen />);
