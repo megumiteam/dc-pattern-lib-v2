@@ -162,7 +162,8 @@ const LogoSvg = ({ logoStyle }: { logoStyle: string }) => {
   }
 };
 
-export const Logo = ({ logoStyle, className = '' }: { logoStyle: string, className?: string }) => (
+type Props = { logoStyle: string, className?: string };
+const Logo = ({ logoStyle, className = '' }: Props) => (
   <div className={`logo--shifter logo-${logoStyle} ${className || 'logomark-color'}`}>
     <LogoSvg logoStyle={logoStyle} />
   </div>

@@ -8802,35 +8802,3 @@ button {
 /**
  * Stripe Elements
  */
-/**
- * Sites List
- */
-.sites a {
-  text-decoration: none; }
-
-.sites th.screenshot {
-  width: 1px; }
-  .sites th.screenshot img {
-    width: 4em; }
-    @media (min-width: 768px) {
-      .sites th.screenshot img {
-        width: 6rem; } }
-
-/**
- * Tables
- */
-th.fit,
-td.fit {
-  width: 1px; }
-
-th {
-  font-weight: 500; }
-
-/**
- * Overflows
- */
-.overflow-x-hidden {
-  overflow-x: hidden; }
-
-.overflow-y-hidden {
-  overflow-y: hidden; }

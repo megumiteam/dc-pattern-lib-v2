@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Table } from 'reactstrap';
-import { Logo } from '../src/Logos';
+import Logo from '../src/Logos';
 
 storiesOf('Logos', module).add('Styles', () => (
   <Table>

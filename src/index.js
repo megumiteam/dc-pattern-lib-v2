@@ -9,6 +9,7 @@ import DashboardCard from './DashboardCard';
 import DashboardCardGroup from './DashboardCardGroup';
 import DashboardCardLoader from './DashboardCardLoader';
 import DashboardAlert from './DashboardAlert';
+import Logo from './Logos';
 
 export {
   AppMain,
@@ -21,4 +22,5 @@ export {
   DashboardCardGroup,
   DashboardCardLoader,
   DashboardAlert,
+  Logo,
 };

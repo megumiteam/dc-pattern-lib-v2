@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { Modal } from 'reactstrap';
-import { Logo } from './Logos';
+import Logo from './Logos';
 
 type Props = {
   isOpen: boolean,
