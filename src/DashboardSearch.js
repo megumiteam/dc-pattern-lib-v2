@@ -7,11 +7,11 @@ import { FaSearch } from 'react-icons/fa';
 const DashboardSearch = () => (
   <InputGroup>
     <InputGroupAddon addonType="prepend">
-      <InputGroupText>
+      <InputGroupText className="border-0 shadow-none">
         <FaSearch />
       </InputGroupText>
     </InputGroupAddon>
-    <Input placeholder="Search" />
+    <Input className="border-0 shadow-none" placeholder="Search" />
   </InputGroup>
 );
 export default DashboardSearch;
