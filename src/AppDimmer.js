@@ -17,7 +17,7 @@ export default class AppDimmer extends React.Component<Props> {
         contentClassName="text-center border-0 shadow-none bg-transparent"
       >
         <div className="spin mx-auto" style={{ width: '40px' }}>
-          <Logo logoStyle="logomark-color" />
+          <Logo logoStyle="logomark-ko-white" />
         </div>
       </Modal>
     );
