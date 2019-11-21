@@ -1,7 +1,12 @@
 import React from 'react';
 
 const DefaultLogo = () => (
-  <svg id="ShifterLogomarkWhite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.37 115.36">
+  <svg
+    width="25"
+    id="ShifterLogomarkWhite"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 90.37 115.36"
+  >
     <path
       d="M51.86,78.9H34.15V30H51.86ZM64.55,30V57L90.37,30ZM43,115.36A28.24,28.24,0,0,0,71.23,87.09H14.78A28.24,28.24,0,0,0,43,115.36ZM22.68,46.54A9.48,9.48,0,1,0,13.2,56,9.48,9.48,0,0,0,22.68,46.54ZM26.4,0H0V26.44H26.4Z"
       style={{ fill: '#fff' }}
@@ -22,6 +27,21 @@ const LogoKoWhite = () => (
     />
   </svg>
 );
+
+const LogoKoBlack = () => (
+  <svg
+    width="25"
+    id="ShifterLogomarkBlack"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 90.37 115.36"
+  >
+    <path
+      d="M51.86,78.9H34.15V30H51.86ZM64.55,30V57L90.37,30ZM43,115.36A28.24,28.24,0,0,0,71.23,87.09H14.78A28.24,28.24,0,0,0,43,115.36ZM22.68,46.54A9.48,9.48,0,1,0,13.2,56,9.48,9.48,0,0,0,22.68,46.54ZM26.4,0H0V26.44H26.4Z"
+      style={{ fill: '#000' }}
+    />
+  </svg>
+);
+
 const LogoColor = () => (
   <svg
     width="25"
@@ -127,6 +147,8 @@ const LogoSvg = ({ logoStyle }: { logoStyle: string }) => {
   switch (logoStyle) {
     case 'logomark-ko-white':
       return <LogoKoWhite />;
+    case 'logomark-ko-black':
+      return <LogoKoBlack />;
     case 'logomark-color':
       return <LogoColor />;
     case 'primary-ko-white':
@@ -140,9 +162,9 @@ const LogoSvg = ({ logoStyle }: { logoStyle: string }) => {
   }
 };
 
-export const Logo = ({ LogoStyle, className = '' }: { LogoStyle: string, className?: string }) => (
-  <div className={`logo--shifter logo-${LogoStyle} ${className || 'logomark-color'}`}>
-    <LogoSvg logoStyle={LogoStyle} />
+export const Logo = ({ logoStyle, className = '' }: { logoStyle: string, className?: string }) => (
+  <div className={`logo--shifter logo-${logoStyle} ${className || 'logomark-color'}`}>
+    <LogoSvg logoStyle={logoStyle} />
   </div>
 );
 
