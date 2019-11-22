@@ -22,3 +22,26 @@
     transition:.25s;
   }
 }
+
+.nav-sidebar {
+  font-size:1.35rem;
+  color: $body-color;
+  width:100%;
+}
+
+.nav-sidebar__link {
+  width:100%;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+    transition: .25s;
+  }
+}
+
+.nav-tabs .nav-link {
+  &:hover {
+    background-color: rgba($pink-lighter, 0.35);
+    transition:.25s;
+  }
+}
