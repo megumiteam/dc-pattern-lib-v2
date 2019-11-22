@@ -1,10 +1,6 @@
 // import './assets/main.css';
-import AppMain from './AppMain';
-import AppDimmer from './AppDimmer';
-import AppDrawer from './AppDrawer';
-import AppNav from './AppNav';
-import AppSidebar from './AppSidebar';
-import AppDrawerToggle from './AppDrawerToggle';
+import DashboardDimmer from './DashboardDimmer';
+import DashboardNav from './DashboardNav';
 import DashboardCard from './DashboardCard';
 import DashboardCardGroup from './DashboardCardGroup';
 import DashboardCardLoader from './DashboardCardLoader';
@@ -12,12 +8,8 @@ import DashboardAlert from './DashboardAlert';
 import Logo from './Logos';
 
 export {
-  AppMain,
-  AppDimmer,
-  AppDrawer,
-  AppNav,
-  AppSidebar,
-  AppDrawerToggle,
+  DashboardDimmer,
+  DashboardNav,
   DashboardCard,
   DashboardCardGroup,
   DashboardCardLoader,

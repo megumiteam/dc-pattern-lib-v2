@@ -1,0 +1,8 @@
+.avatar {
+    border:1px $gray solid;
+&:hover
+&:focus {
+    border:3px $pink solid;
+    transition: .25s;
+}
+}

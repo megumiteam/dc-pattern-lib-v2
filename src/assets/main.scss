@@ -11,6 +11,7 @@
 @import "nav";
 @import "alert";
 @import "custom"; // Custom Styles, not twbs/bootstrap related.
+@import "avatar";
 
 ul.navbar-nav {
   margin: 0 (-$navbar-padding-x + -$navbar-nav-link-padding-x);
@@ -93,48 +94,6 @@ button {
   }
 }
 
-* {
-  &:disabled {
-    pointer-events: none;
-  }
-}
-
-/**
- * Sizing Utilities
- */
-
-//  .vh-100 {
-//    min-height: 100vh;
-//  }
-
-// .vw-100 {
-//   min-height: 100vw;
-// }
-
-/**
- * Admin Layout
- */
-.app-outer {
-  &.open {
-    .app-drawer {
-      transform: translateX(0);
-    }
-
-    .app-dimmer {
-      opacity: 1;
-      pointer-events: initial;
-    }
-  }
-}
-
-.app-right {
-  overflow-x: hidden;
-}
-
-.app-inner {
-  margin-bottom: $spacer * 2;
-}
-
 .global-nav,
 .global-nav__inner,
 .global-nav__secondary {
@@ -158,35 +117,6 @@ button {
 .account-avatar {
   padding: 2px;
   background: $white;
-}
-
-// Modal Off Canvas
-.app-nav {
-  .modal-dialog {
-    width: 250px;
-  }
-
-  .modal-content {
-    border-radius: 0;
-    border: none;
-  }
-
-  &.left {
-    .modal-dialog {
-      margin: 0;
-    }
-
-    .modal-dialog {
-      transform: translateX(-100%);
-      transition: opacity 0.15s linear, transform 0.15s ease-in-out;
-    }
-
-    .show {
-      .modal-dialog {
-        transform: translateX(0);
-      }
-    }
-  }
 }
 
 /**
@@ -282,4 +212,18 @@ button {
       @extend .align-self-center;
     }
   }
+}
+
+// Spacing Helper
+.mb-gutter {
+  margin-bottom: $grid-gutter-width / 2;
+}
+
+.mt-gutter {
+  margin-top: $grid-gutter-width / 2;
+}
+
+.my-gutter {
+  margin-top: $grid-gutter-width / 2;
+  margin-bottom: $grid-gutter-width / 2;
 }
