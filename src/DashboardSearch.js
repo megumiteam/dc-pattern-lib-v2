@@ -14,4 +14,5 @@ const DashboardSearch = () => (
     <Input className="border-0 shadow-none" placeholder="Search" />
   </InputGroup>
 );
+
 export default DashboardSearch;
