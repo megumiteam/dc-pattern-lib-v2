@@ -23,25 +23,54 @@
   }
 }
 
+//dashboard sidebar styling
+
 .nav-sidebar {
-  font-size:1.35rem;
+  font-size:1.25rem;
   color: $body-color;
   width:100%;
 }
+//dashbaord sidebar links
 
 .nav-sidebar__link {
   width:100%;
-
-  &:hover,
-  &:focus {
+  border-left:.25rem solid $pink;
+  &:hover {
     color: $pink;
     transition: .25s;
   }
+  &:focus {
+    border-color: $pink;
+  }
 }
 
+//dashboard nav link styling
+
 .nav-tabs .nav-link {
-  &:hover {
-    background-color: rgba($pink-lighter, 0.35);
+  &:hover
+   {
+    background-color: rgba($purple-light, 0.25);
     transition:.25s;
   }
+  &:focus {
+    background-color: rgba($purple-light, 0.65)
+  }
+}
+
+//dashbaord nav icon
+
+.nav-sidebar__icon {
+  display:inline;
+
+}
+
+.nav-sidebar__icon-container {
+  display:inline-block;
+  background-color:$purple-light;
+  height:30px;
+  width:30px;
+
+&:focus {
+  background-color:$pink;
+}
 }
