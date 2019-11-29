@@ -8539,14 +8539,16 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   animation: spin 1.25s linear infinite; }
 
 .avatar {
-  border: 1px #c0c0c0 solid; }
-  .avatar:hover .avatar:focus {
-    border: 3px #f80759 solid;
-    transition: .25s; }
+  box-shadow: 0 0 3px #DAD2D7; }
+  .avatar:hover {
+    box-shadow: 0 0 8px #f80759;
+    transition: .25s;
+    cursor: pointer; }
 
 .notifications__bell {
   font-size: 1.25rem;
-  color: #c0c0c0; }
+  color: #c0c0c0;
+  margin-top: .5rem; }
   .notifications__bell:hover {
     color: #f80759;
     transition: .25s;
