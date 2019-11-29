@@ -1,14 +1,9 @@
 .notifications__bell {
     font-size: 1.25rem;
-    margin-top:-1rem;
+    color:$gray;
 &:hover {
     color:$pink;
-}
-}
-.notifications__bell-bg {
-    width:2rem;
-    height:2rem;
-&:hover {
-    background-color: $purple-light;
+    transition:.25s;
+    cursor: pointer;
 }
 }

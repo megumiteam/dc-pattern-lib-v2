@@ -8546,15 +8546,11 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 
 .notifications__bell {
   font-size: 1.25rem;
-  margin-top: -1rem; }
+  color: #c0c0c0; }
   .notifications__bell:hover {
-    color: #f80759; }
-
-.notifications__bell-bg {
-  width: 2rem;
-  height: 2rem; }
-  .notifications__bell-bg:hover {
-    background-color: #DAD2D7; }
+    color: #f80759;
+    transition: .25s;
+    cursor: pointer; }
 
 ul.navbar-nav {
   margin: 0 -0.5rem; }
