@@ -12,6 +12,7 @@
 @import "alert";
 @import "custom"; // Custom Styles, not twbs/bootstrap related.
 @import "avatar";
+@import "notifications";
 
 ul.navbar-nav {
   margin: 0 (-$navbar-padding-x + -$navbar-nav-link-padding-x);

@@ -1,29 +1,37 @@
 import React from 'react';
 import { Nav, NavLink } from 'reactstrap';
-import { FaBeer } from 'react-icons/fa';
+import Icon from './Icons';
 
 const DashboardNav = ({ children }: { children: React.Node }) => (
   <div className="w-100">
     <Nav className="nav-sidebar" tabs vertical>
-      <NavLink className="nav-sidebar__link mt-3 pl-5" href="#">
-        <FaBeer className="mr-4" />
+      <NavLink className="nav-sidebar__link mt-3 pl-3" href="#">
+        <div className="nav-sidebar__icon-container rounded-circle text-center align-middle mr-3">
+          <Icon iconStyle="icon-globe" className="nav-sidebar__icon" />
+        </div>
         {' '}
-Sites
+        Sites
       </NavLink>
-      <NavLink className="nav-sidebar__link mt-3 pl-5" href="#">
-        <FaBeer className="mr-4" />
+      <NavLink className="nav-sidebar__link mt-3 pl-3" href="#">
+        <div className="nav-sidebar__icon-container rounded-circle text-center mr-3">
+          <Icon iconStyle="icon-teams" className="nav-sidebar__icon" />
+        </div>
         {' '}
-Teams
+        Teams
       </NavLink>
-      <NavLink className="nav-sidebar__link mt-3 pl-5" href="#">
-        <FaBeer className="mr-4" />
+      <NavLink className="nav-sidebar__link mt-3 pl-3" href="#">
+        <div className="nav-sidebar__icon-container rounded-circle text-center mr-3">
+          <Icon iconStyle="icon-account" className="nav-sidebar__icon" />
+        </div>
         {' '}
-Account
+        Account
       </NavLink>
-      <NavLink className="nav-sidebar__link mt-3 pl-5" href="#">
-        <FaBeer className="mr-4" />
+      <NavLink className="nav-sidebar__link mt-3 pl-3" href="#">
+        <div className="nav-sidebar__icon-container rounded-circle text-center mr-3">
+          <Icon iconStyle="icon-map" className="nav-sidebar__icon" />
+        </div>
         {' '}
-Guides
+        Guides
       </NavLink>
     </Nav>
     {children}

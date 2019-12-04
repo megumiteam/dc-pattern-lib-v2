@@ -4958,7 +4958,7 @@ a.close.disabled {
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #2e1627; }
+  background-color: #DAD2D7; }
   .modal-backdrop.fade {
     opacity: 0; }
   .modal-backdrop.show {
@@ -8334,19 +8334,36 @@ a.text-gray-100:hover, a.text-gray-100:focus {
     transition: .25s; }
 
 .nav-sidebar {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   color: #2e1627;
   width: 100%; }
 
 .nav-sidebar__link {
-  width: 100%; }
-  .nav-sidebar__link:hover, .nav-sidebar__link:focus {
+  width: 100%;
+  border-left: 0.25rem solid #f80759; }
+  .nav-sidebar__link:hover {
     color: #f80759;
     transition: .25s; }
+  .nav-sidebar__link:focus {
+    border-color: #f80759; }
 
 .nav-tabs .nav-link:hover {
-  background-color: rgba(255, 192, 192, 0.35);
+  background-color: rgba(218, 210, 215, 0.25);
   transition: .25s; }
+
+.nav-tabs .nav-link:focus {
+  background-color: rgba(218, 210, 215, 0.65); }
+
+.nav-sidebar__icon {
+  display: inline; }
+
+.nav-sidebar__icon-container {
+  display: inline-block;
+  background-color: #DAD2D7;
+  height: 30px;
+  width: 30px; }
+  .nav-sidebar__icon-container:focus {
+    background-color: #f80759; }
 
 .alert {
   color: #451D39; }
@@ -8522,10 +8539,20 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   animation: spin 1.25s linear infinite; }
 
 .avatar {
-  border: 1px #c0c0c0 solid; }
-  .avatar:hover .avatar:focus {
-    border: 3px #f80759 solid;
-    transition: .25s; }
+  box-shadow: 0 0 3px #DAD2D7; }
+  .avatar:hover {
+    box-shadow: 0 0 8px #f80759;
+    transition: .25s;
+    cursor: pointer; }
+
+.notifications__bell {
+  font-size: 1.25rem;
+  color: #c0c0c0;
+  margin-top: .5rem; }
+  .notifications__bell:hover {
+    color: #f80759;
+    transition: .25s;
+    cursor: pointer; }
 
 ul.navbar-nav {
   margin: 0 -0.5rem; }
