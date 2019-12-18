@@ -1,5 +1,5 @@
 // Import Fonts
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Code+Pro:200,300,400,500,600,700,900");
+// @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Code+Pro:200,300,400,500,600,700,900");
 
 // Variables
 //
@@ -46,10 +46,11 @@ $indigo: #6610f2;
 $purple: #bc519e;
 $purple-dark: #451D39;
 $purple-darker: #2e1627;
-$purple-light: #DAD2D7;
+$purple-light: #dad2d7;
 $purple-lighter: #FEEEF4;
 $pink: #f80759;
 $pink-lighter: #FFC0C0;
+$pink-light: #ffc0c0;
 $magenta: $pink;
 $red-light: #ff6477 !default;
 $red: #ff5857 !default;
@@ -113,10 +114,13 @@ $theme-colors: map-merge(
     "yellow": $yellow,
     "dark": $dark,
     "white": $white,
+    "purple-lighter": $purple-lighter,
+    "purple-light": $purple-light,
     "purple-dark": $purple-dark,
     "magenta": $magenta,
     "green": $green,
     "purple": $purple,
+    "pink-light": $pink-light,
     "blue": $blue,
     "transparent": $transparent,
     "gray-100": $gray-100
@@ -197,7 +201,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg: $gray-light !default;
-$body-color: $purple-darker !default;
+$body-color: $purple-dark !default;
 
 // Links
 //
@@ -214,7 +218,7 @@ $emphasized-link-hover-darken-percentage: 15% !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom: 1rem !default;
+$paragraph-margin-bottom: 2.1875rem !default;
 
 // Grid breakpoints
 //
@@ -260,7 +264,7 @@ $container-max-widths: map-merge(
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 40px !default;
+$grid-gutter-width: 30px !default;
 
 // Components
 //
@@ -279,9 +283,9 @@ $border-radius-rounded: 0.25rem;
 
 $rounded-pill: 50rem !default;
 
-$box-shadow-sm: 0 0.125rem .25rem rgba($purple-darker, 0.15) !default;
-$box-shadow: 0 0.15rem .5rem 0.125rem rgba($purple, 0.25) !default;
-$box-shadow-lg: 0 .125rem .625rem 0 rgba(69,29,57,0.25), 0 .5rem 2rem .125rem rgba(69,29,57,0.25) !default;
+$box-shadow-sm: 0 0.125rem .25rem rgba($black, 0.25) !default;
+$box-shadow: 0 0 0.125rem 0 rgba($black, 0.25), 0 0.125rem 0.125rem 0 rgba($black, 0.25) !default;
+$box-shadow-lg: 0 .125rem .625rem 0 rgba($black, 0.25), 0 .5rem 2rem .125rem rgba($black, 0.25) !default;
 
 $component-active-color: inherit !default;
 $component-active-bg: rgba($black, 0.1) !default;
@@ -309,14 +313,14 @@ $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: ($font-size-base * 1.25) !default;
 $font-size-sm: ($font-size-base * 0.875) !default;
 
-$font-weight-lighter: lighter !default;
+$font-weight-lighter: 100 !default;
 $font-weight-light: 200 !default;
 $font-weight-normal: 300 !default;
 $font-weight-bold: 500 !default;
 $font-weight-bolder: bolder !default;
 
 $font-weight-base: $font-weight-normal !default;
-$line-height-base: 1.5 !default;
+$line-height-base: 1.75 !default;
 
 $h1-font-size: $font-size-base * 2 !default;
 $h2-font-size: $font-size-base * 1.75 !default;
@@ -325,21 +329,21 @@ $h4-font-size: $font-size-base * 1.25 !default;
 $h5-font-size: $font-size-base * 1.125 !default;
 $h6-font-size: $font-size-base !default;
 
-$headings-margin-bottom: ($spacer / 2) !default;
+$headings-margin-bottom: ($spacer / 1) !default;
 $headings-font-family: inherit !default;
 $headings-font-weight: $font-weight-normal;
 $headings-line-height: 1.4 !default;
 $headings-color: inherit !default;
 
-$display1-size: 6rem !default;
-$display2-size: 5.5rem !default;
-$display3-size: 4.5rem !default;
-$display4-size: 3.5rem !default;
+$display1-size: 2.5rem !default;
+$display2-size: 1.875rem !default;
+$display3-size: 1.562rem !default;
+$display4-size: 1.25rem !default;
 
-$display1-weight: 300 !default;
-$display2-weight: 300 !default;
-$display3-weight: 300 !default;
-$display4-weight: 300 !default;
+$display1-weight: 400 !default;
+$display2-weight: 400 !default;
+$display3-weight: 200 !default;
+$display4-weight: 100 !default;
 $display-line-height: $headings-line-height !default;
 
 $lead-font-size: ($font-size-base * 1.25) !default;
@@ -399,7 +403,7 @@ $card-columns-margin: $card-spacer-y !default;
 $table-cell-padding: 1rem !default;
 $table-cell-padding-sm: 0.3rem !default;
 
-$table-color: $body-color !default;
+$table-color: $purple-dark !default;
 $table-bg: transparent !default;
 $table-accent-bg: rgba($black, 0.05) !default;
 $table-hover-color: $table-color !default;
@@ -430,7 +434,7 @@ $table-border-level: -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y: 0.375rem !default;
+$input-btn-padding-y: 0.5rem !default;
 $input-btn-padding-x: 1rem !default;
 $input-btn-font-size: 0.8125rem !default;
 $input-btn-line-height: $line-height-base !default;
@@ -485,7 +489,7 @@ $btn-block-spacing-y: 0.5rem !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius: $border-radius-rounded !default;
-$btn-border-radius-lg: $border-radius-lg !default;
+$btn-border-radius-lg: $border-radius-rounded !default;
 $btn-border-radius-sm: $border-radius-sm !default;
 
 $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
