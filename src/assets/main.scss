@@ -13,16 +13,10 @@
 @import "custom"; // Custom Styles, not twbs/bootstrap related.
 @import "avatar";
 @import "notifications";
+@import "utilities";
 
 ul.navbar-nav {
   margin: 0 (-$navbar-padding-x + -$navbar-nav-link-padding-x);
-}
-
-@mixin bg-gradient-variant($parent, $color) {
-  #{$parent} {
-    background: $color
-      linear-gradient(90deg, mix($body-bg, $color, 15%), $color) repeat-x !important;
-  }
 }
 
 /**

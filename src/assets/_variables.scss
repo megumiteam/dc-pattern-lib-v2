@@ -990,8 +990,8 @@ $alert-border-radius: $border-radius !default;
 $alert-link-font-weight: $font-weight-bold !default;
 $alert-border-width: 1px !default;
 
-$alert-bg-level: 0 !default;
-$alert-border-level: 10 !default;
+$alert-bg-level: -10 !default;
+$alert-border-level: 0 !default;
 $alert-color-level: 0 !default;
 
 // Progress bars
