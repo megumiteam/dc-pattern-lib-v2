@@ -1,4 +1,13 @@
-// Shadows
+// Overflow
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+// Shadow
 .shadow--hover {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   
@@ -7,7 +16,17 @@
   }
 }
 
-// Layouts
+// Layout
+.section-row {
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
+
+  &-lg {
+    padding-top: $grid-gutter-width * 2;
+    padding-bottom: $grid-gutter-width * 2;
+  }
+}
+
 .mb-gutter {
   margin-bottom: $grid-gutter-width;
 }
