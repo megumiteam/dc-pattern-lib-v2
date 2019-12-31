@@ -8895,9 +8895,11 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 .section-row {
   padding-top: 30px;
   padding-bottom: 30px; }
-  .section-row-lg {
+  .section-row--lg {
     padding-top: 60px;
     padding-bottom: 60px; }
+    .section-row--lg + .section-row--lg {
+      padding-top: 30px; }
 
 .mb-gutter {
   margin-bottom: 30px; }
