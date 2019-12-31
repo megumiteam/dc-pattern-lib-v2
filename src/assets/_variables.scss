@@ -252,7 +252,7 @@ $container-max-widths: map-merge(
     sm: 540px,
     md: 720px,
     lg: 960px,
-    xl: 1140px
+    xl: 1200px
   ),
   $container-max-widths
 );
@@ -337,13 +337,13 @@ $headings-color: inherit !default;
 
 $display1-size: 2.5rem !default;
 $display2-size: 1.875rem !default;
-$display3-size: 1.562rem !default;
+$display3-size: 1.6rem !default;
 $display4-size: 1.25rem !default;
 
-$display1-weight: 400 !default;
-$display2-weight: 400 !default;
-$display3-weight: 200 !default;
-$display4-weight: 100 !default;
+$display1-weight: 600 !default;
+$display2-weight: 600 !default;
+$display3-weight: 600 !default;
+$display4-weight: 600 !default;
 $display-line-height: $headings-line-height !default;
 
 $lead-font-size: ($font-size-base * 1.25) !default;
