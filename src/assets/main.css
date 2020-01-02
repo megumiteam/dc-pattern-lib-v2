@@ -8883,6 +8883,18 @@ a.text-gray-100:hover, a.text-gray-100:focus {
     transition: .25s;
     cursor: pointer; }
 
+.h-underline {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative; }
+  .h-underline:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    border-bottom: 5px solid #451D39; }
+
 .overflow-x-hidden {
   overflow-x: hidden; }
 
@@ -8903,6 +8915,9 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 
 .mb-gutter {
   margin-bottom: 30px; }
+
+.mh-400 {
+  min-height: 400px; }
 
 ul.navbar-nav {
   margin: 0 -0.5rem; }
