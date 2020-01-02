@@ -146,13 +146,15 @@ button {
 
     &.hover,
     &:hover {
-      background-color: $purple-darker !important;
+      background-color: $purple !important;
+      border-color: $purple !important;
     }
 
     &:focus,
     &.focus {
       background-color: $purple !important;
       border-color: $purple !important;
+      box-shadow:0 0 .5rem .25rem rgba($pink-light, 0.75) !important;
     }
 
     &:active,
@@ -174,15 +176,17 @@ button {
 
     &.hover,
     &:hover {
-      background-color: $purple-dark !important;
+      background-color: $purple !important;
+      border-color: $purple !important;
       color: $white;
     }
 
     &:focus,
     &.focus {
+      color:$white;
       background-color: $purple !important;
       border-color: $purple !important;
-      color: $white;
+      box-shadow:0 0 .5rem .25rem rgba($pink-light, 0.75) !important;
     }
 
     &:active,

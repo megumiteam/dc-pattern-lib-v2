@@ -9098,12 +9098,14 @@ button {
   [scheme="shifter"] .btn-primary.hover, [scheme="shifter"] .btn-primary:hover,
   .shifter-ui .btn-primary.hover,
   .shifter-ui .btn-primary:hover {
-    background-color: #2e1627 !important; }
+    background-color: #bc519e !important;
+    border-color: #bc519e !important; }
   [scheme="shifter"] .btn-primary:focus, [scheme="shifter"] .btn-primary.focus,
   .shifter-ui .btn-primary:focus,
   .shifter-ui .btn-primary.focus {
     background-color: #bc519e !important;
-    border-color: #bc519e !important; }
+    border-color: #bc519e !important;
+    box-shadow: 0 0 0.5rem 0.25rem rgba(255, 192, 192, 0.75) !important; }
   [scheme="shifter"] .btn-primary:active, [scheme="shifter"] .btn-primary.active,
   .shifter-ui .btn-primary:active,
   .shifter-ui .btn-primary.active {
@@ -9153,14 +9155,16 @@ button {
   [scheme="shifter"] .btn-secondary.hover, [scheme="shifter"] .btn-secondary:hover,
   .shifter-ui .btn-secondary.hover,
   .shifter-ui .btn-secondary:hover {
-    background-color: #451D39 !important;
+    background-color: #bc519e !important;
+    border-color: #bc519e !important;
     color: #fff; }
   [scheme="shifter"] .btn-secondary:focus, [scheme="shifter"] .btn-secondary.focus,
   .shifter-ui .btn-secondary:focus,
   .shifter-ui .btn-secondary.focus {
+    color: #fff;
     background-color: #bc519e !important;
     border-color: #bc519e !important;
-    color: #fff; }
+    box-shadow: 0 0 0.5rem 0.25rem rgba(255, 192, 192, 0.75) !important; }
   [scheme="shifter"] .btn-secondary:active, [scheme="shifter"] .btn-secondary.active,
   .shifter-ui .btn-secondary:active,
   .shifter-ui .btn-secondary.active {
