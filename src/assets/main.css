@@ -8542,8 +8542,8 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   .btn:hover {
     box-shadow: 0 0 0.125rem 0 rgba(0, 0, 0, 0.25), 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.25); }
   .btn.disabled, .btn:disabled {
-    background-color: #c0c0c0 !important;
-    border-color: #c0c0c0 !important; }
+    background-color: #e4e4e4 !important;
+    border-color: #e4e4e4 !important; }
 
 .btn-link {
   padding: 0;
@@ -8876,7 +8876,7 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 
 .notifications__bell {
   font-size: 1.25rem;
-  color: #c0c0c0;
+  color: #e4e4e4;
   margin-top: .5rem; }
   .notifications__bell:hover {
     color: #f80759;
@@ -9133,7 +9133,7 @@ button {
   [scheme="shifter"] .btn-secondary:disabled, [scheme="shifter"] .btn-secondary.disabled,
   .shifter-ui .btn-secondary:disabled,
   .shifter-ui .btn-secondary.disabled {
-    color: #c0c0c0;
+    color: #e4e4e4;
     background-color: transparent !important; }
   [scheme="shifter"] .btn-secondary.hover, [scheme="shifter"] .btn-secondary:hover,
   .shifter-ui .btn-secondary.hover,
