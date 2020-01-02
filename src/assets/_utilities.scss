@@ -40,8 +40,8 @@
   padding-bottom: $grid-gutter-width;
 
   &--lg {
-    padding-top: $grid-gutter-width * 2;
-    padding-bottom: $grid-gutter-width * 2;
+    padding-top: $grid-gutter-width * 3;
+    padding-bottom: $grid-gutter-width * 3;
 
     + .section-row--lg {
       padding-top: $grid-gutter-width;
