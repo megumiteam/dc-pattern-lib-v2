@@ -10,7 +10,7 @@
 
 $transparent: transparent !default;
 $white: #fff !default;
-$gray: #c0c0c0 !default;
+$gray: #e4e4e4 !default;
 $gray-light: #f5f5f5 !default;
 $gray-dark: #6a6a6a !default;
 $gray-100: #f5f5f5 !default;
@@ -283,9 +283,9 @@ $border-radius-rounded: 0.25rem;
 
 $rounded-pill: 50rem !default;
 
-$box-shadow-sm: 0 0.125rem .25rem rgba($black, 0.25) !default;
-$box-shadow: 0 0 0.125rem 0 rgba($black, 0.25), 0 0.125rem 0.125rem 0 rgba($black, 0.25) !default;
-$box-shadow-lg: 0 .125rem .625rem 0 rgba($black, 0.25), 0 .5rem 2rem .125rem rgba($black, 0.25) !default;
+$box-shadow-sm: 0 0.125rem .25rem rgba($purple-dark, 0.25) !default;
+$box-shadow: 0 0 0.125rem 0 rgba($purple-dark, 0.25), 0 0.125rem 0.125rem 0 rgba($purple-dark, 0.25) !default;
+$box-shadow-lg: 0 .125rem .625rem 0 rgba($purple-dark, 0.25), 0 .5rem 2rem .125rem rgba($purple-dark, 0.25) !default;
 
 $component-active-color: inherit !default;
 $component-active-bg: rgba($black, 0.1) !default;
