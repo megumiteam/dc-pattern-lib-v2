@@ -150,7 +150,7 @@ a {
   background-color: transparent; }
   a:hover {
     color: #0f060d;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -2831,9 +2831,9 @@ fieldset:disabled a.btn {
   text-decoration: none; }
   .btn-link:hover {
     color: #0f060d;
-    text-decoration: underline; }
+    text-decoration: none; }
   .btn-link:focus, .btn-link.focus {
-    text-decoration: underline;
+    text-decoration: none;
     box-shadow: none; }
   .btn-link:disabled, .btn-link.disabled {
     color: #5c5c5c;
