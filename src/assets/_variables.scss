@@ -200,7 +200,7 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg: $gray-light !default;
+$body-bg: $gray !default;
 $body-color: $purple-dark !default;
 
 // Links
@@ -283,9 +283,9 @@ $border-radius-rounded: 0.25rem;
 
 $rounded-pill: 50rem !default;
 
-$box-shadow-sm: 0 0.125rem .25rem rgba($purple-dark, 0.25) !default;
-$box-shadow: 0 0 0.125rem 0 rgba($purple-dark, 0.25), 0 0.125rem 0.125rem 0 rgba($purple-dark, 0.25) !default;
-$box-shadow-lg: 0 .125rem .625rem 0 rgba($purple-dark, 0.25), 0 .5rem 2rem .125rem rgba($purple-dark, 0.25) !default;
+$box-shadow-sm: 0 0.125rem .25rem rgba($purple-darker, 0.25) !default;
+$box-shadow: 0 0 0.125rem 0 rgba($purple-darker, 0.25), 0 0.125rem 0.125rem 0 rgba($purple-darker, 0.25) !default;
+$box-shadow-lg: 0 .125rem .625rem 0 rgba($purple-darker, 0.25), 0 .5rem 2rem .125rem rgba($purple-darker, 0.25) !default;
 
 $component-active-color: inherit !default;
 $component-active-bg: rgba($black, 0.1) !default;
