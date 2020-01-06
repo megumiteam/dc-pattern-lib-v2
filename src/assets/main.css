@@ -8933,6 +8933,8 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 
 .shadow--hover {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  .shadow--hover:hover {
+    transform: translatey(-0.25rem); }
 
 .clickable {
   cursor: pointer; }
