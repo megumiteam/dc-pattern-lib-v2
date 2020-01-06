@@ -8870,9 +8870,11 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 .avatar {
   box-shadow: 0 0 3px #dad2d7; }
   .avatar:hover {
-    box-shadow: 0 0 8px #f80759;
+    background-color: #451D39;
+    opacity: 0.75;
     transition: .25s;
-    cursor: pointer; }
+    cursor: pointer;
+    fill: rgba(69, 29, 57, 0.2); }
 
 .notifications__bell {
   font-size: 1.25rem;
