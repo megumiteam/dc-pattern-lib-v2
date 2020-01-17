@@ -56,7 +56,7 @@ export default class DashboardAlert extends React.Component<Props> {
       );
     }
 
-    if (type === 'error' || type === 'danger') {
+    if (type === 'error') {
       return (
         <UncontrolledAlert color="danger">
           <span className="pr-3 text-danger">
