@@ -1,8 +1,11 @@
 .avatar {
     box-shadow: 0 0 3px $purple-light;
-&:hover {
-    box-shadow: 0 0 8px $pink;
-    transition: .25s;
-    cursor: pointer;
+    &:hover {
+        background-color:$purple-dark;
+        opacity: 0.75;
+        // box-shadow: 0 0 0px $pink;
+        transition: .25s;
+        cursor: pointer;
+        fill:transparentize($purple-dark, 0.8);
 }
 }

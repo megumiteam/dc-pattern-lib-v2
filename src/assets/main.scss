@@ -133,6 +133,8 @@ $theme-gradients: (
 
   .btn-secondary {
     @include button-outline-variant($purple-dark);
+    
+    border-width:$border-width;
     background-color: transparent;
 
     &:disabled,
