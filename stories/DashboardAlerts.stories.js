@@ -8,27 +8,30 @@ import '../src/assets/main.css';
 
 storiesOf('Dashboard Alerts', module).add('Styles', () => (
   <Table className="shifter-ui">
-    <thead>
-      <tr>
-        <td>Info</td>
-        <td>Success</td>
-        <td>Warning</td>
-        <td>Error</td>
-      </tr>
-    </thead>
     <tbody>
       <tr>
         <td>
-          <DashboardAlert type="info">Primary Messages </DashboardAlert>
+          <DashboardAlert type="info">Use for general messages</DashboardAlert>
         </td>
+      </tr>
+      <tr>
         <td>
-          <DashboardAlert type="success">Successful action</DashboardAlert>
+          <DashboardAlert type="success">Use for successful operations</DashboardAlert>
         </td>
+      </tr>
+      <tr>
         <td>
-          <DashboardAlert type="warning">Something's missing</DashboardAlert>
+          <DashboardAlert type="warning">Use for important alerts</DashboardAlert>
         </td>
+      </tr>
+      <tr>
         <td>
-          <DashboardAlert type="error">Something's wrong</DashboardAlert>
+          <DashboardAlert type="error">Use for API errors or user errors</DashboardAlert>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <DashboardAlert type="danger">Warn users of the dangers of their action</DashboardAlert>
         </td>
       </tr>
     </tbody>
