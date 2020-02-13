@@ -288,8 +288,8 @@ $component-active-color: inherit !default;
 $component-active-bg: rgba($black, 0.1) !default;
 
 $caret-width: 0.3em !default;
-$caret-vertical-align: $caret-width * 0.85 !default;
-$caret-spacing: 0.5em !default;
+$caret-vertical-align: 0 !default;
+$caret-spacing: 0.75em !default;
 
 $transition-base: all 0.2s ease-in-out !default;
 $transition-fade: opacity 0.15s linear !default;
@@ -309,11 +309,11 @@ $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: ($font-size-base * 1.25) !default;
 $font-size-sm: ($font-size-base * 0.875) !default;
 
-$font-weight-lighter: 100 !default;
-$font-weight-light: 200 !default;
-$font-weight-normal: 300 !default;
+$font-weight-lighter: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
 $font-weight-bold: 500 !default;
-$font-weight-bolder: bolder !default;
+$font-weight-bolder: 700 !default;
 
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.875 !default;

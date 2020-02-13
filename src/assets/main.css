@@ -9112,9 +9112,6 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 .mb-gutter {
   margin-bottom: 30px; }
 
-ul.navbar-nav {
-  margin: 0 -0.5rem; }
-
 /**
  * Theme Gradients
  */
@@ -9125,8 +9122,8 @@ ul.navbar-nav {
   background-position: 20%; }
   .btn-gradient-primary:hover {
     color: #fff;
-    text-decoration: none;
-    opacity: 90%; }
+    opacity: 90%;
+    text-decoration: none; }
 
 .bg-gradient-primary {
   background: linear-gradient(to right, #bc519e, #f80759); }
@@ -9138,8 +9135,8 @@ ul.navbar-nav {
   background-position: 20%; }
   .btn-gradient-magenta:hover {
     color: #fff;
-    text-decoration: none;
-    opacity: 90%; }
+    opacity: 90%;
+    text-decoration: none; }
 
 .bg-gradient-magenta, [scheme="shifter"] .bg-primary,
 [scheme="shifter"] .bg-gradient-primary,
@@ -9154,11 +9151,24 @@ ul.navbar-nav {
   background-position: 20%; }
   .btn-gradient-purple-dark:hover {
     color: #fff;
-    text-decoration: none;
-    opacity: 90%; }
+    opacity: 90%;
+    text-decoration: none; }
 
 .bg-gradient-purple-dark {
   background: linear-gradient(to right, #451D39, #000); }
+
+.btn-gradient-purple-darker {
+  color: #fff;
+  background: linear-gradient(to right, #2e1627, #451D39);
+  background-size: 120%;
+  background-position: 20%; }
+  .btn-gradient-purple-darker:hover {
+    color: #fff;
+    opacity: 90%;
+    text-decoration: none; }
+
+.bg-gradient-purple-darker {
+  background: linear-gradient(to right, #2e1627, #451D39); }
 
 .btn-gradient-green {
   color: #fff;
@@ -9167,11 +9177,14 @@ ul.navbar-nav {
   background-position: 20%; }
   .btn-gradient-green:hover {
     color: #fff;
-    text-decoration: none;
-    opacity: 90%; }
+    opacity: 90%;
+    text-decoration: none; }
 
 .bg-gradient-green {
   background: linear-gradient(to right, #17b491, #20c997); }
+
+ul.navbar-nav {
+  margin: 0 -0.5rem; }
 
 /**
  * Z Index
