@@ -20,8 +20,7 @@
 
   &:hover {
     @extend .shadow-lg;
-    transform: translatey(-.25rem);
-
+    transform: translatey(-0.25rem);
   }
 }
 
