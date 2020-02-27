@@ -51,7 +51,7 @@ const IconSvg = ({ iconStyle }: { iconStyle: string }) => {
   }
 };
 
-type Props = { iconStyle: string, className?: string };
+type Props = { iconStyle: string; className?: string };
 const Icon = ({ iconStyle, className = '' }: Props) => (
   <div className={`logo--shifter logo-${iconStyle} ${className || 'icon-color'}`}>
     <IconSvg iconStyle={iconStyle} />

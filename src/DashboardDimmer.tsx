@@ -4,7 +4,7 @@ import { Modal } from 'reactstrap';
 import Logo from './Logos';
 
 type Props = {
-  isOpen: boolean,
+  isOpen: boolean;
 };
 
 export default class DashboardDimmer extends React.Component<Props> {
