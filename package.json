@@ -29,6 +29,13 @@
     "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.jsx\" \"src/**/*.ts\" \"src/**/*.tsx\""
   },
   "dependencies": {
+    "@storybook/addon-actions": "^5.3.8",
+    "@storybook/addon-info": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.8",
+    "@storybook/addon-links": "^5.3.8",
+    "@storybook/addons": "^5.3.8",
+    "@storybook/react": "^5.3.8",
+    "@storybook/theming": "^5.3.8",
     "prop-types": "^15.7.2",
     "react-content-loader": "^4.3.4",
     "react-copy-to-clipboard": "^5.0.2",
@@ -43,13 +50,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
-    "@storybook/addon-actions": "^5.3.8",
-    "@storybook/addon-info": "^5.3.14",
-    "@storybook/addon-knobs": "^5.3.8",
-    "@storybook/addon-links": "^5.3.8",
-    "@storybook/addons": "^5.3.8",
-    "@storybook/react": "^5.3.8",
-    "@storybook/theming": "^5.3.8",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
     "@types/react-gravatar": "^2.6.7",
