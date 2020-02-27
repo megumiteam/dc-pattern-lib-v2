@@ -13,6 +13,7 @@ export default class DashboardDimmer extends React.Component<Props> {
       <Modal
         centered
         isOpen={this.props.isOpen}
+        // @ts-ignore
         toggle={this.toggle}
         contentClassName="text-center border-0 shadow-none bg-transparent"
       >

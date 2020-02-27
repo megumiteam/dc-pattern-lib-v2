@@ -8,7 +8,7 @@ import {
 
 type Props = {
   type: string,
-  children: React.Node,
+  children: React.ReactNode,
 };
 
 export default class DashboardAlert extends React.Component<Props> {

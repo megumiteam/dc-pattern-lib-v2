@@ -67,7 +67,7 @@ body {
   margin: 0;
   font-family: sofia-pro, sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.875;
   color: #451D39;
   text-align: left;
@@ -126,7 +126,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: 700; }
 
 small {
   font-size: 80%; }
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 1rem;
   font-family: inherit;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4;
   color: inherit; }
 
@@ -368,7 +368,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 300; }
+  font-weight: 400; }
 
 mark,
 .mark {
@@ -1627,7 +1627,7 @@ pre {
   height: calc(2.52344rem + 4px);
   padding: 1.125rem 1rem;
   font-size: 0.9375rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.875;
   color: #434343;
   background-color: #fff;
@@ -2967,7 +2967,7 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0.125rem 0 rgba(46, 22, 39, 0.25), 0 0.125rem 0.125rem 0 rgba(46, 22, 39, 0.25), 0 0 0 0 rgba(245, 245, 245, 0.5); }
 
 .btn-link {
-  font-weight: 300;
+  font-weight: 400;
   color: #451D39;
   text-decoration: none; }
   .btn-link:hover {
@@ -3033,8 +3033,8 @@ input[type="button"].btn-block {
   white-space: nowrap; }
   .dropdown-toggle::after {
     display: inline-block;
-    margin-left: 0.5em;
-    vertical-align: 0.255em;
+    margin-left: 0.75em;
+    vertical-align: 0;
     content: "";
     border-top: 0.3em solid;
     border-right: 0.3em solid transparent;
@@ -3111,8 +3111,8 @@ input[type="button"].btn-block {
 
 .dropup .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.5em;
-  vertical-align: 0.255em;
+  margin-left: 0.75em;
+  vertical-align: 0;
   content: "";
   border-top: 0;
   border-right: 0.3em solid transparent;
@@ -3131,8 +3131,8 @@ input[type="button"].btn-block {
 
 .dropright .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.5em;
-  vertical-align: 0.255em;
+  margin-left: 0.75em;
+  vertical-align: 0;
   content: "";
   border-top: 0.3em solid transparent;
   border-right: 0;
@@ -3154,8 +3154,8 @@ input[type="button"].btn-block {
 
 .dropleft .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.5em;
-  vertical-align: 0.255em;
+  margin-left: 0.75em;
+  vertical-align: 0;
   content: ""; }
 
 .dropleft .dropdown-toggle::after {
@@ -3163,8 +3163,8 @@ input[type="button"].btn-block {
 
 .dropleft .dropdown-toggle::before {
   display: inline-block;
-  margin-right: 0.5em;
-  vertical-align: 0.255em;
+  margin-right: 0.75em;
+  vertical-align: 0;
   content: "";
   border-top: 0.3em solid transparent;
   border-right: 0.3em solid;
@@ -3191,7 +3191,7 @@ input[type="button"].btn-block {
   width: 100%;
   padding: 0.5rem 1.5rem;
   clear: both;
-  font-weight: 300;
+  font-weight: 400;
   color: #101010;
   text-align: inherit;
   white-space: nowrap;
@@ -3408,7 +3408,7 @@ input[type="button"].btn-block {
   padding: 1.125rem 1rem;
   margin-bottom: 0;
   font-size: 0.9375rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.875;
   color: #434343;
   text-align: center;
@@ -3593,7 +3593,7 @@ input[type="button"].btn-block {
   height: calc(2.52344rem + 4px);
   padding: 0.5rem 2rem 0.5rem 1rem;
   font-size: 0.9375rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.875;
   color: #434343;
   vertical-align: middle;
@@ -3669,7 +3669,7 @@ input[type="button"].btn-block {
   z-index: 1;
   height: calc(2.52344rem + 4px);
   padding: 1.125rem 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.875;
   color: #434343;
   background-color: #fff;
@@ -5378,7 +5378,7 @@ a.close.disabled {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid 0;
   border-radius: 0.25rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
   outline: 0; }
@@ -5469,7 +5469,7 @@ a.close.disabled {
   margin: 0;
   font-family: sofia-pro, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.875;
   text-align: left;
   text-align: start;
@@ -5554,7 +5554,7 @@ a.close.disabled {
   max-width: 276px;
   font-family: sofia-pro, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.875;
   text-align: left;
   text-align: start;
@@ -8332,19 +8332,19 @@ button.bg-gray-100:focus {
   text-transform: capitalize !important; }
 
 .font-weight-light {
-  font-weight: 200 !important; }
+  font-weight: 300 !important; }
 
 .font-weight-lighter {
-  font-weight: 100 !important; }
+  font-weight: 200 !important; }
 
 .font-weight-normal {
-  font-weight: 300 !important; }
+  font-weight: 400 !important; }
 
 .font-weight-bold {
   font-weight: 500 !important; }
 
 .font-weight-bolder {
-  font-weight: bolder !important; }
+  font-weight: 700 !important; }
 
 .font-italic {
   font-style: italic !important; }
@@ -9182,6 +9182,9 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 
 .bg-gradient-green {
   background: linear-gradient(to right, #17b491, #20c997); }
+
+.close {
+  opacity: 1; }
 
 ul.navbar-nav {
   margin: 0 -0.5rem; }

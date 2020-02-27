@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav, NavLink } from 'reactstrap';
 import Icon from './Icons';
 
-const DashboardNav = ({ children }: { children: React.Node }) => (
+const DashboardNav = ({ children }: { children: React.ReactNode }) => (
   <div className="w-100">
     <Nav className="nav-sidebar" tabs vertical>
       <NavLink className="nav-sidebar__link mt-3 pl-3" href="#">

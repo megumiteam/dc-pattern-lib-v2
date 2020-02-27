@@ -1,4 +1,3 @@
-// @flow
 import * as React from 'react';
 import {
   Card, CardHeader, CardBody, CardTitle, CardSubtitle, CardFooter,
@@ -12,7 +11,7 @@ const DashboardCardHeader = ({
 }: {
   title: string,
   subtitle: string,
-  actions: React.Node,
+  actions: React.ReactNode,
   headerClassName: String,
 }) => (title ? (
   <CardHeader className={`border-0 ${headerClassName || ''}`}>
@@ -25,12 +24,12 @@ const DashboardCardHeader = ({
     <DashboardCardSubTitle subtitle={subtitle} />
   </CardHeader>
 ) : (
-  ''
+  null
 ));
 
-const DashboardCardFooter = ({ footer }: { footer: React.Node }) => (footer ? <CardFooter>{footer}</CardFooter> : '');
+const DashboardCardFooter = ({ footer }: { footer: React.ReactNode }) => (footer ? <CardFooter>{footer}</CardFooter> : null);
 
-const DashboardCardSubTitle = ({ subtitle }: { subtitle: string }) => (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : '');
+const DashboardCardSubTitle = ({ subtitle }: { subtitle: string }) => (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : null);
 
 const DashboardCard = ({
   title,
@@ -45,9 +44,9 @@ const DashboardCard = ({
 }: {
   title: string,
   subtitle: string,
-  children: React.Node,
-  actions: React.Node,
-  footer: React.Node,
+  children: React.ReactNode,
+  actions: React.ReactNode,
+  footer: React.ReactNode,
   className: string,
   bodyClassName: string,
   headerClassName: string,
@@ -65,7 +64,7 @@ const DashboardCard = ({
         {children}
       </CardBody>
     ) : (
-      ''
+      null
     )}
     <DashboardCardFooter footer={footer} />
   </Card>
