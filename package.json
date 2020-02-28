@@ -1,6 +1,6 @@
 {
   "name": "dc-pattern-lib",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "dc-pattern-lib React component",
   "main": "lib/index.js",
   "module": "es/index.js",
