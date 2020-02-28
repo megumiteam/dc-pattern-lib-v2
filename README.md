@@ -83,7 +83,7 @@ You should run the following command after merge your TOPIC BRANCH into the mast
 $ git checkout master
 $ git pull origin master
 # Tag it ( https://semver.org/ )
-$ npm version {major | minior | patch}
+$ npm version {major | minor | patch}
 ```
 
 After run `npm version`, the `npm run postversion` will run to push the tag into GitHub.
