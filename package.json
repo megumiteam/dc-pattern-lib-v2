@@ -22,15 +22,19 @@
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
-    "lint": "eslint src/",
+    "lint": "eslint src/**/*.tsx stories/**/*.tsx",
+    "lint:fix": "eslint src/**/*.tsx stories/**/*.tsx --fix",
     "storybook": "start-storybook -p 6006",
     "postversion": "git push origin $(git describe --abbrev=0 --tags)",
     "build-storybook": "build-storybook",
-    "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.jsx\""
+    "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.jsx\" \"src/**/*.ts\" \"src/**/*.tsx\""
   },
   "dependencies": {
-    "@storybook/addon-info": "^5.3.8",
+    "@storybook/addon-actions": "^5.3.8",
+    "@storybook/addon-info": "^5.3.14",
     "@storybook/addon-knobs": "^5.3.8",
+    "@storybook/addon-links": "^5.3.8",
+    "@storybook/addons": "^5.3.8",
     "@storybook/react": "^5.3.8",
     "@storybook/theming": "^5.3.8",
     "prop-types": "^15.7.2",
@@ -47,9 +51,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
-    "@storybook/addon-actions": "^5.3.8",
-    "@storybook/addon-links": "^5.3.8",
-    "@storybook/addons": "^5.3.8",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-gravatar": "^2.6.7",
+    "@types/reactstrap": "^8.4.2",
+    "@types/storybook__addon-info": "^5.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.3.2",
+    "@typescript-eslint/parser": "^2.3.2",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "bootstrap": "^4.4.1",
@@ -70,7 +78,10 @@
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-docgen-typescript-loader": "^3.6.0",
+    "react-dom": "^16.12.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.2"
   },
   "publishConfig": {
     "access": "public"
@@ -88,7 +99,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{js,jsx,tsx,tsx}": [
       "prettier-eslint --write",
       "./node_modules/.bin/eslint",
       "git add"

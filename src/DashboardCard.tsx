@@ -1,4 +1,3 @@
-// @flow
 import * as React from 'react';
 import {
   Card, CardHeader, CardBody, CardTitle, CardSubtitle, CardFooter,
@@ -10,10 +9,10 @@ const DashboardCardHeader = ({
   subtitle,
   headerClassName,
 }: {
-  title: string,
-  subtitle: string,
-  actions: React.Node,
-  headerClassName: String,
+  title?: string;
+  subtitle?: string;
+  actions?: React.ReactNode;
+  headerClassName?: string;
 }) => (title ? (
   <CardHeader className={`border-0 ${headerClassName || ''}`}>
     <div className="d-flex justify-content-between align-items-center">
@@ -24,13 +23,11 @@ const DashboardCardHeader = ({
     </div>
     <DashboardCardSubTitle subtitle={subtitle} />
   </CardHeader>
-) : (
-  ''
-));
-
-const DashboardCardFooter = ({ footer }: { footer: React.Node }) => (footer ? <CardFooter>{footer}</CardFooter> : '');
-
-const DashboardCardSubTitle = ({ subtitle }: { subtitle: string }) => (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : '');
+) : null);
+// eslint-disable-next-line max-len
+const DashboardCardFooter = ({ footer }: { footer?: React.ReactNode }) => (footer ? <CardFooter>{footer}</CardFooter> : null);
+// eslint-disable-next-line max-len
+const DashboardCardSubTitle = ({ subtitle }: { subtitle?: string }) => (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : null);
 
 const DashboardCard = ({
   title,
@@ -43,15 +40,15 @@ const DashboardCard = ({
   headerClassName,
   borderless,
 }: {
-  title: string,
-  subtitle: string,
-  children: React.Node,
-  actions: React.Node,
-  footer: React.Node,
-  className: string,
-  bodyClassName: string,
-  headerClassName: string,
-  borderless: Boolean,
+  title?: string;
+  subtitle?: string;
+  children?: React.ReactNode;
+  actions?: React.ReactNode;
+  footer?: React.ReactNode;
+  className?: string;
+  bodyClassName?: string;
+  headerClassName?: string;
+  borderless?: boolean;
 }) => (
   <Card className={`shadow-sm ${className || ''}`}>
     <DashboardCardHeader
@@ -64,9 +61,7 @@ const DashboardCard = ({
       <CardBody className={`${bodyClassName || ''} ${borderless ? 'p-0 overflow-hidden' : ''}`}>
         {children}
       </CardBody>
-    ) : (
-      ''
-    )}
+    ) : null}
     <DashboardCardFooter footer={footer} />
   </Card>
 );
