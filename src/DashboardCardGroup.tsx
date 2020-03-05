@@ -3,7 +3,7 @@ import * as React from 'react';
 import { CardDeck } from 'reactstrap';
 
 const DashboardCardGroup = (
-  { children }: { children: React.Node } = {
+  { children }: { children: React.ReactNode } = {
     children: '',
   },
 ) => <CardDeck>{children}</CardDeck>;

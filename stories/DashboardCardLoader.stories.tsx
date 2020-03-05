@@ -12,11 +12,7 @@ storiesOf('DashboardCardLoader', module)
   .addDecorator(withKnobs)
   .addDecorator(withInfo)
   .add('Default / Card', () => (
-    <DashboardCardLoader>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </DashboardCardLoader>
+    <DashboardCardLoader />
   ))
   .add('Site', () => (
     <div className="card-columns">

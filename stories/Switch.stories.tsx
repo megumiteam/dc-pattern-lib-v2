@@ -11,7 +11,7 @@ storiesOf('Switch', module)
     <span className="switch" data-active="false">
       <Input
         id="switch-mfaSelector-0f49165e-527e-43df-a967-eb60435fdfeb"
-        disabled=""
+        disabled={false}
         type="checkbox"
         className="switch form-check-input"
       />

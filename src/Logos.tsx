@@ -143,7 +143,7 @@ const LogoPrimaryWhite = () => (
   </svg>
 );
 
-const LogoSvg = ({ logoStyle }: { logoStyle: string }) => {
+const LogoSvg = ({ logoStyle }: { logoStyle?: string }) => {
   switch (logoStyle) {
     case 'logomark-ko-white':
       return <LogoKoWhite />;
@@ -162,7 +162,7 @@ const LogoSvg = ({ logoStyle }: { logoStyle: string }) => {
   }
 };
 
-type Props = { logoStyle: string, className?: string };
+type Props = { logoStyle?: string; className?: string };
 const Logo = ({ logoStyle, className = '' }: Props) => (
   <div className={`logo--shifter logo-${logoStyle} ${className || 'logomark-color'}`}>
     <LogoSvg logoStyle={logoStyle} />

@@ -4,7 +4,7 @@ import { Modal } from 'reactstrap';
 import Logo from './Logos';
 
 type Props = {
-  isOpen: boolean,
+  isOpen: boolean;
 };
 
 export default class DashboardDimmer extends React.Component<Props> {
@@ -13,6 +13,7 @@ export default class DashboardDimmer extends React.Component<Props> {
       <Modal
         centered
         isOpen={this.props.isOpen}
+        // @ts-ignore
         toggle={this.toggle}
         contentClassName="text-center border-0 shadow-none bg-transparent"
       >

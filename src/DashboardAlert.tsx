@@ -7,15 +7,17 @@ import {
 } from 'react-icons/md';
 
 type Props = {
-  type: string,
-  children: React.Node,
+  type: string;
+  children: React.ReactNode;
 };
 
 export default class DashboardAlert extends React.Component<Props> {
+  // eslint-disable-next-line react/static-property-placement
   static propTypes = {
     type: t.string,
   };
 
+  // eslint-disable-next-line react/static-property-placement
   static defaultProps = {
     type: 'info',
   };
