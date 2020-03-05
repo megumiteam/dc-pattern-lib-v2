@@ -90,8 +90,7 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "prettier-eslint --write",
-      "./node_modules/.bin/eslint",
-      "git add"
+      "./node_modules/.bin/eslint"
     ]
   }
 }
