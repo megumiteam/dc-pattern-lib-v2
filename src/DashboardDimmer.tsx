@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 import { Modal } from 'reactstrap';
 import Logo from './Logos';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Col } from 'reactstrap';
 
 const DashboardMain = ({ children }: { children: React.ReactNode }) => (

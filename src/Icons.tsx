@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 const IconsMap = () => (
   <svg width="20" id="IconWhite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
@@ -57,9 +57,5 @@ const Icon = ({ iconStyle, className = '' }: Props) => (
     <IconSvg iconStyle={iconStyle} />
   </div>
 );
-
-Icon.defaultProps = {
-  className: '',
-};
 
 export default Icon;

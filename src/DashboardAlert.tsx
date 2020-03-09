@@ -1,5 +1,4 @@
 /* eslint-disable react/prefer-stateless-function */
-import t from 'prop-types';
 import * as React from 'react';
 import { UncontrolledAlert } from 'reactstrap';
 import {
@@ -8,22 +7,16 @@ import {
 
 type Props = {
   type: string;
+  isOpen?: boolean;
+  toggle?: Function;
+  className?: string;
   children: React.ReactNode;
 };
 
 export default class DashboardAlert extends React.Component<Props> {
-  // eslint-disable-next-line react/static-property-placement
-  static propTypes = {
-    type: t.string,
-  };
-
-  // eslint-disable-next-line react/static-property-placement
-  static defaultProps = {
-    type: 'info',
-  };
-
   render() {
-    const { type, children } = this.props;
+    const { children } = this.props;
+    const type = this.props.type || 'info';
 
     if (type === 'info') {
       return (
