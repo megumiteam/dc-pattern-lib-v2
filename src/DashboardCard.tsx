@@ -39,6 +39,7 @@ const DashboardCard = ({
   bodyClassName,
   headerClassName,
   borderless,
+  id,
 }: {
   title?: string;
   subtitle?: string;
@@ -49,8 +50,10 @@ const DashboardCard = ({
   bodyClassName?: string;
   headerClassName?: string;
   borderless?: boolean;
+  tips?: React.ReactNode;
+  id?: string;
 }) => (
-  <Card className={`shadow-sm ${className || ''}`}>
+  <Card className={`shadow-sm ${className || ''}`} id={id}>
     <DashboardCardHeader
       title={title}
       subtitle={subtitle}

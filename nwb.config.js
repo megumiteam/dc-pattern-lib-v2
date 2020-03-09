@@ -1,7 +1,8 @@
 module.exports = {
   type: 'react-component',
   npm: {
-    esModules: true,
+    cjs: false,
+    esModules: false,
     umd: {
       global: 'DCPatternLib',
       externals: {
@@ -10,14 +11,15 @@ module.exports = {
     },
   },
   webpack: {
-    extra: {
-      entry: './src/index',
-      resolve: {
+    config(conf) {
+      conf.entry = './src/index',
+      conf.resolve = {
         extensions: ['.ts', '.tsx', '.js', '.jsx'],
-      },
-      module: {
-        rules: [{ test: /\.tsx$/, loader: 'ts-loader' }],
-      },
-    },
+      }
+      conf.module.rules.push({
+        exclude: '/example/',
+        test: /\.tsx$/, loader: 'ts-loader' })
+      return conf
+    }
   },
 };

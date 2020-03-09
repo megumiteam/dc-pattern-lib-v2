@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 import { FaBell } from 'react-icons/fa';
 
 const Notifications = () => (

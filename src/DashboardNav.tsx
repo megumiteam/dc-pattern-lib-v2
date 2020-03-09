@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Nav, NavLink } from 'reactstrap';
 import Icon from './Icons';
 

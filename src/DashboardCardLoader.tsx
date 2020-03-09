@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import ContentLoader from 'react-content-loader';
 import DashboardCard from './DashboardCard';
 

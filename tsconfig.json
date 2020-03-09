@@ -14,11 +14,17 @@
       "strictNullChecks": true,
       "suppressImplicitAnyIndexErrors": true,
       "noUnusedLocals": true,
-      "declaration": false,
+      "declaration": true,
+      "declarationDir": "types",
+      "outDir": "lib",
       "allowSyntheticDefaultImports": true,
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true
     },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+    ],
     "exclude": [
       "node_modules",
       "build",
@@ -26,7 +32,9 @@
       "acceptance-tests",
       "webpack",
       "jest",
-      "src/setupTests.ts"
+      "src/setupTests.ts",
+      "example",
+      "stories"
     ]
   }
   
