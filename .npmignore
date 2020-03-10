@@ -10,3 +10,4 @@ tests/
 nwb.*
 tsconfig.json
 yarn*
+example/
