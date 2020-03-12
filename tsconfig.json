@@ -15,7 +15,7 @@
       "suppressImplicitAnyIndexErrors": true,
       "noUnusedLocals": true,
       "declaration": true,
-      "declarationDir": "types",
+      "declarationDir": "lib",
       "outDir": "lib",
       "allowSyntheticDefaultImports": true,
       "experimentalDecorators": true,

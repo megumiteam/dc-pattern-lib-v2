@@ -3,7 +3,7 @@
   "version": "1.4.2",
   "description": "dc-pattern-lib React component",
   "main": "lib/index.js",
-  "types": "types/index.d.ts",
+  "types": "lib/index.d.ts",
   "files": [
     "css",
     "es",
