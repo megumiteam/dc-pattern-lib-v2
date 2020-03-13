@@ -169,8 +169,4 @@ const Logo = ({ logoStyle, className = '' }: Props) => (
   </div>
 );
 
-Logo.defaultProps = {
-  className: '',
-};
-
 export default Logo;
