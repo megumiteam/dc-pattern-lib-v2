@@ -25,6 +25,7 @@ rules:
     - extensions:
       - ".ts"
       - ".tsx"
+  react/jsx-props-no-spreading: 0
 parserOptions:
   sourceType: "module"
   ecmaFeatures:
