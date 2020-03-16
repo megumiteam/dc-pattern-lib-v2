@@ -1,6 +1,5 @@
-/* eslint-disable react/prefer-stateless-function */
-import * as React from 'react';
-import { UncontrolledAlert } from 'reactstrap';
+import React, { useState, useCallback } from 'react';
+import { Alert } from 'reactstrap';
 import {
   MdInfoOutline, MdErrorOutline, MdWarning, MdCheck,
 } from 'react-icons/md';
@@ -11,77 +10,85 @@ type Props = {
   toggle?: Function;
   className?: string;
   children: React.ReactNode;
+  icon?: React.ReactNode;
+  iconClassName?: string;
+  canDismiss?: boolean;
 };
 
-export default class DashboardAlert extends React.Component<Props> {
-  render() {
-    const { children } = this.props;
-    const type = this.props.type || 'info';
+const AlertLayout = ({
+  type,
+  children,
+  icon,
+  iconClassName,
+  canDismiss,
+}: {
+  type: 'info' | 'success' | 'warning' | 'error' | 'danger' | string;
+  children: React.ReactNode | React.ReactNode[];
+  icon: React.ReactNode;
+  iconClassName?: string;
+  canDismiss?: boolean;
+}) => {
+  const [visible, updateVisibleState] = useState(true);
+  const toggle = canDismiss
+    ? useCallback(() => {
+      updateVisibleState(!visible);
+    }, [visible, updateVisibleState])
+    : undefined;
+  return (
+    <Alert color={type} toggle={toggle} isOpen={visible}>
+      <span className={`pr-2 ${iconClassName}`}>{icon}</span>
+      {children}
+    </Alert>
+  );
+};
 
-    if (type === 'info') {
+export default (props: Props) => {
+  const { children } = props;
+  const type = props.type || 'info';
+
+  switch (type) {
+    case 'info':
       return (
-        <UncontrolledAlert color={type}>
-          <span className="pr-3">
-            <MdInfoOutline />
-          </span>
+        <AlertLayout {...props} type="info" icon={<MdInfoOutline />}>
           {children}
-        </UncontrolledAlert>
+        </AlertLayout>
       );
-    }
-
-    if (type === 'success') {
+    case 'success':
       return (
-        <UncontrolledAlert color={type}>
-          <span className="pr-3 text-green">
-            <MdCheck />
-          </span>
+        <AlertLayout {...props} type="success" icon={<MdCheck />} iconClassName="text-green">
           {children}
-        </UncontrolledAlert>
+        </AlertLayout>
       );
-    }
-
-    if (type === 'warning') {
+    case 'warning':
       return (
-        <UncontrolledAlert color={type}>
-          <span className="pr-3 text-yellow">
-            <MdErrorOutline />
-          </span>
+        <AlertLayout
+          {...props}
+          type="warning"
+          icon={<MdErrorOutline />}
+          iconClassName="text-yellow"
+        >
           {children}
-        </UncontrolledAlert>
+        </AlertLayout>
       );
-    }
-
-    if (type === 'error') {
+    case 'error':
       return (
-        <UncontrolledAlert color="danger">
-          <span className="pr-3 text-danger">
-            <MdWarning />
-          </span>
-          <span className="text-danger font-weight-bold">Error:</span>
-          {' '}
+        <AlertLayout {...props} type="danger" icon={<MdWarning />} iconClassName="text-danger">
+          <span className="text-danger font-weight-bold">Error: </span>
           {children}
-        </UncontrolledAlert>
+        </AlertLayout>
       );
-    }
-
-    if (type === 'danger') {
+    case 'danger':
       return (
-        <UncontrolledAlert color="danger">
-          <span className="pr-3 text-danger">
-            <MdWarning />
-          </span>
-          <span className="text-danger font-weight-bold">Danger:</span>
-          {' '}
+        <AlertLayout {...props} type="danger" icon={<MdWarning />} iconClassName="text-danger">
+          <span className="text-danger font-weight-bold">Danger: </span>
           {children}
-        </UncontrolledAlert>
+        </AlertLayout>
       );
-    }
-
-    return (
-      <UncontrolledAlert>
-        {type}
-        {children}
-      </UncontrolledAlert>
-    );
+    default:
+      return (
+        <AlertLayout {...props} type={type} icon={props.icon} iconClassName={props.iconClassName}>
+          {children}
+        </AlertLayout>
+      );
   }
-}
+};

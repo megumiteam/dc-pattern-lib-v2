@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {
   Card, CardHeader, CardBody, CardTitle, CardSubtitle, CardFooter,
 } from 'reactstrap';
@@ -24,10 +24,16 @@ const DashboardCardHeader = ({
     <DashboardCardSubTitle subtitle={subtitle} />
   </CardHeader>
 ) : null);
-// eslint-disable-next-line max-len
-const DashboardCardFooter = ({ footer }: { footer?: React.ReactNode }) => (footer ? <CardFooter>{footer}</CardFooter> : null);
-// eslint-disable-next-line max-len
-const DashboardCardSubTitle = ({ subtitle }: { subtitle?: string }) => (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : null);
+
+const DashboardCardFooter = ({ footer }: { footer?: React.ReactNode }) => {
+  if (!footer) return null;
+  return <CardFooter>{footer}</CardFooter>;
+};
+
+const DashboardCardSubTitle = ({ subtitle }: { subtitle?: string }) => {
+  if (!subtitle) return null;
+  return <CardSubtitle>{subtitle}</CardSubtitle>;
+};
 
 const DashboardCard = ({
   title,
