@@ -30,7 +30,7 @@ storiesOf('Dashboard', module).add('Full Mockup', () => (
         <Button color="outline-primary">
           <FaBeer />
           {' '}
-Create New Site
+          Create New Site
         </Button>
       </div>
       <DashboardNav />

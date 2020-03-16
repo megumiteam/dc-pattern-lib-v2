@@ -80,7 +80,7 @@ storiesOf('Forms', module)
             <Label check>
               <Input type="radio" name="radio1" />
               {' '}
-Option two can be something else and selecting it
+              Option two can be something else and selecting it
               will deselect option one
             </Label>
           </FormGroup>
@@ -88,7 +88,7 @@ Option two can be something else and selecting it
             <Label check>
               <Input type="radio" name="radio1" disabled />
               {' '}
-Option three is disabled
+              Option three is disabled
             </Label>
           </FormGroup>
         </FormGroup>
@@ -96,7 +96,7 @@ Option three is disabled
           <Label check>
             <Input type="checkbox" />
             {' '}
-Check me out
+            Check me out
           </Label>
         </FormGroup>
         <Button>Submit</Button>
