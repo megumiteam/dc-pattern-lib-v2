@@ -46,7 +46,7 @@
     "react-icons": "^3.8.0",
     "react-router-dom": "^5.1.2",
     "reactstrap": "^8.4.0",
-    "storybook": "^5.3.8"
+    "storybook": "^5.3.17"
   },
   "peerDependencies": {
     "react": "16.x"
