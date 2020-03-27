@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {
   Card, CardHeader, CardBody, CardTitle, CardSubtitle, CardFooter,
 } from 'reactstrap';
@@ -16,7 +16,7 @@ const DashboardCardHeader = ({
 }) => (title ? (
   <CardHeader className={`border-0 ${headerClassName || ''}`}>
     <div className="d-flex justify-content-between align-items-center">
-      <CardTitle className="h5" tag="div">
+      <CardTitle className={`h5 ${subtitle ? '' : 'mb-0'}`} tag="div">
         {title}
       </CardTitle>
       {actions ? <div>{actions}</div> : ''}
@@ -24,10 +24,16 @@ const DashboardCardHeader = ({
     <DashboardCardSubTitle subtitle={subtitle} />
   </CardHeader>
 ) : null);
-// eslint-disable-next-line max-len
-const DashboardCardFooter = ({ footer }: { footer?: React.ReactNode }) => (footer ? <CardFooter>{footer}</CardFooter> : null);
-// eslint-disable-next-line max-len
-const DashboardCardSubTitle = ({ subtitle }: { subtitle?: string }) => (subtitle ? <CardSubtitle>{subtitle}</CardSubtitle> : null);
+
+const DashboardCardFooter = ({ footer }: { footer?: React.ReactNode }) => {
+  if (!footer) return null;
+  return <CardFooter>{footer}</CardFooter>;
+};
+
+const DashboardCardSubTitle = ({ subtitle }: { subtitle?: string }) => {
+  if (!subtitle) return null;
+  return <CardSubtitle>{subtitle}</CardSubtitle>;
+};
 
 const DashboardCard = ({
   title,
@@ -58,7 +64,7 @@ const DashboardCard = ({
       title={title}
       subtitle={subtitle}
       actions={actions}
-      headerClassName={headerClassName}
+      headerClassName={`${title || subtitle ? 'pb-0' : ''} ${headerClassName} `}
     />
     {children ? (
       <CardBody className={`${bodyClassName || ''} ${borderless ? 'p-0 overflow-hidden' : ''}`}>

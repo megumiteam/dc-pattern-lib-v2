@@ -45,7 +45,7 @@ storiesOf('DashboardCard', module)
         {' '}
         <code>borderless</code>
         {' '}
-to DashboardCard to disable padding and add overflow css.
+        to DashboardCard to disable padding and add overflow css.
       </span>
     </DashboardCard>
   ));
