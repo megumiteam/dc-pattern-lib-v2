@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Table } from 'reactstrap';
+import { Button, Table, Progress } from 'reactstrap';
 
 import { storiesOf } from '@storybook/react';
 
@@ -99,23 +99,49 @@ storiesOf('Buttons', module).add('Styles', () => (
       </tr>
       <tr>
         <td>
-          <Button color="primary" className="active">
+          <Button color="primary" active>
             Primary Active
           </Button>
         </td>
         <td>
-          <Button color="secondary" className="active">
+          <Button color="secondary" active>
             Secondary Active
           </Button>
         </td>
         <td>
-          <Button color="success" className="active">
+          <Button color="success" active>
             Success Active
           </Button>
         </td>
         <td>
-          <Button color="danger" className="active">
+          <Button color="danger" active>
             Danger Active
+          </Button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <Button disabled className="btn-progress" color="primary">
+            <span className="btn-progress__label">Progress Button</span>
+            <Progress color="warning" className="bg-danger" animated value="25" />
+          </Button>
+        </td>
+        <td>
+          <Button disabled className="btn-progress" color="secondary">
+            <span className="btn-progress__label">Progress Button</span>
+            <Progress color="warning" className="bg-danger" animated value="50" />
+          </Button>
+        </td>
+        <td>
+          <Button disabled className="btn-progress" color="success">
+            <span className="btn-progress__label">Progress Button</span>
+            <Progress color="warning" className="bg-danger" animated value="75" />
+          </Button>
+        </td>
+        <td>
+          <Button disabled className="btn-progress" color="danger">
+            <span className="btn-progress__label">Progress Button</span>
+            <Progress color="warning" className="bg-danger" animated value="100" />
           </Button>
         </td>
       </tr>
