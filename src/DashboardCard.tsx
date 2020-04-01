@@ -13,7 +13,7 @@ const DashboardCardHeader = ({
   subtitle?: string;
   actions?: React.ReactNode;
   headerClassName?: string;
-}) => (title ? (
+}) => (
   <CardHeader className={`border-0 ${headerClassName || ''}`}>
     <div className="d-flex justify-content-between align-items-center">
       <CardTitle className={`h5 ${subtitle ? '' : 'mb-0'}`} tag="div">
@@ -23,7 +23,7 @@ const DashboardCardHeader = ({
     </div>
     <DashboardCardSubTitle subtitle={subtitle} />
   </CardHeader>
-) : null);
+);
 
 const DashboardCardFooter = ({ footer }: { footer?: React.ReactNode }) => {
   if (!footer) return null;
