@@ -316,7 +316,7 @@ $font-weight-bold: 500 !default;
 $font-weight-bolder: 700 !default;
 
 $font-weight-base: $font-weight-normal !default;
-$line-height-base: 1.875 !default;
+$line-height-base: 1.5 !default;
 
 $h1-font-size: $font-size-base * 2 !default;
 $h2-font-size: $font-size-base * 1.75 !default;
@@ -340,6 +340,9 @@ $display1-weight: 500 !default;
 $display2-weight: 500 !default;
 $display3-weight: 500 !default;
 $display4-weight: 500 !default;
+
+$display1-line-height: 1.25 !default;
+
 $display-line-height: $headings-line-height !default;
 
 $lead-font-size: ($font-size-base * 1.25) !default;
