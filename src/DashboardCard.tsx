@@ -13,17 +13,20 @@ const DashboardCardHeader = ({
   subtitle?: string;
   actions?: React.ReactNode;
   headerClassName?: string;
-}) => (
-  <CardHeader className={`border-0 ${headerClassName || ''}`}>
-    <div className="d-flex justify-content-between align-items-center">
-      <CardTitle className={`h5 ${subtitle ? '' : 'mb-0'}`} tag="div">
-        {title}
-      </CardTitle>
-      {actions ? <div>{actions}</div> : ''}
-    </div>
-    <DashboardCardSubTitle subtitle={subtitle} />
-  </CardHeader>
-);
+}) => {
+  if (!title && !subtitle && !actions) return null;
+  return (
+    <CardHeader className={`border-0 ${headerClassName || ''}`}>
+      <div className="d-flex justify-content-between align-items-center">
+        <CardTitle className={`h5 ${subtitle ? '' : 'mb-0'}`} tag="div">
+          {title}
+        </CardTitle>
+        {actions ? <div>{actions}</div> : ''}
+      </div>
+      <DashboardCardSubTitle subtitle={subtitle} />
+    </CardHeader>
+  );
+};
 
 const DashboardCardFooter = ({ footer }: { footer?: React.ReactNode }) => {
   if (!footer) return null;
