@@ -9134,6 +9134,32 @@ a.text-gray:hover, a.text-gray:focus {
 .spin {
   animation: spin 1.25s linear infinite; }
 
+/**
+ * Login Background
+ */
+.login-background {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1; }
+
+.login-background___rectangle {
+  position: absolute;
+  top: -10rem;
+  left: 10rem;
+  height: 45rem;
+  width: 17rem;
+  transform: rotate(50deg);
+  background: linear-gradient(360deg, rgba(248, 7, 89, 0.5) 0%, rgba(248, 7, 89, 0) 100%); }
+
+.login-background___circle {
+  position: absolute;
+  bottom: -40rem;
+  right: -10rem;
+  height: 40rem;
+  width: 40rem;
+  border-radius: 100%;
+  background: linear-gradient(360deg, rgba(248, 7, 89, 0.5) 0%, rgba(248, 7, 89, 0) 100%); }
+
 .avatar {
   box-shadow: 0 0 3px #dad2d7; }
   .avatar:hover {
