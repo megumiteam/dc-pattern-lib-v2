@@ -686,8 +686,8 @@ const DigitalCubeLogoDark = () => (
 );
 
 const DigitalCubeMark = () => (
-  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
-    <g fill="#231f20">
+  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
+    <g>
       <path d="M16.82 16.82L0 16.82 0 33.65 0 50.45 0 50.47 0 67.28 50.47 67.28 50.47 50.47 50.47 50.45 50.47 33.65 33.65 33.65 33.65 50.45 16.82 50.45 16.82 33.65 33.65 33.65 33.65 16.82 16.82 16.82z" />
       <path d="M33.65 0H50.47V16.82H33.65z" />
     </g>
@@ -695,8 +695,8 @@ const DigitalCubeMark = () => (
 );
 
 const DigitalCubeMarkDark = () => (
-  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
-    <g fill="#ffffff">
+  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
+    <g fill="#fff">
       <path d="M16.82 16.82L0 16.82 0 33.65 0 50.45 0 50.47 0 67.28 50.47 67.28 50.47 50.47 50.47 50.45 50.47 33.65 33.65 33.65 33.65 50.45 16.82 50.45 16.82 33.65 33.65 33.65 33.65 16.82 16.82 16.82z" />
       <path d="M33.65 0H50.47V16.82H33.65z" />
     </g>
