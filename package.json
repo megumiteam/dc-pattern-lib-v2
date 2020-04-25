@@ -40,12 +40,14 @@
     "@storybook/addons": "^5.3.8",
     "@storybook/react": "^5.3.8",
     "@storybook/theming": "^5.3.8",
+    "node-sass": "^4.14.0",
     "react-content-loader": "^4.3.4",
     "react-copy-to-clipboard": "^5.0.2",
     "react-gravatar": "^2.6.3",
     "react-icons": "^3.8.0",
     "react-router-dom": "^5.1.2",
     "reactstrap": "^8.4.0",
+    "sass-loader": "^8.0.2",
     "storybook": "^5.3.17"
   },
   "peerDependencies": {
@@ -106,5 +108,12 @@
       "prettier-eslint --write",
       "./node_modules/.bin/eslint"
     ]
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react-typescript@3.1.51"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }

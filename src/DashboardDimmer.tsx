@@ -19,7 +19,7 @@ export default (props: Props) => {
       contentClassName="text-center border-0 shadow-none bg-transparent"
     >
       <div className="spin mx-auto" style={{ width: '40px' }}>
-        <Logo logoStyle="logomark-ko-white" />
+        <Logo logoStyle="logomark-light" />
       </div>
     </Modal>
   );

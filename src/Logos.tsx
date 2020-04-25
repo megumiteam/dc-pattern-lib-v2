@@ -127,7 +127,7 @@ const LogoPrimaryWhite = () => (
 
 const LogoSvg = ({ logoStyle }: { logoStyle?: string }) => {
   switch (logoStyle) {
-    case 'logomark-ko-white':
+    case 'logomark-light':
       return <LogoKoWhite />;
     case 'logomark-ko-black':
       return <LogoKoBlack />;
