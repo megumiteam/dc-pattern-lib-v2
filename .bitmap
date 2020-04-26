@@ -14,5 +14,31 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "digitalcube.pattern-lib/ui/dashboard-card-loader@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/dashboard-card-loader/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/components/dashboard-card-loader/index.tsx",
+        "trackDir": "src/components/dashboard-card-loader",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "digitalcube.pattern-lib/ui/dashboard-card@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/dashboard-card/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/components/dashboard-card/index.tsx",
+        "trackDir": "src/components/dashboard-card",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "version": "14.7.6"
 }

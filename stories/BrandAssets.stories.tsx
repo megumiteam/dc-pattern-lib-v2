@@ -1,9 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-// import { Table } from 'reactstrap';
 import Brand from '../src/components/brand';
-// import DashboardCard from '../src/DashboardCard';
 
 const shifter = [
   { name: 'logo', id: 'shifter-logo' },
