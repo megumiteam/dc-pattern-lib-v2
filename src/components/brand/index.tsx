@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AmimotoLogo = () => (
-  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.87 70.49">
+  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.87 70.49">
     <g fill="#040000">
       <path
         d="M419.93 186.19c0 9.6-6.77 16.19-16.61 16.19s-16.67-6.59-16.67-16.19S393.43 170 403.32 170s16.61 6.54 16.61 16.19zm-26.38.06c0 6.18 4 10.37 9.77 10.37s9.72-4.19 9.72-10.37-4-10.31-9.72-10.31-9.77 4.19-9.77 10.31z"
@@ -61,7 +61,7 @@ const AmimotoLogo = () => (
 
 const AmimotoLogoLight = () => (
   <svg
-    height="45"
+    height="auto"
     id="Amimoto_Primary"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 335.87 70.49"
@@ -166,7 +166,7 @@ const AmimotoLogoLight = () => (
 
 const AmimotoLogoDark = () => (
   <svg
-    height="45"
+    height="auto"
     id="Amimoto_Primary"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 335.87 70.49"
@@ -270,7 +270,7 @@ const AmimotoLogoDark = () => (
 );
 
 const AmimotoMark = () => (
-  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.01 70.49">
+  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.01 70.49">
     <g fillRule="evenodd">
       <path
         fill="#00a8ff"
@@ -320,7 +320,7 @@ const AmimotoMark = () => (
 
 const AmimotoMarkLight = () => (
   <svg
-    height="45"
+    height="auto"
     id="Amimoto_Primary"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 70.01 70.49"
@@ -388,7 +388,7 @@ const AmimotoMarkLight = () => (
 
 const AmimotoMarkDark = () => (
   <svg
-    height="45"
+    height="auto"
     id="Amimoto_Primary"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 70.01 70.49"
@@ -456,7 +456,7 @@ const AmimotoMarkDark = () => (
 
 const DefaultLogo = () => (
   <svg
-    height="45"
+    height="auto"
     id="ShifterLogomarkWhite"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 90.37 115.36"
@@ -470,7 +470,7 @@ const DefaultLogo = () => (
 
 const LogoKoWhite = () => (
   <svg
-    height="45"
+    height="auto"
     id="ShifterLogomarkWhite"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 90.37 115.36"
@@ -484,7 +484,7 @@ const LogoKoWhite = () => (
 
 const LogoKoBlack = () => (
   <svg
-    height="45"
+    height="auto"
     id="ShifterLogomarkBlack"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 90.37 115.36"
@@ -496,9 +496,9 @@ const LogoKoBlack = () => (
   </svg>
 );
 
-const LogoColor = () => (
+const ShifterMark = () => (
   <svg
-    height="45"
+    height="auto"
     viewBox="0 0 32 43"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -523,7 +523,7 @@ const LogoColor = () => (
 
 const LogoPrimaryKoWhite = () => (
   <svg
-    height="45"
+    height="auto"
     id="Layer_1"
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
@@ -542,7 +542,7 @@ const LogoPrimaryKoWhite = () => (
 
 const LogoPrimaryKoBlack = () => (
   <svg
-    height="45"
+    height="auto"
     id="Layer_1"
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
@@ -561,7 +561,7 @@ const LogoPrimaryKoBlack = () => (
 
 const LogoPrimaryDark = () => (
   <svg
-    height="45"
+    height="auto"
     id="Layer_1"
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
@@ -580,7 +580,7 @@ const LogoPrimaryDark = () => (
 );
 
 const DigitalCubeLogo = () => (
-  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
+  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
     <g fill="#231f20">
       <path
         d="M169.49 188.69c0 11.28-8.54 19.54-20.38 19.54h-15.85v-39.07h16c11.74 0 20.23 8.2 20.23 19.53zm-6.65.06a13.31 13.31 0 00-13.67-13.67h-9.32v27.23h9.6c7.55 0 13.39-5.63 13.39-13.56z"
@@ -633,7 +633,7 @@ const DigitalCubeLogo = () => (
 );
 
 const DigitalCubeLogoDark = () => (
-  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
+  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
     <g fill="#ffffff">
       <path
         d="M169.49 188.69c0 11.28-8.54 19.54-20.38 19.54h-15.85v-39.07h16c11.74 0 20.23 8.2 20.23 19.53zm-6.65.06a13.31 13.31 0 00-13.67-13.67h-9.32v27.23h9.6c7.55 0 13.39-5.63 13.39-13.56z"
@@ -686,7 +686,7 @@ const DigitalCubeLogoDark = () => (
 );
 
 const DigitalCubeMark = () => (
-  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
+  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
     <g>
       <path d="M16.82 16.82L0 16.82 0 33.65 0 50.45 0 50.47 0 67.28 50.47 67.28 50.47 50.47 50.47 50.45 50.47 33.65 33.65 33.65 33.65 50.45 16.82 50.45 16.82 33.65 33.65 33.65 33.65 16.82 16.82 16.82z" />
       <path d="M33.65 0H50.47V16.82H33.65z" />
@@ -695,7 +695,7 @@ const DigitalCubeMark = () => (
 );
 
 const DigitalCubeMarkDark = () => (
-  <svg height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
+  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
     <g fill="#fff">
       <path d="M16.82 16.82L0 16.82 0 33.65 0 50.45 0 50.47 0 67.28 50.47 67.28 50.47 50.47 50.47 50.45 50.47 33.65 33.65 33.65 33.65 50.45 16.82 50.45 16.82 33.65 33.65 33.65 33.65 16.82 16.82 16.82z" />
       <path d="M33.65 0H50.47V16.82H33.65z" />
@@ -710,7 +710,7 @@ const LogoSvg = ({ asset }: { asset?: string }) => {
     case 'shifter-mark-dark':
       return <LogoKoWhite />;
     case 'shifter-mark':
-      return <LogoColor />;
+      return <ShifterMark />;
     case 'shifter-logo-dark':
       return <LogoPrimaryKoWhite />;
     case 'shifter-logo-light':
@@ -744,11 +744,14 @@ const LogoSvg = ({ asset }: { asset?: string }) => {
   }
 };
 
-type Props = { asset?: string; className?: string };
-const Brand = ({ asset, className = '' }: Props) => (
-  <div className={`logo--shifter logo-${asset} ${className || 'logomark-color'}`}>
+type Props = { asset?: string; className?: string; size?: string };
+const Brand = ({ asset, className = '', size = '45' }: Props) => (
+  <figure
+    style={{ height: `${size}px`, width: 'auto', display: 'inline-block' }}
+    className={`logo--shifter logo-${asset} ${className || 'logomark-color'}`}
+  >
     <LogoSvg asset={asset} />
-  </div>
+  </figure>
 );
 
 export default Brand;
