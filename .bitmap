@@ -14,6 +14,19 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "digitalcube.pattern-lib/ui/dashboard-card-group@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/dashboard-card-group/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/components/dashboard-card-group/index.tsx",
+        "trackDir": "src/components/dashboard-card-group",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "digitalcube.pattern-lib/ui/dashboard-card-loader@0.0.1": {
         "files": [
             {
