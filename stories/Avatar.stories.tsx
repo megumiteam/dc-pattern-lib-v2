@@ -5,4 +5,6 @@ import Avatar from '../src/components/avatar';
 // target
 import '../src/assets/main.css';
 
-storiesOf('Avatar', module).add('Styles', () => <Avatar email="hello@getshifter.io" />);
+storiesOf('Avatar', module).add('Fallback', () => <Avatar />);
+
+storiesOf('Avatar', module).add('User Email', () => <Avatar email="emaildano@gmail.com" />);

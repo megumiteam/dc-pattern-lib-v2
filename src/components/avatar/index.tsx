@@ -5,9 +5,6 @@ type Props = {
   email?: string;
 };
 
-const Avatar = ({ email }: Props) => {
-  if (!email) return null;
-  return <Gravatar className="rounded-circle avatar" email={email} size={40} />;
-};
+const Avatar = ({ email = 'hello@getshifter.io' }: Props) => <Gravatar className="rounded-circle avatar" email={email} size={40} />;
 
 export default Avatar;

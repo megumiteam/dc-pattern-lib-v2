@@ -1,7 +1,7 @@
 import React from 'react';
 
-const AmimotoLogo = () => (
-  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.87 70.49">
+const AmimotoLogo = ({ size }: { size?: string }) => (
+  <svg height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.87 70.49">
     <g fill="#040000">
       <path
         d="M419.93 186.19c0 9.6-6.77 16.19-16.61 16.19s-16.67-6.59-16.67-16.19S393.43 170 403.32 170s16.61 6.54 16.61 16.19zm-26.38.06c0 6.18 4 10.37 9.77 10.37s9.72-4.19 9.72-10.37-4-10.31-9.72-10.31-9.77 4.19-9.77 10.31z"
@@ -59,9 +59,9 @@ const AmimotoLogo = () => (
   </svg>
 );
 
-const AmimotoLogoLight = () => (
+const AmimotoLogoLight = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="Amimoto_Primary"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 335.87 70.49"
@@ -164,9 +164,9 @@ const AmimotoLogoLight = () => (
   </svg>
 );
 
-const AmimotoLogoDark = () => (
+const AmimotoLogoDark = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="Amimoto_Primary"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 335.87 70.49"
@@ -269,8 +269,8 @@ const AmimotoLogoDark = () => (
   </svg>
 );
 
-const AmimotoMark = () => (
-  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.01 70.49">
+const AmimotoMark = ({ size }: { size?: string }) => (
+  <svg height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.01 70.49">
     <g fillRule="evenodd">
       <path
         fill="#00a8ff"
@@ -318,9 +318,9 @@ const AmimotoMark = () => (
   </svg>
 );
 
-const AmimotoMarkLight = () => (
+const AmimotoMarkLight = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="Amimoto_Primary"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 70.01 70.49"
@@ -386,9 +386,9 @@ const AmimotoMarkLight = () => (
   </svg>
 );
 
-const AmimotoMarkDark = () => (
+const AmimotoMarkDark = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="Amimoto_Primary"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 70.01 70.49"
@@ -454,9 +454,9 @@ const AmimotoMarkDark = () => (
   </svg>
 );
 
-const DefaultLogo = () => (
+const DefaultLogo = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="ShifterLogomarkWhite"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 90.37 115.36"
@@ -468,9 +468,9 @@ const DefaultLogo = () => (
   </svg>
 );
 
-const LogoKoWhite = () => (
+const LogoKoWhite = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="ShifterLogomarkWhite"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 90.37 115.36"
@@ -482,9 +482,9 @@ const LogoKoWhite = () => (
   </svg>
 );
 
-const LogoKoBlack = () => (
+const LogoKoBlack = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="ShifterLogomarkBlack"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 90.37 115.36"
@@ -496,9 +496,9 @@ const LogoKoBlack = () => (
   </svg>
 );
 
-const ShifterMark = () => (
+const ShifterMark = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     viewBox="0 0 32 43"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -521,9 +521,9 @@ const ShifterMark = () => (
   </svg>
 );
 
-const LogoPrimaryKoWhite = () => (
+const LogoPrimaryKoWhite = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="Layer_1"
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
@@ -540,9 +540,9 @@ const LogoPrimaryKoWhite = () => (
   </svg>
 );
 
-const LogoPrimaryKoBlack = () => (
+const LogoPrimaryKoBlack = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="Layer_1"
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
@@ -559,9 +559,9 @@ const LogoPrimaryKoBlack = () => (
   </svg>
 );
 
-const LogoPrimaryDark = () => (
+const LogoPrimaryDark = ({ size }: { size?: string }) => (
   <svg
-    height="auto"
+    height={size}
     id="Layer_1"
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
@@ -579,8 +579,8 @@ const LogoPrimaryDark = () => (
   </svg>
 );
 
-const DigitalCubeLogo = () => (
-  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
+const DigitalCubeLogo = ({ size }: { size?: string }) => (
+  <svg height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
     <g fill="#231f20">
       <path
         d="M169.49 188.69c0 11.28-8.54 19.54-20.38 19.54h-15.85v-39.07h16c11.74 0 20.23 8.2 20.23 19.53zm-6.65.06a13.31 13.31 0 00-13.67-13.67h-9.32v27.23h9.6c7.55 0 13.39-5.63 13.39-13.56z"
@@ -632,8 +632,8 @@ const DigitalCubeLogo = () => (
   </svg>
 );
 
-const DigitalCubeLogoDark = () => (
-  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
+const DigitalCubeLogoDark = ({ size }: { size?: string }) => (
+  <svg height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.68 78.45">
     <g fill="#ffffff">
       <path
         d="M169.49 188.69c0 11.28-8.54 19.54-20.38 19.54h-15.85v-39.07h16c11.74 0 20.23 8.2 20.23 19.53zm-6.65.06a13.31 13.31 0 00-13.67-13.67h-9.32v27.23h9.6c7.55 0 13.39-5.63 13.39-13.56z"
@@ -685,8 +685,8 @@ const DigitalCubeLogoDark = () => (
   </svg>
 );
 
-const DigitalCubeMark = () => (
-  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
+const DigitalCubeMark = ({ size }: { size?: string }) => (
+  <svg height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
     <g>
       <path d="M16.82 16.82L0 16.82 0 33.65 0 50.45 0 50.47 0 67.28 50.47 67.28 50.47 50.47 50.47 50.45 50.47 33.65 33.65 33.65 33.65 50.45 16.82 50.45 16.82 33.65 33.65 33.65 33.65 16.82 16.82 16.82z" />
       <path d="M33.65 0H50.47V16.82H33.65z" />
@@ -694,8 +694,8 @@ const DigitalCubeMark = () => (
   </svg>
 );
 
-const DigitalCubeMarkDark = () => (
-  <svg height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
+const DigitalCubeMarkDark = ({ size }: { size?: string }) => (
+  <svg height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.47 67.28">
     <g fill="#fff">
       <path d="M16.82 16.82L0 16.82 0 33.65 0 50.45 0 50.47 0 67.28 50.47 67.28 50.47 50.47 50.47 50.45 50.47 33.65 33.65 33.65 33.65 50.45 16.82 50.45 16.82 33.65 33.65 33.65 33.65 16.82 16.82 16.82z" />
       <path d="M33.65 0H50.47V16.82H33.65z" />
@@ -703,55 +703,56 @@ const DigitalCubeMarkDark = () => (
   </svg>
 );
 
-const LogoSvg = ({ asset }: { asset?: string }) => {
+const LogoSvg = ({ asset, size }: { asset?: string; size?: string }) => {
   switch (asset) {
     case 'shifter-mark-light':
-      return <LogoKoBlack />;
+      return <LogoKoBlack size={size} />;
     case 'shifter-mark-dark':
-      return <LogoKoWhite />;
+      return <LogoKoWhite size={size} />;
     case 'shifter-mark':
-      return <ShifterMark />;
+      return <ShifterMark size={size} />;
     case 'shifter-logo-dark':
-      return <LogoPrimaryKoWhite />;
+      return <LogoPrimaryKoWhite size={size} />;
     case 'shifter-logo-light':
-      return <LogoPrimaryKoBlack />;
+      return <LogoPrimaryKoBlack size={size} />;
     case 'shifter-logo':
-      return <LogoPrimaryDark />;
+      return <LogoPrimaryDark size={size} />;
     case 'amimoto-logo':
-      return <AmimotoLogo />;
+      return <AmimotoLogo size={size} />;
     case 'amimoto-logo-light':
-      return <AmimotoLogoLight />;
+      return <AmimotoLogoLight size={size} />;
     case 'amimoto-logo-dark':
-      return <AmimotoLogoDark />;
+      return <AmimotoLogoDark size={size} />;
     case 'amimoto-mark':
-      return <AmimotoMark />;
+      return <AmimotoMark size={size} />;
     case 'amimoto-mark-dark':
-      return <AmimotoMarkDark />;
+      return <AmimotoMarkDark size={size} />;
     case 'amimoto-mark-light':
-      return <AmimotoMarkLight />;
+      return <AmimotoMarkLight size={size} />;
     case 'dc-logo':
     case 'dc-logo-light':
-      return <DigitalCubeLogo />;
+      return <DigitalCubeLogo size={size} />;
     case 'dc-logo-dark':
-      return <DigitalCubeLogoDark />;
+      return <DigitalCubeLogoDark size={size} />;
     case 'dc-mark':
     case 'dc-mark-light':
-      return <DigitalCubeMark />;
+      return <DigitalCubeMark size={size} />;
     case 'dc-mark-dark':
-      return <DigitalCubeMarkDark />;
+      return <DigitalCubeMarkDark size={size} />;
     default:
-      return <DefaultLogo />;
+      return <DefaultLogo size={size} />;
   }
 };
 
 type Props = { asset?: string; className?: string; size?: string };
+
 const Brand = ({ asset, className = '', size = '45' }: Props) => (
-  <figure
+  <span
     style={{ height: `${size}px`, width: 'auto', display: 'inline-block' }}
     className={`logo--shifter logo-${asset} ${className || 'logomark-color'}`}
   >
-    <LogoSvg asset={asset} />
-  </figure>
+    <LogoSvg asset={asset} size={size} />
+  </span>
 );
 
 export default Brand;
