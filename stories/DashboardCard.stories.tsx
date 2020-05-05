@@ -5,7 +5,8 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 // target
-import DashboardCard from '../src/DashboardCard';
+// import DashboardCard from '../src/DashboardCard';
+import DashboardCard from '../src/components/dashboard-card';
 import '../src/assets/main.css';
 
 storiesOf('DashboardCard', module)
