@@ -306,7 +306,7 @@ $font-family-monospace: source-code-pro, monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 1.15rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: ($font-size-base * 1.25) !default;
 $font-size-sm: ($font-size-base * 0.875) !default;
 
@@ -1103,7 +1103,7 @@ $close-text-shadow: 0 1px 0 $white !default;
 // Code
 
 $code-font-size: 87.5% !default;
-$code-color: $pink !default;
+$code-color: $gray-light !default;
 
 $kbd-padding-y: 0.2rem !default;
 $kbd-padding-x: 0.4rem !default;
