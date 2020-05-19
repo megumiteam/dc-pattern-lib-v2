@@ -205,9 +205,9 @@ $body-color: $purple-dark !default;
 //
 // Style anchor elements.
 
-$link-color: $body-color !default;
+$link-color: $purple-dark !default;
 $link-decoration: none !default;
-$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: $pink !default;
 $link-hover-decoration: none !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
