@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { Modal } from 'reactstrap';
 import Logo from './Logos';
 
@@ -8,6 +8,9 @@ type Props = {
 
 export default (props: Props) => {
   const [isOpen, updateModalState] = useState(props.isOpen);
+  useEffect(() => {
+    updateModalState(props.isOpen);
+  }, [props.isOpen, updateModalState]);
   const toggle = useCallback(() => {
     updateModalState(!isOpen);
   }, [isOpen, updateModalState]);
