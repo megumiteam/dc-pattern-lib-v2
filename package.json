@@ -48,7 +48,7 @@
     "react-router-dom": "^5.1.2",
     "reactstrap": "^8.4.0",
     "sass-loader": "^8.0.2",
-    "storybook": "^5.3.17"
+    "storybook": "^7.0.7"
   },
   "peerDependencies": {
     "react": "16.x"
